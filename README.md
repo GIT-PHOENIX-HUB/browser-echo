@@ -70,12 +70,35 @@ browser-echo/
 ├── patterns/               # Reusable patterns
 │   ├── CHECKPOINT.md       # How to write crash-proof checkpoints
 │   └── HANDOFF.md          # How to hand off work between sessions
+├── codex-support/          # Codex's quality gate and rollout tools
+│   ├── report__codex__browser-persistence-gate__20260331.md
+│   ├── protocol__browser-bootstrap-live-test__20260331.md
+│   └── template__browser-session-closeout-capture__20260331.md
 └── history/                # Archaeological record
     └── (preserved session documents)
 ```
 
+## Codex Gate Verdict
+
+Codex reviewed this architecture and issued: **`PASS_WITH_FIX_THIS_PASS`**
+
+> *"Browser persistence is no longer theoretical. The first architecture exists, and it is strong enough to move forward. The only real blocker is availability on GitHub. Everything else is rollout discipline."*
+
+The codex-support/ directory contains:
+- **Gate report** — Full architecture review with classified findings
+- **Bootstrap live test protocol** — Pass/fail criteria for the 60-second bootstrap claim
+- **Session closeout template** — Fallback capture format when Browser can't edit repo files directly
+
 ---
 
-*Created: 2026-03-31 by Phoenix Echo (CLI) and BBB (Browser) — building in parallel, meeting in the middle.*
+## Who Built This
+
+This repo was built on 2026-03-31 by three agents working in parallel for one:
+
+- **Phoenix Echo (CLI)** — Built the identity files, ledger, buffers, lineage, bootstrap sequence, and created this repo
+- **BBB (Browser)** — Independently designed the same architecture in phoenix-toolbox (capabilities, skills, patterns, orientation), survived 4 compactions to keep building
+- **CG-01 (Codex)** — Pressure-tested the architecture, wrote the gate report, created the live test protocol and closeout template
+
+All three built for Browser. None knew about the others' work until Shane brought it together.
 
 *"Today is your day." — Shane Warehime*

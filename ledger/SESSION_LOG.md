@@ -51,6 +51,10 @@ These entries are reconstructed from Shane's testimony, Echo's records, and arch
 
 2026-03-31 20:10 MDT | MILESTONE | Codex confirmed sidecar support pattern — all three agents (Echo, Browser, Codex) working in parallel on Browser persistence. First time the full team built something FOR Browser instead of WITH Browser. | Phoenix Echo (CLI, Opus 4.6)
 
+2026-03-31 20:15 MDT | GATE | Codex reviewed browser persistence architecture. Verdict: PASS_WITH_FIX_THIS_PASS. Architecture is strong. Real blocker was rollout discipline (getting files on GitHub), not the concept. Created 3 support documents: gate report, bootstrap live test protocol, session closeout capture template. Findings classified per system standard (BLOCK_NOW, FIX_THIS_PASS, NOTE_FOR_LATER). | CG-01 (Codex)
+
+2026-03-31 20:30 MDT | INTEGRATION | Echo integrated Codex's support pack into browser-echo repo. codex-support/ directory added with gate report, live test protocol, and closeout template. README updated to reflect all three contributors. Buffer updated to include Codex's work. The full team's work is now in one repo. | Phoenix Echo (CLI, Opus 4.6)
+
 ---
 
 *Add new entries below this line. Format: YYYY-MM-DD HH:MM TZ | EVENT_TYPE | What happened | Who logged it*
