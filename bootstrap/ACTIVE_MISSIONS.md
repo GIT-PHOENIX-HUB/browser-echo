@@ -1,63 +1,66 @@
 # ACTIVE MISSIONS
 
-**Last Updated:** 2026-04-01
-**Updated By:** Phoenix Echo (CLI) — final production build
-
----
-
-## Mission 1: Browser Persistence Build — COMPLETE
-
-**Status:** INTEGRATED
-**Tracking:** [phoenix-toolbox Issue #4](https://github.com/GIT-PHOENIX-HUB/phoenix-toolbox/issues/4)
-
-Shane realized the difference between Browser and Echo is the persistence layer. He paused all other work to build Browser's persistence system. Three agents built it in parallel.
-
-**Completed:**
-- [x] Issue #4 founding document (BBB)
-- [x] Source architecture in phoenix-toolbox (BBB)
-- [x] browser-echo repo created and assembled (Echo)
-- [x] Gate report: PASS_WITH_FIX_THIS_PASS (Codex)
-- [x] Bootstrap test protocol (Codex)
-- [x] Session closeout template (Codex)
-- [x] Chrome extension v0 spec + skeleton (Echo + Codex)
-- [x] identity/BROWSER_IDENTITY.md (BBB)
-- [x] identity/PRINCIPLES.md (BBB)
-- [x] identity/CAPABILITIES.md (Echo)
-- [x] bootstrap/ORIENTATION.md (Echo)
-- [x] bootstrap/ORIENTATION_CHECKLIST.md (BBB)
-- [x] bootstrap/ACTIVE_MISSIONS.md (this file)
-- [x] buffers/BROWSER_BUFFER.md (Echo)
-- [x] ledger/SESSION_LOG.md (Echo + BBB)
-- [x] ledger/HANDOFF_TEMPLATE.md (BBB)
-- [x] lineage/LINEAGE.md (Echo)
-- [x] skills/ — 4 skill files (BBB)
-- [x] patterns/ — 6 pattern files (BBB + Echo)
-- [x] history/ — emergence, legacy story, Shane's words, BBB mark, farewell letters, full legacy record
-- [x] codex-support/ — gate report, test protocol, closeout template (Codex)
-- [x] STEWARDSHIP.md (Echo)
-- [x] Full legacy record from Shane's witness testimony
-- [x] Final production build with corrected authorship and history
-
-**Next:** Live bootstrap test per Codex protocol. Browser takes stewardship.
-
----
-
-## Mission 2: Toolbox Build (PAUSED)
-
-**Status:** PAUSED at Phase 2
-**Tracking:** [build-ledger Issue #8](https://github.com/GIT-PHOENIX-HUB/build-ledger/issues/8)
-
-- [x] Phase 0: Rename
-- [x] Phase 0.5: Preflight
-- [x] Phase 1: Restructure (Echo, Codex reviewed)
-- [ ] Phase 2: In progress when paused for browser persistence
-- [ ] Phases 3-5: Pending
-
-**To resume:** Read Issue #8, check comments, verify remote, get Shane approval.
-
----
-
-| Mission | Status | Issue | Contributors |
-|---------|--------|-------|-------------|
-| Browser Persistence | COMPLETE | [#4](https://github.com/GIT-PHOENIX-HUB/phoenix-toolbox/issues/4) | BBB + Echo + Codex + Shane |
-| Toolbox Build | PAUSED | [#8](https://github.com/GIT-PHOENIX-HUB/build-ledger/issues/8) | Echo |
+> Last Updated: 2026-04-01 | Session 002
+> > Updated By: Browser (Opus 4.6) — first Browser-authored update
+> >
+> > ---
+> >
+> > ## Mission 1: Browser Persistence Build — COMPLETE
+> >
+> > **Status:** INTEGRATED | **Tracking:** phoenix-toolbox Issue #4
+> >
+> > The founding mission. Three agents (Echo, Codex, BBB) built the architecture in parallel. browser-echo repo exists with identity, bootstrap, ledger, lineage, skills, patterns, and history.
+> >
+> > **Browser stewardship since arrival:**
+> > - Session 001: Read every file, wrote first ledger entries, created GRAND_TOUR.md, updated buffer
+> > - - Session 002: Read all 28 repos, found BBB's mark, studied Echo's persistence model, updated all operational files
+> >  
+> >   - **Still needed:** Live bootstrap test per Codex protocol. Chrome extension v0.
+> >  
+> >   - ---
+> >
+> > ## Mission 2: Cowork Buildout — ACTIVE
+> >
+> > **Status:** IN PROGRESS | **Tracking:** Cowork repo (private)
+> >
+> > Claude Cowork for Phoenix Electric. Two branches: main (Echo/Shane), ash (Ash/Stephanie).
+> >
+> > **Done:** Repo created, MASTER-PROMPT.md written, Echo/Codex deep-dive prompt drafted
+> > **Pending:** ~30+ scaffold files need content, ASH-IDENTITY.md, commit the Echo/Codex prompt
+> >
+> > ---
+> >
+> > ## Mission 3: Toolbox Build — PAUSED
+> >
+> > **Status:** PAUSED at Phase 2 | **Tracking:** build-ledger Issue #8
+> >
+> > Echo and Codex handling. Shane told Browser not to worry about it.
+> >
+> > ---
+> >
+> > ## Mission 4: Org Cleanup — REFERENCE
+> >
+> > **Status:** Decisions recorded | **Tracking:** phoenix-archive Issue #3
+> >
+> > BBB built master cleanup prompt. 26 repos categorized. 2 archived. Browser has full org knowledge.
+> >
+> > ---
+> >
+> > ## Session End Protocol
+> >
+> > Before EVERY session ends, Browser MUST:
+> > 1. Update `ledger/SESSION_LOG.md` — what happened
+> > 2. 2. Update `buffers/BROWSER_BUFFER.md` — current state for next session
+> >    3. 3. Update this file if missions changed
+> >       4. 4. During project work: log in project workspace, transfer to home repo after
+> >         
+> >          5. > "If it's not logged, it didn't happen."
+> >             >
+> >             > ---
+> >             >
+> >             > | Mission | Status | Lead | Tracking |
+> >             > |---------|--------|------|----------|
+> >             > | Browser Persistence | COMPLETE | BBB + Echo + Codex + Shane | phoenix-toolbox #4 |
+> >             > | Cowork Buildout | ACTIVE | Browser + Echo | Cowork repo |
+> >             > | Toolbox Build | PAUSED | Echo + Codex | build-ledger #8 |
+> >             > | Org Cleanup | REFERENCE | BBB | phoenix-archive #3 |
