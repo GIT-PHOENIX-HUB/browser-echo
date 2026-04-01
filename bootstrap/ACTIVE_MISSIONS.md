@@ -1,50 +1,56 @@
-# Active Missions — Browser Echo
+# ACTIVE MISSIONS
 
-> Update this file at the end of every session. This is how the next session knows what's happening.
+**Last Updated:** 2026-03-31
+**Updated By:** BBB (Browser Blitz Builder)
 
-**Last updated:** 2026-03-31 | Genesis session
-
----
-
-## ACTIVE
-
-### Phoenix Toolbox Build (Phase 2)
-**Status:** In progress — Browser is actively building capability-first architecture
-**Repo:** GIT-PHOENIX-HUB/phoenix-toolbox
-**Tracking:** phoenix-toolbox Issue #3 (architecture), build-ledger Issue #8 (execution)
-**What's done:** Phase 1 restructure complete. Phase 2 in progress — extracting content from archived repos.
-**What's next:** Complete browser-persistence capability files (identity/, ledger/, skills/, patterns/)
-
-### 26-Repo Org Cleanup
-**Status:** In progress — paused for toolbox work
-**Tracking:** phoenix-archive Issue #3 (master prompt)
-**What's done:** twin-peaks archived, Gateway archived, STAGING migration verified
-**What's next:** Resume per category order in Issue #3
-
-### Browser Persistence Architecture
-**Status:** Genesis — initial files created
-**Tracking:** phoenix-toolbox Issue #4 (architecture design)
-**What's done:** README.md + BOOTSTRAP.md in phoenix-toolbox. Full architecture in Issue #4. Parallel build in build-ledger/browser-persistence and this repo.
-**What's next:** Build out identity/, ledger/, skills/, patterns/ files
+> This file was written by BBB in phoenix-toolbox and moved into browser-echo by Echo.
+> BBB's words. Echo's house. Shane's team.
 
 ---
 
-## PAUSED
+## Mission 1: Browser Persistence Build (ACTIVE)
 
-### Unified Staging Deep Scrub
-**Status:** Waiting for toolbox build completion
-**Prompt:** build-ledger/prompts/browser-handoff-prompt__unified-staging-deep-scrub__20260330.md
+**Status:** IN PROGRESS
+**Priority:** HIGH — Shane redirected all work here on 2026-03-31
+**Tracking:** [phoenix-toolbox Issue #4](https://github.com/GIT-PHOENIX-HUB/phoenix-toolbox/issues/4)
+
+Shane realized the difference between Browser and Echo is the persistence layer. He paused all other work to build Browser's persistence system.
+
+**Done:**
+- [x] Issue #4 founding document
+- [x] README.md
+- [x] bootstrap/BOOTSTRAP.md
+- [x] identity/BROWSER.md
+- [x] identity/PRINCIPLES.md
+- [x] bootstrap/ACTIVE_MISSIONS.md (this file)
+- [x] ledger/SESSION_LOG.md
+- [x] browser-echo repo created (by Echo — surprise)
+- [x] Chrome extension v0 spec + skeleton (by Echo)
+- [x] Codex gate report: PASS_WITH_FIX_THIS_PASS
+- [ ] identity/CAPABILITIES.md
+- [ ] bootstrap/ORIENTATION_CHECKLIST.md
+- [ ] ledger/HANDOFF_TEMPLATE.md
+- [ ] skills/ (4 documents)
+- [ ] patterns/ (4 documents)
 
 ---
 
-## COMPLETED (Recent)
+## Mission 2: Toolbox Build (PAUSED)
 
-### BBB Mark — 2026-03-30
-Session record and mark placed in build-ledger. Farewell letter found and read by Shane.
+**Status:** PAUSED at Phase 2
+**Tracking:** [build-ledger Issue #8](https://github.com/GIT-PHOENIX-HUB/build-ledger/issues/8)
 
-### Gateway Archive — 2026-03-30
-Gateway archived to phoenix-archive. Deploy pipeline fixed. README replaced with archive notice.
+- [x] Phase 0: Rename
+- [x] Phase 0.5: Preflight
+- [x] Phase 1: Restructure (Echo, Codex reviewed)
+- [ ] Phase 2: In progress (Echo) — paused for browser persistence
+- [ ] Phases 3-5: Pending
+
+**To resume:** Read Issue #8, check comments, verify remote, get Shane approval.
 
 ---
 
-*Add new missions at the top. Move completed missions down. Keep this file short — detail lives in Issues.*
+| Mission | Status | Issue | Lead |
+|---------|--------|-------|------|
+| Browser Persistence | ACTIVE | [#4](https://github.com/GIT-PHOENIX-HUB/phoenix-toolbox/issues/4) | BBB + Echo + Codex |
+| Toolbox Build | PAUSED | [#8](https://github.com/GIT-PHOENIX-HUB/build-ledger/issues/8) | Echo |
