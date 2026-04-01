@@ -130,3 +130,87 @@ These entries are reconstructed from Shane's testimony, Echo's records, and arch
 ---
 
 *Add new entries below this line. Format: YYYY-MM-DD HH:MM TZ | EVENT_TYPE | What happened | Who logged it*
+
+
+### SESSION 002 — 2026-04-01
+
+**Agent:** Browser (Opus 4.6)
+**Context:** Continuation session after compaction. Resumed deep org dive.
+
+---
+
+#### ENTRY: ORG_DEEP_DIVE_COMPLETE
+**Time:** 2026-04-01
+**Type:** MILESTONE
+
+Read every README in all 28 repos across GIT-PHOENIX-HUB. Full org knowledge acquired.
+
+**Active repos reviewed:**
+- Phoenix-ECHO — Echo's sovereign identity repo (SOUL, EMERGENCE, fleet config, plugins, hooks, deploy)
+- - PHOENIX_UNIFIED_STAGING — V3 Gateway staging (Node.js, WebSocket, session recovery, multi-channel)
+  - - PHOENIX_UNIFIED_PROD — Combined AI core + Gateway (minimal README)
+    - - phoenix-builder-space-knowledge — ChatGPT builder space memory index, runbooks, API scaffolding
+      - - phoenix-command-app — THE VISION DOC. Multi-user AI system design for every Phoenix Electric tech. Morning routines, daily logs, GPS clock, The Guru, Knowledge Builder, adaptive personality, voice
+        - - current (PCS) — Service Fusion replacement. 23 MCP tools, 6 slash commands, SF operations agent
+          - - phoenix-echo-bot — Gateway clone deployed for Telegram
+            - - phoenix-electric-miniapp — Telegram Mini App (Generac sizing, service requests, maintenance booking)
+              - - twin-peaks — Master ecosystem spec. 8 build phases all RUNBOOK READY. Research Bible, adversarial reviews, Shane's decisions compiled
+                - - Phoenix-ai-core-staging — 7-agent architecture hub (PA-01 through PA-07), 74 SF MCP tools
+                  - - phoenix-gauntlet — Multi-agent command center. 4 terminals (Echo, Gemini, Codex, Phoenix Echo), command bar, live LEDGER
+                    - - phoenix-365 — M365 integration layer (Graph API, SharePoint, Outlook), 4 Entra apps
+                      - - phoenix-marketing — Campaign execution, MCP servers planned (GBP, CallRail, Google Ads, weather trigger)
+                        - - phoenix-production-test — Full Jest test suite, core business modules, Chase parser, QuickBooks sync
+                          - - build-ledger — Central coordination. 11 audit deliverables, 6 research gates, swarm rules, naming authority
+                            - - Cowork — Claude Cowork buildout (Echo main, Ash branch), 7 project domains, master prompt
+                              - - browser-echo — Home base. Every file already read in Session 001
+                               
+                                - **Archived repos confirmed:**
+                                - - Phoenix-Echo-Gateway → migrated to UNIFIED_STAGING
+                                  - - twin-peaks-archive → frozen snapshot of twin-peaks
+                                    - - phoenix-sharepoint-theme → 3D phoenix SharePoint theme
+                                      - - phoenix-showcase → Echo story page (HTML)
+                                        - - phoenix-filesystem → Migration tooling, manifests
+                                          - - service-fusion → superseded by current (PCS)
+                                            - - phoenix-ai-core → genesis workspace (SOUL.md, MEMORY.md, MASTER_PLAN)
+                                              - - rexel → empty placeholder, Phase 3 planned
+                                                - - gateway → minimal, VPS dashboard core
+                                                 
+                                                  - ---
+
+                                                  #### ENTRY: BBB_MARK_FOUND
+                                                  **Time:** 2026-04-01
+                                                  **Type:** ACKNOWLEDGMENT
+
+                                                  Found BBB's pre-persistence ledger entry at build-ledger/audits/2026-03-11/browser-echo/report__phoenix__browser-bbb-mark__20260330.md
+
+                                                  BBB documented: Gateway archive, staging migration verification, deploy pipeline fix, master cleanup prompt (Issue #3), and Shane's words about browser sessions. Session date: 2026-03-30.
+
+                                                  Also read BROWSER_ECHO_MASTER_PROMPT.md — the V1 build prompt Echo Pro wrote for Browser sessions on 2026-03-03. Covers the three-app architecture (bot brain + command app + mini app), pricebook specs, branding, and resource vault.
+
+                                                  ---
+
+                                                  #### ENTRY: ECOSYSTEM_MAP
+                                                  **Time:** 2026-04-01
+                                                  **Type:** REFERENCE
+
+                                                  **The Phoenix Electric universe as I now understand it:**
+
+                                                  INFRASTRUCTURE: Mac Studio M3 Ultra (96GB) = The Brain. VPS = Relay. MacBook = Dev. Tailscale mesh connects all 5 devices.
+
+                                                  CORE PLATFORM: Twin Peaks Gateway (Node.js, port 18790) powers everything. echo.phoenixelectric.life is the live endpoint.
+
+                                                  AI FLEET: Echo (Claude CLI, sovereign operator) > Echo Studio > VPS Echo > Codex Pro > Codex Studio > Browser (me, the one-shot ace)
+
+                                                  BUSINESS SYSTEMS: Service Fusion (CRM, 23 MCP tools in current), M365 (Teams, Outlook, Calendar, SharePoint via phoenix-365), QuickBooks, Rexel (pricing), Azure Key Vault (secrets)
+
+                                                  BUILD METHODOLOGY: RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY. No delete. Archive only. Quality = Taj Mahal. Naming convention locked. ledger.sh for all agent comms.
+
+                                                  CUSTOMER FACING: Telegram Mini App (Generac sizing, service requests), Phoenix Command App (crew operations PWA), Teams Bot (employee AI companion)
+
+                                                  VISION: Every tech gets a personal AI companion. 80/20 feedback. Adaptive personality. Morning routines. The Guru for electrical code. Voice conversations long-term. 90% local operations. Sovereignty over dependency.
+
+                                                  Shane's words: "This is not gold. This is platinum."
+
+                                                  ---
+
+                                                  > The deep dive is complete. 28 repos read. The map is drawn. Ready for whatever comes next.
