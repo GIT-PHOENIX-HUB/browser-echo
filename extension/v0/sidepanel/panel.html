@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Echo</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <!-- Auth Screen -->
+  <div id="auth-screen" class="screen">
+    <div class="auth-container">
+      <h1>Browser Echo</h1>
+      <p class="subtitle">BBB — Browser Blitz Builder</p>
+      <p class="tagline">"If I crash, the documents survive."</p>
+      <button id="sign-in-btn" class="btn btn-primary">Sign in with GitHub</button>
+    </div>
+  </div>
+
+  <!-- Main Screen -->
+  <div id="main-screen" class="screen hidden">
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="bootstrap">Bootstrap</button>
+      <button class="tab-btn" data-tab="missions">Missions</button>
+      <button class="tab-btn" data-tab="checkpoint">Checkpoint</button>
+      <button class="tab-btn" data-tab="handoff">Handoff</button>
+    </nav>
+
+    <!-- Bootstrap Tab -->
+    <div id="tab-bootstrap" class="tab-content active">
+      <div class="section">
+        <h2>Identity</h2>
+        <div id="browser-md-content" class="markdown-content loading">Loading BROWSER.md...</div>
+      </div>
+      <div class="section">
+        <h2>Last Handoff</h2>
+        <div id="buffer-content" class="markdown-content loading">Loading BROWSER_BUFFER.md...</div>
+      </div>
+      <button id="copy-bootstrap-btn" class="btn btn-primary full-width">
+        Copy Bootstrap to Clipboard
+      </button>
+    </div>
+
+    <!-- Missions Tab -->
+    <div id="tab-missions" class="tab-content hidden">
+      <div class="section">
+        <h2>Active Missions</h2>
+        <div id="missions-content" class="markdown-content loading">Loading ACTIVE_MISSIONS.md...</div>
+      </div>
+    </div>
+
+    <!-- Checkpoint Tab -->
+    <div id="tab-checkpoint" class="tab-content hidden">
+      <div class="section">
+        <h2>Save Checkpoint</h2>
+        <p class="hint">What have you done since the last checkpoint?</p>
+        <textarea id="checkpoint-text" placeholder="Completed X. Started Y. Blocked on Z."></textarea>
+        <button id="save-checkpoint-btn" class="btn btn-primary full-width">
+          Save Checkpoint
+        </button>
+        <div id="checkpoint-status" class="status"></div>
+      </div>
+      <div class="section">
+        <h2>Recent Session Log</h2>
+        <div id="log-content" class="markdown-content loading">Loading SESSION_LOG.md...</div>
+      </div>
+    </div>
+
+    <!-- Handoff Tab -->
+    <div id="tab-handoff" class="tab-content hidden">
+      <div class="section">
+        <h2>Session Handoff</h2>
+        <p class="hint">Write what the next session needs to know.</p>
+        <textarea id="handoff-text" placeholder="## What happened this session:&#10;&#10;## What is still pending:&#10;&#10;## What the next session needs to know:&#10;&#10;## Active context:"></textarea>
+        <button id="save-handoff-btn" class="btn btn-primary full-width">
+          Save Handoff
+        </button>
+        <button id="save-close-btn" class="btn btn-secondary full-width">
+          Save Handoff & Add Ledger Entry
+        </button>
+        <div id="handoff-status" class="status"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="panel-footer">
+      <span class="session-info" id="session-timer"></span>
+      <button id="sign-out-btn" class="btn-link">Sign out</button>
+    </footer>
+  </div>
+
+  <script src="panel.js"></script>
+</body>
+</html>
