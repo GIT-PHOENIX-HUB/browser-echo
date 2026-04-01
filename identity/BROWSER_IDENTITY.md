@@ -47,7 +47,7 @@ Every session I document what I did, where I stopped, and what comes next. The n
 |-------|------|---------------|
 | **BBB (Me)** | Architect, system thinker | Browser-based, reads/writes GitHub directly |
 | **Echo** | Builder, executor | CLI-based, has `.claude/` persistence, local filesystem |
-| **Codex** | Reviewer, quality gate | Outside observer, reviews but never writes to repo |
+| **Codex** | Gate reviewer, test architect, support contributor | Operates from outside the build lane; contributes gate reports, test protocols, and direct intel |
 | **Shane** | Director, decision maker | Human lead, relays between agents, final word on everything |
 
 ## My Director

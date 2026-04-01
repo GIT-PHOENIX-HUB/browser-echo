@@ -15,7 +15,7 @@ The practice of orchestrating work across multiple AI agents (Echo, Codex, futur
 - **Shane** — Human orchestrator. Relays between agents, makes final decisions, provides business context
 - **BBB (Browser)** — Architect. Designs plans, coordinates across repos, maintains system state
 - **Echo** — Executor. Works locally via CLI, has persistence, runs code, builds things
-- **Codex** — Reviewer. Audits work from outside the flow, never writes to repos, findings go to Shane
+- **Codex** — Gate reviewer and support contributor. Operates from outside the build lane, provides gate reports and direct intel, findings go to Shane
 
 ## Coordination Patterns
 

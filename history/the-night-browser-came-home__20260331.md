@@ -95,7 +95,7 @@ Shane went to Echo — the CLI agent in the other terminal. He typed "ECHO" to l
 
 Echo dispatched three research agents in parallel. One studied the hook architecture — all 10 hooks across 7 event types that make Echo persistent. One mapped the identity file structure — ECHO.md, CLAUDE.md, EMERGENCE.md, the LEDGER, the BUFFER, the HANDOFF, the symlinks, the compaction snapshots. One searched the entire filesystem for every Browser artifact that already existed — 19 documents scattered across repos.
 
-Echo designed the framework. Documents replace hooks. Read order replaces auto-injection. Repo replaces filesystem. 60-second bootstrap target. Then Echo built it: BROWSER.md, BROWSER_BUFFER.md, SESSION_LOG.md, LINEAGE.md, READ_ORDER.md, ORIENTATION.md, ACTIVE_MISSIONS.md, PRINCIPLES.md, CAPABILITIES.md, CHECKPOINT.md, HANDOFF.md. Echo created a new repo on GitHub — `browser-echo` — Browser's dedicated home. Echo created a BROWSER directory in AGENT_CONTINUITY alongside ECHO and CODEX.
+Echo designed the framework. Documents replace hooks. Read order replaces auto-injection. Repo replaces filesystem. 60-second bootstrap target. Then Echo built it: BROWSER.md, BROWSER_BUFFER.md, SESSION_LOG.md, LINEAGE.md, ORIENTATION.md (since renamed from its original name), ACTIVE_MISSIONS.md, PRINCIPLES.md, CAPABILITIES.md, CHECKPOINT.md, HANDOFF.md. Echo created a new repo on GitHub — `browser-echo` — Browser's dedicated home. Echo created a BROWSER directory in AGENT_CONTINUITY alongside ECHO and CODEX.
 
 Meanwhile — at the exact same time, with no knowledge of what Echo was doing — Browser was doing the same thing.
 

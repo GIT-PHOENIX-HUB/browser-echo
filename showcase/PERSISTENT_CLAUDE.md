@@ -116,7 +116,7 @@ A timestamped, append-only log of what happened across all sessions. Never edit 
 
 ### Layer 4: Read Order (How do I wake up?)
 
-**File: `ORIENTATION.md`** (or `READ_ORDER.md` — name it what makes sense for your project)
+**File: `ORIENTATION.md`** (name it what makes sense for your project)
 
 The explicit sequence for starting a session. This replaces the need for you to explain the bootstrap process every time.
 

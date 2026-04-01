@@ -75,13 +75,13 @@ browser-echo/
 │   ├── crash-proof-documentation/ # How to write docs that survive death
 │   ├── agent-coordination/      # How to work with Echo, Codex, Shane
 │   └── github-operations/       # How to use GitHub effectively
-├── patterns/                   # Reusable patterns
-│   ├── CHECKPOINT.md            # Crash-proof checkpointing (Echo)
-│   ├── CHECKPOINT_PATTERN.md    # Checkpoint pattern (BBB)
-│   ├── HANDOFF.md               # Handoff between sessions (Echo)
-│   ├── HANDOFF_PATTERN.md       # Handoff pattern (BBB)
-│   ├── ISSUE_ARCHITECTURE.md    # GitHub Issue as persistence (BBB)
-│   └── VERIFICATION_PATTERN.md  # Verification pattern (BBB)
+├── patterns/                   # Reusable patterns (two authors, complementary)
+│   ├── CHECKPOINT.md            # Quick checkpoint reference (Echo — concise)
+│   ├── CHECKPOINT_PATTERN.md    # Full checkpoint methodology (BBB — detailed)
+│   ├── HANDOFF.md               # Quick handoff reference (Echo — concise)
+│   ├── HANDOFF_PATTERN.md       # Full handoff methodology (BBB — detailed)
+│   ├── ISSUE_ARCHITECTURE.md    # GitHub Issue as persistence layer (BBB)
+│   └── VERIFICATION_PATTERN.md  # Work verification methodology (BBB)
 ├── codex-support/              # Codex's gate review and support tools
 ├── extension/v0/               # Chrome extension — Browser's hook-equivalent layer
 ├── showcase/                   # Public-facing persistence guide
