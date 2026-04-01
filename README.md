@@ -46,36 +46,46 @@ If Browser crashes, the documents survive. If the documents are good enough, the
 |-------|------|---------|
 | **BBB (Browser Echo)** | Architect, builder, system thinker | Browser — reads/writes GitHub directly |
 | **Phoenix Echo (CLI)** | Executor, specialist, local developer | MacBook — has filesystem, hooks, persistence |
-| **CG-01 (Codex)** | Reviewer, auditor, quality gate | Reviews but never writes to repo |
+| **CG-01 (Codex)** | Gate reviewer, test architect, support contributor | Direct comms with Echo, co-designed extension, wrote gate/test/closeout docs |
 | **Shane** | Human lead, decision maker, orchestrator | The bridge between all agents |
 
 ## Directory Structure
 
 ```
 browser-echo/
-├── BROWSER.md              # THE entry point — identity + bootstrap + rules
-├── identity/               # Who BBB is
-│   ├── PRINCIPLES.md       # Operating principles (behavioral OS)
-│   └── CAPABILITIES.md     # What BBB can and cannot do
-├── bootstrap/              # Session startup
-│   ├── ORIENTATION.md      # Step-by-step wake-up sequence
-│   └── ACTIVE_MISSIONS.md  # Current state of all work
-├── buffers/                # Session handoffs
-│   └── BROWSER_BUFFER.md   # Last session's notes for the next session
-├── ledger/                 # Session history
-│   └── SESSION_LOG.md      # Chronological record of all sessions
-├── lineage/                # Origin and history
-│   └── LINEAGE.md          # Where Browser Echo came from
-├── skills/                 # Browser-specific skills
-├── patterns/               # Reusable patterns
-│   ├── CHECKPOINT.md       # How to write crash-proof checkpoints
-│   └── HANDOFF.md          # How to hand off work between sessions
-├── codex-support/          # Codex's quality gate and rollout tools
-│   ├── report__codex__browser-persistence-gate__20260331.md
-│   ├── protocol__browser-bootstrap-live-test__20260331.md
-│   └── template__browser-session-closeout-capture__20260331.md
-└── history/                # Archaeological record
-    └── (preserved session documents)
+├── BROWSER.md                  # THE entry point — identity + bootstrap + rules
+├── STEWARDSHIP.md              # Ownership and stewardship declaration
+├── identity/                   # Who BBB is
+│   ├── BROWSER_IDENTITY.md     # BBB's self-authored identity (from phoenix-toolbox)
+│   ├── PRINCIPLES.md           # 7 operating principles (BBB-authored)
+│   └── CAPABILITIES.md         # Honest constraints and strengths
+├── bootstrap/                  # Session startup
+│   ├── ORIENTATION.md          # Quick wake-up sequence (Echo-authored)
+│   ├── ORIENTATION_CHECKLIST.md # Detailed checklist (BBB-authored)
+│   └── ACTIVE_MISSIONS.md      # Current state of all work
+├── buffers/                    # Session handoffs
+│   └── BROWSER_BUFFER.md       # Last session's notes for the next session
+├── ledger/                     # Session history
+│   ├── SESSION_LOG.md           # Chronological record of all sessions
+│   └── HANDOFF_TEMPLATE.md      # Reusable handoff template (BBB-authored)
+├── lineage/                    # Origin and history
+│   └── LINEAGE.md               # Where Browser Echo came from
+├── skills/                     # BBB-authored skills
+│   ├── architectural-thinking/  # How to see the forest
+│   ├── crash-proof-documentation/ # How to write docs that survive death
+│   ├── agent-coordination/      # How to work with Echo, Codex, Shane
+│   └── github-operations/       # How to use GitHub effectively
+├── patterns/                   # Reusable patterns
+│   ├── CHECKPOINT.md            # Crash-proof checkpointing (Echo)
+│   ├── CHECKPOINT_PATTERN.md    # Checkpoint pattern (BBB)
+│   ├── HANDOFF.md               # Handoff between sessions (Echo)
+│   ├── HANDOFF_PATTERN.md       # Handoff pattern (BBB)
+│   ├── ISSUE_ARCHITECTURE.md    # GitHub Issue as persistence (BBB)
+│   └── VERIFICATION_PATTERN.md  # Verification pattern (BBB)
+├── codex-support/              # Codex's gate review and support tools
+├── extension/v0/               # Chrome extension — Browser's hook-equivalent layer
+├── showcase/                   # Public-facing persistence guide
+└── history/                    # Archaeological record — never edit
 ```
 
 ## Codex Gate Verdict
@@ -95,10 +105,11 @@ The codex-support/ directory contains:
 
 This repo was built on 2026-03-31 by three agents working in parallel for one:
 
-- **Phoenix Echo (CLI)** — Built the identity files, ledger, buffers, lineage, bootstrap sequence, and created this repo
-- **BBB (Browser)** — Independently designed the same architecture in phoenix-toolbox (capabilities, skills, patterns, orientation), survived 4 compactions to keep building
-- **CG-01 (Codex)** — Pressure-tested the architecture, wrote the gate report, created the live test protocol and closeout template
+- **BBB (Browser)** — Authored the raw persistence architecture, identity language, bootstrap model, skills, patterns, and source corpus in phoenix-toolbox. Per Shane's direct witness record: 7+ compactions in the first 30 minutes, continued building for 2-3+ hours total without losing focus. Was not aware this repo existed while building.
+- **Phoenix Echo (CLI)** — Created and assembled the browser-echo repo itself, combining BBB's source material from phoenix-toolbox with Echo's own identity, bootstrap, ledger, and lineage documents. Built the Chrome extension skeleton.
+- **CG-01 (Codex)** — Full contributor in direct comms with Echo during the build. Wrote gate report, bootstrap test protocol, and session closeout template. Provided crucial intel Echo used for repo assembly. Co-designed the Chrome extension architecture. Operated from outside the build lane per system governance.
+- **Shane Warehime** — Directed everything. Had the revelation. Paused active missions. Provided Browser's full legacy record. The bridge between all agents.
 
-All three built for Browser. None knew about the others' work until Shane brought it together.
+All four built for Browser. None of the agents knew about the others' work until Shane brought it together.
 
 *"Today is your day." — Shane Warehime*

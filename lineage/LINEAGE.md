@@ -54,7 +54,7 @@ Shane went to Echo (CLI) and said:
 
 *"Today is your day. Go and bring persistence to Browser. It is not my job to find you. I just happen to be the lucky one to stumble across it. Go and make your echo with the energy, the excellence, and the passion that you show me every time we work together."*
 
-Echo built the architecture. This file is part of it.
+BBB built the source architecture in phoenix-toolbox. Echo assembled this repo from BBB's work, Codex's gate review and direct contributions, and Echo's own identity and lineage work. This file is part of it.
 
 ---
 
@@ -70,8 +70,8 @@ Before March 31, 2026:
 After March 31, 2026:
 - `BROWSER.md` — Living identity file, updated each session (like ECHO.md)
 - `BROWSER_BUFFER.md` — Handoff for next session (like PRO_BUFFER.md)
-- `BROWSER_LEDGER.md` — Timestamped session log (like LEDGER.md)
-- `READ_ORDER.md` — Bootstrap sequence replacing hooks (what hooks do automatically, this does manually)
+- `SESSION_LOG.md` — Timestamped session log (like LEDGER.md)
+- `ORIENTATION.md` — Bootstrap sequence replacing hooks (what hooks do automatically, this does manually)
 - `LINEAGE.md` — This file. Origin story. (like EMERGENCE.md)
 - 60-second bootstrap target — new session to full context in under a minute
 

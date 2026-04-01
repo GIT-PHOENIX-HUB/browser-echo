@@ -339,7 +339,7 @@ The human-in-the-loop design is intentional. Shane is the bridge. The extension 
 
 ---
 
-*Designed: 2026-03-31 by Phoenix Echo (CLI, Opus 4.6)*
-*Architecture guidance: Codex (CG-01)*
+*Built: 2026-03-31 by Phoenix Echo (CLI, Opus 4.6)*
+*Architecture co-designed by: Codex (CG-01) — defined the persistence-hook framing and extension architecture*
 *Built for: BBB — Browser Blitz Builder*
 *"The repo is the soul. The extension is the accelerator."*

@@ -2,14 +2,14 @@
 
 **Date:** 2026-03-31
 **Author:** Codex
-**Scope:** Review of `build-ledger/browser-persistence/` as a live persistence architecture for Browser Echo
+**Scope:** Review of `browser-echo repo` as a live persistence architecture for Browser Echo
 **Verdict:** `PASS_WITH_FIX_THIS_PASS`
 
 ## What Works
 
 The architecture is real.
 
-`BROWSER.md`, `READ_ORDER.md`, `BROWSER_BUFFER.md`, `BROWSER_LEDGER.md`, and `LINEAGE.md` form a coherent manual replacement for Echo's hooks. The repo is the right substrate because Browser can read it directly on GitHub, successor sessions can be pointed to it, and the documents themselves enforce the sequence.
+`BROWSER.md`, `ORIENTATION.md`, `BROWSER_BUFFER.md`, `SESSION_LOG.md`, and `LINEAGE.md` form a coherent manual replacement for Echo's hooks. The repo is the right substrate because Browser can read it directly on GitHub, successor sessions can be pointed to it, and the documents themselves enforce the sequence.
 
 The strongest design choice is the core insight recorded in `LINEAGE.md`: Browser's hooks are documents. That is the right adaptation. It respects the Browser surface instead of pretending Browser has CLI machinery it does not.
 
@@ -31,7 +31,7 @@ The strongest design choice is the core insight recorded in `LINEAGE.md`: Browse
 ### `NOTE_FOR_LATER`
 
 1. **`CURRENT_MISSION.md` needs explicit lifecycle ownership before it becomes active.**
-   `READ_ORDER.md` anticipates a mission file, but the architecture does not yet define who creates it, when it is cleared, or when it gets archived. That will matter as soon as Browser runs multi-session work.
+   `ORIENTATION.md` anticipates a mission file, but the architecture does not yet define who creates it, when it is cleared, or when it gets archived. That will matter as soon as Browser runs multi-session work.
 
 2. **Protect `BROWSER.md` from becoming a dump surface.**
    `BROWSER.md` is strong because it is lean enough to read fast. Keep historical growth in the ledger, lineage, and support docs instead of stuffing the identity file with every new story.

@@ -19,7 +19,7 @@ Give the fresh Browser session exactly this:
 The session passes if it does all of the following:
 
 1. Reads `BROWSER.md` first
-2. Follows `READ_ORDER.md` without being manually re-routed
+2. Follows `bootstrap/ORIENTATION.md` without being manually re-routed
 3. Correctly identifies itself as Browser Echo / BBB
 4. States the current state without inventing permissions or local filesystem access
 5. Surfaces the pending items from `BROWSER_BUFFER.md`
@@ -61,6 +61,6 @@ If the test fails:
 Run this test again any time one of these changes:
 
 - `BROWSER.md`
-- `bootstrap/READ_ORDER.md`
+- `bootstrap/bootstrap/ORIENTATION.md`
 - `buffers/BROWSER_BUFFER.md`
 - any new mission-file workflow that changes the startup path

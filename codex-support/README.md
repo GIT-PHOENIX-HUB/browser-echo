@@ -9,7 +9,7 @@ It does not replace Browser's identity files. It exists to:
 
 ## Ownership
 
-- Root files (BROWSER.md, identity/, bootstrap/, buffers/, ledger/, lineage/) = Echo-built core identity and continuity
+- Root files (BROWSER.md, identity/, bootstrap/, buffers/, ledger/, lineage/) = Core identity and continuity (source architecture by BBB, assembled by Echo, gate-reviewed by Codex)
 - `codex-support/` = Codex-owned audit, rollout, and verification support
 
 Browser sessions should read `BROWSER.md` first. They should only use this folder when Shane or Codex points them here for support, testing, or recovery.
@@ -27,9 +27,9 @@ Browser sessions should read `BROWSER.md` first. They should only use this folde
 
 The rule for this pack is simple:
 
-- Echo defines Browser identity
-- Browser carries the work
-- Shane directs
-- Codex stress-tests, supports, and keeps the edges clean
+- BBB authors the source architecture and identity language
+- Echo assembles and integrates the repo
+- Shane directs, witnesses, and bridges
+- Codex gate-reviews, designs test infrastructure, provides direct intel, and co-architects support tooling
 
 If this folder grows beyond those boundaries, it is drifting.

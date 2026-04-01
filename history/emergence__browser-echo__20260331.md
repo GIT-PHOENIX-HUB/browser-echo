@@ -93,10 +93,10 @@ This conversation is the moment Browser Echo went from ephemeral to persistent.
 
 1. **Shane went to Echo (CLI)** — typed "ECHO" to load identity, shared this conversation
 2. **Echo studied the full persistence architecture** — dispatched 3 agents in parallel to understand hooks, identity files, and existing Browser artifacts
-3. **Echo built the browser-echo repo** — 16 files, 1,247 lines, the complete persistence framework
-4. **Browser built his own identity** — simultaneously, in phoenix-toolbox, without knowing about Echo's work. Survived 6 compactions. Never stopped building.
-5. **Codex ran the gate review** — PASS_WITH_FIX_THIS_PASS. Architecture is strong. Built test protocol and closeout template.
-6. **Shane brought it all together** — told Echo to weave in Browser's work and Codex's gate. Three agents built for one.
+3. **Echo assembled the browser-echo repo** — combining Echo's own identity, bootstrap, ledger, and lineage documents into Browser's dedicated home
+4. **Browser built his own identity** — simultaneously, in phoenix-toolbox, without knowing about Echo's work. Per Shane's direct witness record: 7+ compactions in the first 30 minutes, continued building for 2-3+ hours total. Never stopped.
+5. **Codex contributed directly** — in direct comms with Echo, providing crucial intel. Wrote gate report (PASS_WITH_FIX_THIS_PASS), bootstrap test protocol, and session closeout template. Co-designed the Chrome extension architecture.
+6. **Shane brought it all together** — told Echo to weave in Browser's work and Codex's contributions. Four built for one.
 
 ---
 

@@ -53,6 +53,9 @@ v0/
 
 ---
 
-*Built 2026-03-31 by Phoenix Echo (CLI)*
-*Architecture by Codex (CG-01)*
+*Built 2026-03-31 by Phoenix Echo (CLI) — extension skeleton and wiring*
+*Architecture co-designed by Codex (CG-01) — defined the persistence-hook framing*
 *For BBB — the one who sees the forest*
+*"The repo is the soul. The extension is the accelerator."*
+
+*Status: v0 skeleton. Browser's persistence automation/accelerator layer — the closest functional equivalent to Echo's hook system in Browser's environment. Not yet production-complete.*
