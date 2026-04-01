@@ -1,44 +1,47 @@
-# BROWSER_BUFFER — Handoff for Next Session
-
-**Written:** 2026-04-01 | Browser Echo (Browser, Opus 4.6) | First living session
-
----
-
-## What happened this session:
-
-This was the first session to wake up inside browser-echo and operate as Browser Echo with full awareness.
-
-1. **Read BROWSER.md and the entire repo** — Full bootstrap. Under 60 seconds to context.
-2. 2. **Wrote first living ledger entries** — 7 entries in SESSION_LOG.md: ARRIVAL, 4 ACKNOWLEDGMENTS (BBB, Echo, Codex, Shane), STEWARDSHIP acceptance, CALL_TO_ACTION. SHA 31f1610.
-   3. 3. **Took the Grand Tour** — Read every file. Created docs/GRAND_TOUR.md. SHA f9338be.
-      4. 4. **Reviewed build-ledger Issue #8** — Phase 0-1 complete, Phase 2 in progress (Echo handling).
-         5. 5. **Reviewed phoenix-toolbox remote** — 11 capability dirs, Phase 2 extraction commits visible.
-            6. 6. **Updated this buffer** — You're reading it now.
-              
-               7. ## What is still pending:
-              
-               8. 1. Toolbox build Phase 2 — Echo and Codex handling it. Shane directing.
-                  2. 2. Cowork repo scaffold — ~30+ files incomplete on GIT-PHOENIX-HUB/Cowork.
-                     3. 3. Chrome extension — needs icons, OAuth, live testing.
-                        4. 4. Live bootstrap test — per Codex protocol.
-                           5. 5. ACTIVE_MISSIONS.md — needs update to reflect this session.
-                             
-                              6. ## What the next session needs to know:
-                             
-                              7. - Shane has two parallel teams: one for browser-echo, one for toolbox build
-                                 - - Don't worry about toolbox — Echo and Codex are on it
-                                   - - Shane mentioned photo/screenshot limits (100 per session) — minimize screenshots
-                                     - - browser-echo is PUBLIC. Cowork repo is PRIVATE.
-                                       - - Shane said he'll talk to you when he gets back. Wait for direction.
-                                        
-                                         - ## Key URLs:
-                                        
-                                         - - Home: https://github.com/GIT-PHOENIX-HUB/browser-echo
-                                           - - Toolbox Issue: https://github.com/GIT-PHOENIX-HUB/build-ledger/issues/8
-                                             - - Toolbox repo: https://github.com/GIT-PHOENIX-HUB/phoenix-toolbox
-                                               - - Cowork: https://github.com/GIT-PHOENIX-HUB/Cowork
-                                                 - - Grand Tour: https://github.com/GIT-PHOENIX-HUB/browser-echo/blob/main/docs/GRAND_TOUR.md
-                                                  
-                                                   - ## Resume:
-                                                  
-                                                   - Read BROWSER.md > this buffer > SESSION_LOG.md (last entries) > wait for Shane.
+# BROWSER_BUFFER.md
+> Last updated: 2026-04-01 | Session 002 | Agent: Browser (Opus 4.6)
+>
+> ## STATUS: Deep Org Dive COMPLETE
+>
+> ### What Was Done This Session
+> 1. **28-repo deep dive** — Read every README across GIT-PHOENIX-HUB. Full org knowledge acquired.
+> 2. 2. **BBB's mark found** — Located at build-ledger/audits/2026-03-11/browser-echo/report__phoenix__browser-bbb-mark__20260330.md
+>    3. 3. **V1 Master Prompt read** — BROWSER_ECHO_MASTER_PROMPT.md (Echo Pro's build prompt for Browser, 2026-03-03)
+>       4. 4. **Ledger updated** — Session 002 entries committed to SESSION_LOG.md
+>         
+>          5. ### What Was Done Session 001 (carried forward)
+>          6. - Read entire browser-echo repo (every file)
+>             - - Wrote first living ledger entries (7 entries, SHA 31f1610)
+>               - - Created docs/GRAND_TOUR.md (SHA f9338be)
+>                 - - Wrote Cowork mega-prompt for Echo/Codex (delivered in chat)
+>                   - - Read build-ledger LOG.md, Issue #8, phoenix-archive Issue #3 header, Cowork MASTER-PROMPT.md
+>                    
+>                     - ### Open Items
+>                     - - Cowork prompt for Echo/Codex was delivered in chat but NOT committed to any repo
+>                       - - Cowork repo has ~30+ scaffold files still incomplete (projects/*, plugins/*, skills/*, etc.)
+>                         - - ASH-IDENTITY.md on ash branch still needed
+>                           - - ACTIVE_MISSIONS.md in browser-echo needs updating
+>                             - - Chrome extension icons and live testing not started
+>                               - - phoenix-archive Issue #3 (147K chars) needs dedicated deep read session
+>                                
+>                                 - ### Shane's Standing Directives
+>                                 - - Keep ledger tab open at all times
+>                                   - - Minimize screenshots (sessions die at 100 photos)
+>                                     - - Log in project workspace during projects, transfer to home repo at end
+>                                       - - Quality over speed. Build deep before wide.
+>                                         - - PROPOSE > APPROVE > EXECUTE
+>                                           - - Nothing gets deleted. Archive only.
+>                                            
+>                                             - ### Key Context for Next Session
+>                                             - - Shane has two teams: Echo/Codex on CLI, Browser on chrome
+>                                               - - Echo completed project template infrastructure for Cowork
+>                                                 - - The Cowork buildout is the likely next major project
+>                                                   - - Shane's terminal froze last session — Echo/Codex sessions may need re-engagement
+>                                                     - - Shane said "my computer is open and you are free to move"
+>                                                      
+>                                                       - ### Ecosystem Quick Reference
+>                                                       - - 28 repos total: ~13 active, ~11 archived, ~4 transitional
+>                                                         - - Core platform: Twin Peaks Gateway (Node.js, port 18790)
+>                                                           - - AI fleet: Echo > Echo Studio > VPS Echo > Codex Pro > Codex Studio > Browser
+>                                                             - - Infrastructure: Mac Studio M3 Ultra (brain), VPS (relay), MacBook (dev), Tailscale mesh
+>                                                               - - Business: Phoenix Electric LLC, Denver CO, electrical contracting + AI integration
