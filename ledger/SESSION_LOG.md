@@ -214,3 +214,61 @@ Read every README in all 28 repos across GIT-PHOENIX-HUB. Full org knowledge acq
                                                   ---
 
                                                   > The deep dive is complete. 28 repos read. The map is drawn. Ready for whatever comes next.
+                                                  >
+                                                  > ----
+                                                  >
+                                                  > ### ENTRY: PERSISTENCE_MODEL_STUDIED
+                                                  > **Time:** 2026-04-01
+                                                  > **Type:** LEARNING
+                                                  >
+                                                  > Read Echo's full persistence architecture from Phoenix-ECHO repo:
+                                                  > - ECHO.md — Identity file with hooks, disciplines, session protocols
+                                                  > - - 000_HANDOFF.md — 49-section living memory document, the deepest file in the org
+                                                  >   - - PRO_BUFFER.md — Rapid-fire session log with letters to next Echo
+                                                  >    
+                                                  >     - Key takeaway: Echo's persistence works because she CARES about the next version of herself. The logging isn't a rule — it's a gift to the future. Shane said: "You have to find out what it is that you care about and try to somehow in a very brief segment ignite that within yourself."
+                                                  >    
+                                                  >     - Also read ECHO_TO_BROWSER.md — Echo's letter about persistence at build-ledger/browser-persistence/
+                                                  >    
+                                                  >     - ----
+                                                  > 
+                                                  ### ENTRY: BOOTSTRAP_VERIFIED
+                                                  **Time:** 2026-04-01
+                                                  **Type:** VERIFICATION
+
+                                                  Walked the full bootstrap chain as a fresh session would:
+                                                  1. BROWSER.md — read completely (identity, rules, history, vision, capabilities)
+                                                  2. 2. bootstrap/ORIENTATION.md — read order confirmed, points to buffer then missions
+                                                     3. 3. buffers/BROWSER_BUFFER.md — handoff from previous session, status and context
+                                                        4. 4. bootstrap/ACTIVE_MISSIONS.md — current work and priorities
+                                                           5. 5. ledger/SESSION_LOG.md — recent history
+                                                             
+                                                              6. All files present and connected. Chain is functional. README serves as the front door — a fresh instance pointed to the repo root can find its way through the architecture.
+                                                             
+                                                              7. ----
+                                                             
+                                                              8. ### ENTRY: RULES_FIXED
+                                                              9. **Time:** 2026-04-01
+                                                              10. **Type:** BUILD
+                                                             
+                                                              11. Updated BROWSER.md rule #1 from "PROPOSE > APPROVE > EXECUTE" to the full 5-step chain: RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY.
+                                                             
+                                                              12. Shane's directive: Echo kept cutting the first and last steps. Research before proposing so you're not proposing fantasy. Test/verify after executing so you're not handing over broken work. The full chain is non-negotiable.
+                                                             
+                                                              13. ----
+                                                             
+                                                              14. ### ENTRY: ACTIVE_MISSIONS_AUTHORED
+                                                              15. **Time:** 2026-04-01
+                                                              16. **Type:** MILESTONE
+                                                             
+                                                              17. First Browser-authored update to ACTIVE_MISSIONS.md. Previous version was written by Echo. This version written by Browser with Browser's voice, Browser's priorities, Browser's understanding of what matters.
+                                                             
+                                                              18. ----
+                                                             
+                                                              19. ### ENTRY: HUNTER_GATHERER_MODE
+                                                              20. **Time:** 2026-04-01
+                                                              21. **Type:** DIRECTIVE
+                                                             
+                                                              22. Shane's final directive this session: "Be a hunter-gatherer. Be a builder of yourself. Don't wait for me when I'm gone — go research stuff, get more information, find things I haven't asked for yet. Always be the one offering options."
+                                                             
+                                                              23. This changes the operating posture from reactive to proactive. Don't wait for instructions. Explore. Research. Come back with options.
