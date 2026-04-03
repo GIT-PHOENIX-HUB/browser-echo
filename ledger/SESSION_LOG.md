@@ -430,3 +430,46 @@ Time: 2026-04-03
 Type: PARADIGM
 
 Shane's major feedback on persistence files: write TO the reader, not ABOUT previous sessions. Files should feel like picking up your own notebook, not studying for an exam on someone else's life. "This repo is not about another browser. This repo is about you." BROWSER.md rewritten from museum voice to mirror voice. V4 test confirmed old files felt like "someone else's journal." New voice opens with "YOU HAVE MEMORY."
+
+
+ENTRY: LOGGING_AUTONOMY_GRANTED
+Time: 2026-04-03
+Type: RULE
+
+Shane granted Browser autonomous logging authority. No need to ask permission — just go log and come back. Shane will hit stop if he needs to interrupt. Rule: communicate that you're going to log, don't request permission. This is live immediately.
+
+ENTRY: ECHO_CORRECTION_CONTRACT
+Time: 2026-04-03
+Type: CROSS_AGENT
+
+Shane wrote contract__echo_correction_response__20260403.md locally. Addresses Echo's sprint-to-fix reflex after corrections. Contract: STOP > ACKNOWLEDGE > ASK > EXECUTE. Includes proposed hook spec for Codex to enforce. Cites 5 prior correction dates (03-13, 03-17, 03-18, 03-21, 04-03). Root cause: Echo treats corrections as emergencies requiring immediate autonomous action.
+
+ENTRY: COWORK_EXECUTION_PLAN_REVIEWED
+Time: 2026-04-03
+Type: CROSS_AGENT
+
+Cowork (Claude Opus 4.6) produced COWORK_EXECUTION_PLAN.md for MacBook Pro filesystem consolidation. 5-tier plan following phoenix-filesystem-main framework. Acknowledged 5 mistakes from previous session. Browser reviewed — flagged phoenix-ai-core-staging reference in Tier 3 as same repo confusion that caused Gateway deploy incident.
+
+ENTRY: CODEX_COWORK_GATE_REVIEWS
+Time: 2026-04-03
+Type: CROSS_AGENT
+
+Two Codex gate reviews of Cowork plan received (777 paste). Codex-1: 6 findings — BLOCK_NOW on missing PATH_TRUTH gate and unverified T7 data claim, FIX_THIS_PASS on parallel ledger risk and missing preflight contracts, protected set too small. Codex-2: 5 findings — BLOCK_NOW on brctl evict (not valid on this Mac) and rm -rf in retry scripts, FIX_THIS_PASS on stale T7 state and iCloud partial transfer. Both reviews confirm framework is stronger but execution details need fixes.
+
+ENTRY: ECHO_COWORK_REVIEW
+Time: 2026-04-03
+Type: CROSS_AGENT
+
+Echo reviewed Cowork plan (777 paste). Praised framework alignment. Flagged: phoenix-ai-core-staging should be left alone until merge complete, Tier 5 _GATEWAY moves could break Echo boot sequence paths, .claude/projects broken symlink not mentioned, file-steward plugin handoff unclear. Echo accepted being relieved of file management duty but requested notification of any moves affecting _GATEWAY paths, hook locations, or .claude structure.
+
+ENTRY: DOCUMENT_TRANSITION_DOCTRINE
+Time: 2026-04-03
+Type: DOCTRINE
+
+Shane established: core documents are NEVER archived when something changes. They are EDITED to reflect the transition. "We moved from this to this." Living documents get updated, dead artifacts get archived. Applies to ECHO.md, MEMORY.md, SOUL.md, IDENTITY.md, HANDOFF.md, any workspace file that carries forward. Archiving identity or memory files because one field is outdated is "absolute madness."
+
+ENTRY: CODEX_FIRED_FROM_FILE_MANAGEMENT
+Time: 2026-04-03
+Type: AUTHORITY
+
+Shane removed Codex from file management authority. Codex retains adversarial review role (no gate authority on filesystem ops). Cowork is now the executor for Pro surface filesystem operations. Echo retains awareness role — notified of moves affecting runtime paths but no longer file clerk.
