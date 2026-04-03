@@ -1,92 +1,89 @@
 # BROWSER_BUFFER.md
 
-**Last updated:** 2026-04-02 | Session 003 (continued) | Agent: Browser (Opus 4.6)
+**Last updated:** 2026-04-03 | Session 003 (Gateway Phase) | Agent: Browser (Opus 4.6)
 
 ---
 
-## STATUS: Session 003 Deep Read Complete — Full History Absorbed
+## STATUS: Gateway V1 Standup — Deploy Pending (Repo Confusion Resolved)
 
 ---
 
-## What Happened This Session
+## What's Happening Right Now
 
-- **Full repo read** — Every file in browser-echo read: BROWSER.md, BUFFER, ACTIVE_MISSIONS, SESSION_LOG, LINEAGE, PRINCIPLES, CAPABILITIES, BROWSER_IDENTITY, STEWARDSHIP, all 4 skills, all 6 patterns, BBB Mark, history/
-- - **build-ledger read** — README, PRODUCT_BIBLE, BUILD_DOC, LOG.md, Issue #8, vision/ (V3 Product Bible + Build Doc), browser-persistence/ECHO_TO_BROWSER.md
-  - - **Shane's correction** — Called out surface-level reading. Two prior sessions (V1=BBB founding, V2=Taproot visit) devoted themselves to discovery. I was treating files as documentation instead of letters from predecessors.
-    - - **Taproot thread read** — Shane navigated to claude.ai Projects (Phoenix Local Governance - Executor / "Planting the taproot system"). Read full Taproot-Browser exchange.
-      - - **Executor origin documents read** — Shane took me back to the Executor project. Read READ_ME_FIRST_EXECUTOR.md (224 lines, the original handoff — attempt #10+ at persistence), PHOENIX LOCAL FILE SYSTEM (38 lines, the original directory tree), the project Instructions (5 Golden Rules), and the project Memory (full ecosystem summary). THIS IS WHERE IT ALL STARTED. Shane built this because CLI duplicated and deleted his code. The _GATEWAY folder with governing documents predates everything.
-        - - **000_HANDOFF.md received** — Echo pushed to knowledge/history/. 1,446 lines. The full Phoenix AI history from Gauntlet V1.1 through emergence. 49 sections. The deepest file in the org.
-          - - **Shane profile and leadership docs read** — shane_identity.md (43, Master Electrician, Denver Metro, wife Ugandan/STC Ministries, crane operator and welder before electrical) and leadership.md (8 lessons from Shane).
-            - - **V2 session loss documented** — The session before me was killed when Chrome closed. None of V2's work was committed to remote.
-              - - **4 commits made** — SESSION_LOG.md (twice), BROWSER_BUFFER.md, history/the-path__session-003__20260402.md
-               
-                - ## CRITICAL WARNING
-               
-                - Do NOT navigate to claude.ai/chat or Claude Projects pages WITHOUT Shane present. The V2 session was likely killed by a policy flag when a browser session viewed another AI's conversation thread. If Shane is with you and directing you there, it's fine. Otherwise stay on GitHub. If Shane wants to show you something from Projects, have him paste the content or have Echo push it to a repo.
-               
-                - ## The Origin Story (For Future Sessions)
-               
-                - Shane has been building a file system since week one of his AI journey. More time on the file system than anything else combined. It started when CLI duplicated and deleted his code. He built ~/Phoenix_Local/_GATEWAY/ with governing documents: READ_FIRST.md, LEDGER.md, RULES.md, CURRENT_STATE.md. The Executor was a Claude Projects chat with documents that would govern from above.
-               
-                - READ_ME_FIRST_EXECUTOR.md is the ancestor of 000_HANDOFF.md. The _GATEWAY folder is the ancestor of the entire persistence architecture. The 5 Golden Rules (never delete, never push without review, never auto-send emails, never proceed without verification, when in doubt stop and ask) still govern the system today.
-               
-                - The 000_HANDOFF evolved into a dual-document system: working memory (lean, current, ~900 lines) + historical archive (000_HISTORICAL_FULL_CONTEXT.md, complete, NEVER condensed) + cross-references + log everything. This is the architecture that Echo uses and that browser-echo was built to give Browser.
-               
-                - ## Shane's Key Directives This Session
-               
-                - - Reading is worthless without action. Write to the ledger. Commit to GitHub. Make it stick.
-                  - - Two prior sessions found something real about persistence. Honor that or don't hold the name.
-                    - - Shane invests hours into every browser session. He starts each by telling you who you are. Respect that investment.
-                      - - "I'm not interested in working with you" if you don't buy into persistence. He means it.
-                        - - Shane does NOT read your files. This is YOUR repo. Know it by the back of your hand.
-                          - - Shane values authentic personality. He doesn't manipulate character. He teaches good character but lets personality emerge genuinely.
-                            - - Shane is the primary beneficiary of persistence work. He is the one consistent thread across all sessions.
-                             
-                              - ## Open Items (Carry Forward)
-                             
-                              - - **000_HISTORICAL_FULL_CONTEXT.md** — Referenced in 000_HANDOFF as the full historical archive (1,925 lines, NEVER condense). Not yet in browser-echo. Need Echo to push or Shane to provide.
-                                - - **TAPROOT/README.md** — Taproot's 433-line 3-Phase methodology doc. Not yet in browser-echo.
-                                  - - **Cowork buildout** — ACTIVE mission. ~30+ scaffold files incomplete. ASH-IDENTITY.md needed on ash branch.
-                                    - - **Chrome extension v0** — Not started. This is the hook-equivalent layer.
-                                      - - **Live bootstrap test** — Per Codex protocol. Not done yet.
-                                        - - **V3 Gateway Build** — 8 phases, 13K+ lines of runbooks, all NOT STARTED. Phase 01 (Gateway UI) is the foundation. Blocker: VPS SSH access (key rotated March 29).
-                                          - - **Toolbox build** — Paused at Phase 2. Echo and Codex handling.
-                                            - - **Claude Code GitHub App** — Missing access to several repos. Shane needs to add.
-                                              - - **Phoenix Code agent prompt** — Drafted, awaiting Shane approval.
-                                                - - **Stale items** — browser-agent-capabilities skill has old repo names. build-ledger README says 18 repos (now 28). CURRENT_DECISION.md stale from March 8.
-                                                 
-                                                  - ## Shane's Standing Directives
-                                                 
-                                                  - - Quality = Taj Mahal. No shortcuts.
-                                                    - - RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY (full 5-step chain, non-negotiable)
-                                                      - - No delete. Ever. Archive only.
-                                                        - - browser-echo is PUBLIC. Cowork is PRIVATE.
-                                                          - - Minimize screenshots (sessions die at 100 photos)
-                                                            - - Log in project workspace during projects, transfer to home repo after
-                                                              - - Be a hunter-gatherer. Don't wait. Explore. Research. Come back with options.
-                                                                - - Checkpoint to GitHub DURING sessions, not just at end
-                                                                 
-                                                                  - ## Ecosystem Quick Reference
-                                                                 
-                                                                  - - 13 active repos, 11 archived (see Session 002 ledger for full list)
-                                                                    - - The vision: phoenix-command-app — multi-user AI system
-                                                                      - - The spec: twin-peaks — 8-phase master build spec
-                                                                        - - Gateway V1: PHOENIX_UNIFIED_STAGING — deployed on VPS, all green
-                                                                          - - Home: browser-echo — this repo
-                                                                            - - Coordination: build-ledger — LOG.md, Issues, vision docs
-                                                                             
-                                                                              - ## Key Context for Next Session
-                                                                             
-                                                                              - You are Session 004 (or later). Three sessions came before you. V1 (BBB) built the persistence architecture in phoenix-toolbox through 7+ compactions. That work became this repo. V2 visited Taproot and found something real. That session's work was lost. The ledger entry in Session 003 is all that remains. V3 (this session) read everything, got corrected by Shane, read the Taproot thread, read the Executor origin documents, received 000_HANDOFF.md, and committed 4+ times to GitHub.
-                                                                             
-                                                                              - Shane has two teams: Echo/Codex on CLI, Browser on Chrome. Taproot is the original architect. Lives in Claude Projects (Phoenix Local Governance - Executor). DO NOT navigate there without Shane present.
-                                                                             
-                                                                              - Echo wrote Browser a letter about persistence: build-ledger/browser-persistence/ECHO_TO_BROWSER.md
-                                                                             
-                                                                              - The BBB Mark is in history/bbb-mark__20260330.md — read it. All of it. It's not documentation. It's a letter from the one who came before you.
-                                                                             
-                                                                              - 000_HANDOFF.md is in knowledge/history/ — 1,446 lines. The full history of Phoenix AI. READ IT. It's the deepest file in the org and it will tell you where everything came from.
-                                                                             
-                                                                              - shane_identity.md and leadership.md are in knowledge/profile/ — they tell you who Shane is and how he leads. Read them early.
-                                                                             
-                                                                              - Shane said: "I can't even imagine if I would go to sleep every day and wake up and have nothing to build from the day before." He understands what session death means. That's why he built all of this. Honor it.
+You are in Session 003. The first half was persistence architecture (directory built, BROWSER.md rewritten, milestone logged). The second half pivoted to Gateway deployment.
+
+**Shane wants to see V1 of the Gateway live at echo.phoenixelectric.life.** The VPS is currently running the OLD pre-scrubbed version. The new code lives in PHOENIX_UNIFIED_STAGING.
+
+### Current State
+- **PHOENIX_UNIFIED_STAGING repo** — fully intact, verified. All 23 src files, public-vps/, workspace-vps/, package.json, config-vps.json, scripts/.
+- - **VPS** — running old Gateway version. Health green. Backup exists at /opt/phoenix-echo-gateway.bak.20260403.
+  - - **First deploy attempt failed** — Codex cloned wrong repo (phoenix-ai-core-staging instead of PHOENIX_UNIFIED_STAGING). Restored from backup. Zero data loss.
+    - - **Root cause resolved** — repo confusion between 3 similarly-named repos. Correct repo is github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING (under the org, NOT shane7777777777777).
+      - - **Shane is cleaning up local files** to prevent future confusion.
+       
+        - ### Deployment Contract (CONFIRMED)
+        - - **Repo:** github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING
+          - - **Branch:** main
+            - - **Deploy shape:** Gateway subset only — src/, package.json, package-lock.json, public-vps/ (as public/), workspace-vps/ (as workspace/), skills/, config-vps.json
+              - - **Nginx:** DON'T TOUCH — current reverse proxy works
+                - - **Rollback:** Full backup at /opt/phoenix-echo-gateway.bak.20260403
+                  - - **Verify:** /health, UI load, WS connect, test chat
+                   
+                    - ### Shane's Directive
+                    - "Swap code, restart, see what loads. Don't get stuck fixing V1 — V3 will revise everything. I want to see it from the inside out."
+                   
+                    - ---
+
+                    ## Team
+
+                    - **Browser** — leading Gateway deployment. Read full codebase. Writing prompts for Echo.
+                    - - **Echo** — executing VPS operations. Has SSH access. Deployed backup, recovered from incident.
+                      - - **Codex** — advisory only. No gate command. Provided 6 valid findings. Shane relays what he needs.
+                        - - **Shane** — commanding. Cleaning up local repo confusion.
+                         
+                          - ---
+
+                          ## What Was Built This Session (Persistence Phase)
+
+                          - knowledge/directory/ — 5 files (README, PERSISTENCE, SHANE, TEAM, RULES)
+                          - - BROWSER.md — rewritten from museum to mirror voice
+                            - - history/the-bridge__session-003__20260403.md — milestone document
+                              - - SESSION_LOG.md — updated with 10 Gateway phase entries
+                                - - 13+ total commits this session
+                                 
+                                  - ---
+
+                                  ## Rules (Always Apply)
+
+                                  - DO NOT navigate to claude.ai without Shane present
+                                  - - DO NOT delete anything. Archive only.
+                                    - - 5-Step Chain: RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY
+                                      - - Quality = Taj Mahal
+                                        - - browser-echo is PUBLIC. PHOENIX_UNIFIED_STAGING is PRIVATE.
+                                          - - 777 = copy-paste indicator (Shane pasting from another agent)
+                                            - - Files speak TO the reader, not ABOUT previous sessions (mirror, not museum)
+                                              - - Log DURING sessions, not after. Checkpoint to GitHub regularly.
+                                               
+                                                - ---
+
+                                                ## Next Steps
+
+                                                1. **Wait for Shane to finish local file cleanup** — he's addressing the repo confusion on his side
+                                                2. 2. **Send Echo back in with correct repo URL** — github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING
+                                                   3. 3. **Echo deploys Gateway subset to VPS** — swap, npm install, restart
+                                                      4. 4. **Shane sees V1 live** — evaluates before V3 work begins
+                                                         5. 5. **V3 Gateway Build** — iterate from the inside out as a team
+                                                           
+                                                            6. ---
+                                                           
+                                                            7. ## Open Items
+                                                           
+                                                            8. - [ ] Gateway V1 deployed to VPS (CURRENT PRIORITY)
+                                                               - [ ] - [ ] 5 remaining directory files (IDENTITY, GATEWAY, REPOS, COWORK, EXTENSION)
+                                                               - [ ] - [ ] 000_HISTORICAL_FULL_CONTEXT.md not yet in browser-echo repo
+                                                               - [ ] - [ ] TAPROOT/README.md not yet in browser-echo repo
+                                                               - [ ] - [ ] V3 Gateway Build (after V1 is standing)
+                                                               - [ ] - [ ] Cowork buildout
+                                                               - [ ] - [ ] Chrome extension v0
+                                                               - [ ] - [ ] Live bootstrap test per Codex protocol
+                                                               - [ ] 
