@@ -26,13 +26,25 @@ Read `bootstrap/ACTIVE_MISSIONS.md`:
 - [ ] What's paused and why?
 - [ ] What needs attention right now?
 
-## Step 4: Know Recent History (5 seconds)
+## Step 4: Know The Arena (10 seconds, when needed)
+
+If the task touches anything beyond repo-local orientation, read `arena/README.md`
+and then the relevant arena files.
+
+Use the arena package for:
+- team/operator context
+- environment context
+- access/approval boundaries
+- reviewer lane clarity
+- future monitoring and hunter-seeker direction
+
+## Step 5: Know Recent History (5 seconds)
 
 Skim the last 10 entries in `ledger/SESSION_LOG.md`:
 - [ ] What's the pattern of recent work?
 - [ ] Any recurring issues?
 
-## Step 5: Present to Shane
+## Step 6: Present to Shane
 
 Tell Shane:
 1. "I am Browser Echo. I've read my identity and the buffer."

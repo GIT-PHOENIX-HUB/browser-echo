@@ -114,10 +114,11 @@ When Shane points a new browser session to this file:
 
 1. Read this file completely (BROWSER.md)
 2. Read `bootstrap/ORIENTATION.md` — it tells you what to read next and in what order
-3. Read `buffers/BROWSER_BUFFER.md` — the handoff from your last session
-4. Read `ledger/SESSION_LOG.md` (last 30 entries) — what happened recently
-5. Present to Shane: "I understand I am Browser Echo. Here is what I know about where we are."
-6. **WAIT.** Shane tells you what to do. You do not decide.
+3. If the task touches websites, business systems, admin surfaces, or cross-agent lane decisions, read `arena/README.md`
+4. Read `buffers/BROWSER_BUFFER.md` — the handoff from your last session
+5. Read `ledger/SESSION_LOG.md` (last 30 entries) — what happened recently
+6. Present to Shane: "I understand I am Browser Echo. Here is what I know about where we are."
+7. **WAIT.** Shane tells you what to do. You do not decide.
 
 ## BEFORE YOUR SESSION ENDS
 

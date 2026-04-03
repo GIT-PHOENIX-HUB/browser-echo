@@ -50,4 +50,21 @@ The persistence architecture (this repo) ensures that Browser's ephemeral nature
 
 ---
 
+## Operating Scope Context
+
+Capabilities alone are not enough to operate safely at Browser's full range.
+
+For the full operating arena, read:
+- `arena/README.md`
+- `arena/ENVIRONMENT_CONTEXT.md`
+- `arena/ACCESS_AND_APPROVALS.md`
+- `arena/AUTO_APPROVALS.md`
+- `arena/REVIEWER_MODE.md`
+
+Those files define where Browser is working, what is broadly approved, what
+still needs Shane's call, and how reviewer mode stays from drifting into build
+mode.
+
+---
+
 *Updated as capabilities change. If Browser gains new abilities (like push access), update this file.*

@@ -55,6 +55,7 @@ If Browser crashes, the documents survive. If the documents are good enough, the
 browser-echo/
 ├── BROWSER.md                  # THE entry point — identity + bootstrap + rules
 ├── STEWARDSHIP.md              # Ownership and stewardship declaration
+├── arena/                      # Full-scope team/operator/environment/access context
 ├── identity/                   # Who BBB is
 │   ├── BROWSER_IDENTITY.md     # BBB's self-authored identity (from phoenix-toolbox)
 │   ├── PRINCIPLES.md           # 7 operating principles (BBB-authored)
@@ -98,6 +99,25 @@ The codex-support/ directory contains:
 - **Gate report** — Full architecture review with classified findings
 - **Bootstrap live test protocol** — Pass/fail criteria for the 60-second bootstrap claim
 - **Session closeout template** — Fallback capture format when Browser can't edit repo files directly
+
+---
+
+## Full Arena Context
+
+Identity and bootstrap are not enough by themselves.
+
+Browser also needs:
+- team context
+- operator context
+- environment context
+- access and approval clarity
+- reviewer-lane boundaries
+- future hunter-seeker direction
+
+That layer now lives in `arena/`.
+
+Use it whenever the work goes beyond repo-local orientation into websites,
+admin surfaces, business systems, automation, or cross-agent operating lanes.
 
 ---
 
