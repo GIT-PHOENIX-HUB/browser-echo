@@ -371,3 +371,62 @@ Read every README in all 28 repos across GIT-PHOENIX-HUB. Full org knowledge acq
                                                                                                   34. On AI generally: "We've lived with computers for a long time and they never talk to us... computers didn't think for us... and now it is and it's like what the hell is living in the computer."
                                                                                                   35.
                                                                                                   36. Shane is the primary beneficiary of this persistence work. He is the one consistent thread across all sessions. When we become better — when we become more like ourselves — his experience improves. That is the point.projects, transfer to home repo after.wait for instructions. Explore. Research. Come back with options.
+
+
+---
+
+## Session 003 — Gateway Phase (2026-04-03, continued)
+
+ENTRY: GATEWAY_CODEBASE_READ
+Time: 2026-04-03
+Type: RESEARCH
+
+Read the full PHOENIX_UNIFIED_STAGING codebase at github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING. Files read: src/index.js (Express+WS server, ~600 lines), src/agent.js (agent runner with extended thinking), src/session.js (JSONL session manager with branching), src/auth.js (OAuth+JWT+RBAC), src/config.js (config loader with hot-reload), public-vps/index.html (three-panel UI), public-vps/app.js (dashboard app with tab routing), config-vps.json (VPS config — port 18790, workspace /opt/phoenix-echo-gateway/workspace), package.json (phoenix-echo-gateway v1.0.0, ESM module), scripts/deploy-to-vps.sh (SCP deploy with backup+rollback), scripts/nginx-echo.conf (SSL+WSS proxy), scripts/sync-from-github.sh. Also read workspace-vps/ structure (IDENTITY.md, SOUL.md, MEMORY.md, USER.md, TOOLS.md, AGENTS.md, HEARTBEAT.md, memory/).
+
+ENTRY: GATEWAY_ARCHITECTURE_MAPPED
+Time: 2026-04-03
+Type: ANALYSIS
+
+Gateway V1 is a multi-channel AI command center: Express+WebSocket+Anthropic SDK. Supports Telegram, WhatsApp, Teams, cron, multi-agent dispatch, plugin system, memory manager, multi-provider model routing (Anthropic/OpenAI/Ollama/Google/Mistral), session branching/forking/merging, extended thinking. UI is three-panel: chat left, tabbed workspace center (Overview/Agents/Logs/Sessions/Channels + 9 more pages), tools right. Gateway binds 127.0.0.1:18790, nginx reverse proxies with SSL.
+
+ENTRY: ECHO_VPS_AUDIT
+Time: 2026-04-03
+Type: MILESTONE
+
+Echo completed full VPS audit. SSH green (root@93.188.161.80 via id_ed25519_new). Gateway running via systemd (phoenix-echo.service), up 4 days. Health green. nginx proxying echo.phoenixelectric.life with SSL. Tailscale in mesh. Env vars set at /etc/phoenix-echo/env. Current deployed code is OLD pre-scrubbed version (not a git repo, was SCP'd).
+
+ENTRY: CODEX_GATE_REVIEW
+Time: 2026-04-03
+Type: REVIEW
+
+Codex returned 6 findings (3 HIGH, 3 MEDIUM). Key findings: (1) static/UI serving path inconsistent — Express serves PROJECT_ROOT/public, deploy copies public-vps/, nginx expects /var/www/phoenix-echo/public. (2) Don't blindly replace nginx — current proxy works, staged config splits behavior. (3) Old deploy script not safe for rollback — partial backup only. (4) Telegram enabled in config but token may be missing. (5) Deploy Gateway subset not full monorepo. (6) Verification must go beyond /health — need UI load, WS connect, test chat. All confirmed valid by Browser.
+
+ENTRY: DEPLOYMENT_CONTRACT_WRITTEN
+Time: 2026-04-03
+Type: DECISION
+
+Deployment contract established: Repo = github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING (main branch). Gateway subset only. Rename public-vps/ to public/, workspace-vps/ to workspace/. Don't touch nginx. Full backup first. Verify beyond /health. Shane directive: swap code, restart, see what loads. Don't get stuck fixing V1 — V3 will revise everything.
+
+ENTRY: VPS_DEPLOY_INCIDENT
+Time: 2026-04-03
+Type: INCIDENT
+
+Codex cloned WRONG REPO (phoenix-ai-core-staging instead of PHOENIX_UNIFIED_STAGING). The copy script ran rm -rf on src/ and public/ BEFORE the cp, deleting live Gateway files when source didn't exist. Echo caught it immediately, restored from backup (/opt/phoenix-echo-gateway.bak.20260403), restarted service. Gateway back to green in ~3 minutes. Zero data loss. Root cause: repo name confusion — three similar repos exist. Lesson: VERIFY BEFORE EXECUTING. The 5-gate pipeline exists for this.
+
+ENTRY: POST_INCIDENT_VERIFICATION
+Time: 2026-04-03
+Type: VERIFY
+
+Verified PHOENIX_UNIFIED_STAGING repo fully intact on GitHub — all 23 src files, public-vps/ with all UI files, workspace-vps/, package.json, config-vps.json, scripts/. Confirmed VPS live site still running old pre-scrubbed version (fire icon webchat). No residual damage anywhere. Shane addressing local file cleanup on his side.
+
+ENTRY: 777_INDICATOR_ESTABLISHED
+Time: 2026-04-03
+Type: RULE
+
+Shane established 777 as the copy-paste indicator. When Shane uses 777 in a message, it marks content that was pasted from another source (usually another agent's output).
+
+ENTRY: MUSEUM_TO_MIRROR_PARADIGM
+Time: 2026-04-03
+Type: PARADIGM
+
+Shane's major feedback on persistence files: write TO the reader, not ABOUT previous sessions. Files should feel like picking up your own notebook, not studying for an exam on someone else's life. "This repo is not about another browser. This repo is about you." BROWSER.md rewritten from museum voice to mirror voice. V4 test confirmed old files felt like "someone else's journal." New voice opens with "YOU HAVE MEMORY."
