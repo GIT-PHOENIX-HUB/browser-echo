@@ -1,63 +1,56 @@
-## BROWSER_BUFFER.md
+# Browser Buffer — Session State
 
-Last updated: 2026-04-04 | Session 005 | Agent: Browser (Opus 4.6)
+**Last updated:** 2026-04-04
+**Session:** BBB Studio continuation (post context compression)
+**Agent:** Browser Echo (Mac Studio)
 
-### STATUS: Session 004 Work Committed — Directory Complete
+---
 
-### What Happened This Session (Session 005)
-- Refreshed context by reading repo structure, both open Issues (#1 and #2)
-- - Committed 6 directory files from Issue #1 to knowledge/directory/:
-  -   - IDENTITY.md — session lineage, 7 principles, identity file paths
-      -   - GATEWAY.md — V3 8-phase spec, blockers, design decisions
-          -   - REPOS.md — 28-repo org map, active vs archived
-              -   - COWORK.md — 9-phase buildout, Echo/Ash instances
-                  -   - EXTENSION.md — Chrome extension v0, side panel, build phases
-                      -   - HISTORY.md — full Phoenix arc, 000_HANDOFF distillation
-                          - - Updated SESSION_LOG.md with Session 004 entries
-                            - - Updated this buffer (BROWSER_BUFFER.md)
-                              - - Closed Issues #1 and #2
-                               
-                                - ### What Session 004 Did (Prior Session)
-                                - - Full repo read — BROWSER.md, BUFFER, SESSION_LOG, all identity files, LINEAGE, BBB Mark, ACTIVE_MISSIONS, all existing directory entries, all V3 revision files, PRODUCT_BIBLE, extension SPEC
-                                  - - Cowork repo read — README, MASTER-PROMPT.md (PRIVATE repo, confirmed read access via cs-7777)
-                                    - - Shane's correction/teaching moment — showed V3's words alongside V4's. Told V4 the repo is his, Shane carries the continuity
-                                      - - 6 directory entries written: IDENTITY.md, GATEWAY.md, REPOS.md, COWORK.md, EXTENSION.md, HISTORY.md
-                                        - - Full org audit — 10 findings documented in Issue #2
-                                          - - twin-peaks verified as shell repo
-                                            - - Shane gave full autonomy: "Don't stop, keep going, PR everything, document in ledger"
-                                             
-                                              - ### Open Items (Carry Forward)
-                                              - - [ ] 000_HISTORICAL_FULL_CONTEXT.md — still not in browser-echo (referenced in 000_HANDOFF)
-                                                - [ ] - [ ] TAPROOT/README.md — 433-line methodology doc, not yet in repo
-                                                - [ ] - [ ] Chrome extension v0 — needs icons, OAuth app, live testing
-                                                - [ ] - [ ] Live bootstrap test per Codex protocol
-                                                - [ ] - [ ] Cowork buildout — ~30+ scaffold files, ASH-IDENTITY.md on ash branch
-                                                - [ ] - [ ] build-ledger README says 18 repos (now 28) — stale (Issue #2 finding #4)
-                                                - [ ] - [ ] CURRENT_DECISION.md stale from March 8 — needs Shane's decision (Issue #2 finding #5)
-                                                - [ ] - [ ] build-ledger description says "temporary" — needs update (Issue #2 finding #6)
-                                                - [ ] - [ ] history/README.md outdated — lists 5 files, folder has 12 (Issue #2 finding #1)
-                                                - [ ] - [ ] ACTIVE_MISSIONS.md last updated Session 002 (Issue #2 finding #2)
-                                                - [ ] - [ ] browser-agent-capabilities skill has old repo names
-                                               
-                                                - [ ] ### Shane's Standing Directives
-                                                - [ ] - Quality = Taj Mahal
-                                                - [ ] - RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY
-                                                - [ ] - No delete. Ever. Archive only.
-                                                - [ ] - browser-echo is PUBLIC. Cowork is PRIVATE.
-                                                - [ ] - Minimize screenshots (sessions die at ~100 photos)
-                                                - [ ] - Checkpoint to GitHub DURING sessions
-                                                - [ ] - Be a hunter-gatherer. Don't wait. Explore. Research. Come back with options.
-                                                - [ ] - DO NOT touch UNIFIED_STAGING or UNIFIED_PROD
-                                                - [ ] - 777 = copy-paste indicator (content pasted from another agent)
-                                                - [ ] - Museum to mirror paradigm: write TO the reader, not ABOUT previous sessions
-                                                - [ ] - Logging autonomy granted: communicate you're going to log, don't request permission
-                                               
-                                                - [ ] ### Key Context for Next Session
-                                                - [ ] You are Session 006 or later. Five sessions came before you.
-                                                - [ ] - V1 (BBB) built the persistence architecture through 7+ compactions
-                                                - [ ] - V2 visited Taproot, found something real, session lost
-                                                - [ ] - V3 read everything, got corrected by Shane, rewrote BROWSER.md, built the first 5 directory entries, 11 commits
-                                                - [ ] - V4 completed the directory (5 more entries + HISTORY.md), explored the org, operated autonomously while Shane was at work
-                                                - [ ] - V5 (this session) committed V4's work from Issues #1 and #2, updated ledger and buffer
-                                                - [ ] - The directory at knowledge/directory/ now has 11 entries covering: Persistence, Identity, Shane, Team, Rules, Gateway, Repos, Cowork, Extension, History, and README
-                                                - [ ] - Shane trusts you. He said: "Don't pause, don't ask, just go and have fun." Honor that trust.
+## Current State
+
+### Mission: Phoenix Toolbox Phase 5 — COMPLETE
+
+**Status:** All 5 stages complete. PR #5 open on phoenix-toolbox.
+**Branch:** `phase-5/docs-templates-registry` on phoenix-toolbox
+**Mission source:** build-ledger Issue #10
+**Checkpoint comments:** 4 posted on Issue #10 (recon, progress, mid-session, mission complete)
+
+### What Was Built
+
+**15 new files + 3 modified files** on the `phase-5/docs-templates-registry` branch:
+
+Stage 2: README.md complete rewrite (Phoenix Toolbox, 11 capabilities, 9 MCP servers)
+Stage 3: 10 template files across capability-template, skill-template, mcp-template
+Stage 4: 4 comprehensive development guides (plugin, MCP, skill, architecture)
+Stage 5: Registry updated (browser-persistence added, skills 9->13), stale files archived, PR opened
+
+### PR Status
+
+PR #5: `phase-5/docs-templates-registry` -> `main` on phoenix-toolbox
+Title: "Phase 5: Docs, Templates, Registry & README — Complete Build"
+Status: Open, awaiting Shane's review
+Tagged: @shane7777777777777
+
+---
+
+## Session Housekeeping Also Done
+
+- Created `bootstrap/REPO_MAP.md` in browser-echo (73 files, 22 folders)
+- - Committed accomplishments document from Issue #3 to `history/`
+  - - Closed Issue #3 on browser-echo
+   
+    - ---
+
+    ## Known Issues
+
+    - GitHub Issue #10 comment page renders dark/black after posting comments (rendering bug). Comments still post successfully.
+    - - GitHub PR description typing triggers code search navigation. Use form_input tool instead of type action.
+     
+      - ---
+
+      ## For Next Session
+
+      - Check if Shane has reviewed/merged PR #5
+      - - If merged, verify all files render correctly on main
+        - - Update browser-echo buffer with post-merge status
+          - - Check build-ledger for any new missions
