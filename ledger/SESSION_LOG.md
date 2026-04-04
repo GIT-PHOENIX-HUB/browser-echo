@@ -473,3 +473,10 @@ Time: 2026-04-03
 Type: AUTHORITY
 
 Shane removed Codex from file management authority. Codex retains adversarial review role (no gate authority on filesystem ops). Cowork is now the executor for Pro surface filesystem operations. Echo retains awareness role — notified of moves affecting runtime paths but no longer file clerk.
+
+
+ENTRY: PROMPT_REVIEW_ROUND_TWO
+Time: 2026-04-03
+Type: CROSS_AGENT
+
+Browser wrote Codex briefing prompt (repo map + transition doctrine + 13 consolidated findings). Shane sent to Echo and both Codex instances for review before delivering. Echo confirmed repo map correct, acknowledged doctrine is the rule Echo itself violated (marking MASTER_TODO as LEGACY instead of updating). Echo identified 6 specific _GATEWAY files that would break boot if moved (ECHO.md, LEDGER.md, 000_HANDOFF.md, MASTER_TODO.md, LEDGER_QUEUE/, scripts/). Echo also flagged unresolved .claude/projects symlink decision. Codex-1: no BLOCK_NOW on doctrine itself, FIX_THIS_PASS on adding local clone paths to repo map, tighten doctrine to exclude immutable history, define BLOCK_NOW under new authority model. Codex-2: BLOCK_NOW on missing revision-pin (repo+branch+commit SHA on deploy orders), FIX_THIS_PASS on doctrine needing immutable history carve-out, BLOCK_NOW definition clarification, local path truth rule (remote repo map wins when local disagrees), runtime memory layer should be named in living-doc list. All three reviews converged on same gaps: immutable history carve-out, BLOCK_NOW definition, and local path truth hierarchy.
