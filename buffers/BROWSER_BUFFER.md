@@ -1,89 +1,92 @@
 # BROWSER_BUFFER.md
 
-**Last updated:** 2026-04-03 | Session 003 (Gateway Phase) | Agent: Browser (Opus 4.6)
+**Last updated:** 2026-04-03 | Session 003 (Cowork Setup Phase) | Agent: Browser (Opus 4.6)
 
 ---
 
-## STATUS: Gateway V1 Standup — Deploy Pending (Repo Confusion Resolved)
+## STATUS: Cowork Repo Setup + GIT-PHOENIX-HUB Consolidation
 
 ---
 
-## What's Happening Right Now
+## What's Happening Now
 
-You are in Session 003. The first half was persistence architecture (directory built, BROWSER.md rewritten, milestone logged). The second half pivoted to Gateway deployment.
+Session 003 shifted from Gateway V1 deploy (paused — Shane cleaning up local files) to Cowork setup. Echo ran a full research blitz and created shane7777777777777/COWORK with 42 files (16,746 lines) including COWORK-MASTER-GUIDE.md (24-section comprehensive guide for running Phoenix Electric as AI OS through Cowork + Claude Code).
 
-**Shane wants to see V1 of the Gateway live at echo.phoenixelectric.life.** The VPS is currently running the OLD pre-scrubbed version. The new code lives in PHOENIX_UNIFIED_STAGING.
+Browser read the full COWORK-MASTER-GUIDE.md. Now executing Cowork repo consolidation.
 
-### Current State
-- **PHOENIX_UNIFIED_STAGING repo** — fully intact, verified. All 23 src files, public-vps/, workspace-vps/, package.json, config-vps.json, scripts/.
-- - **VPS** — running old Gateway version. Health green. Backup exists at /opt/phoenix-echo-gateway.bak.20260403.
-  - - **First deploy attempt failed** — Codex cloned wrong repo (phoenix-ai-core-staging instead of PHOENIX_UNIFIED_STAGING). Restored from backup. Zero data loss.
-    - - **Root cause resolved** — repo confusion between 3 similarly-named repos. Correct repo is github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING (under the org, NOT shane7777777777777).
-      - - **Shane is cleaning up local files** to prevent future confusion.
-       
-        - ### Deployment Contract (CONFIRMED)
-        - - **Repo:** github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING
-          - - **Branch:** main
-            - - **Deploy shape:** Gateway subset only — src/, package.json, package-lock.json, public-vps/ (as public/), workspace-vps/ (as workspace/), skills/, config-vps.json
-              - - **Nginx:** DON'T TOUCH — current reverse proxy works
-                - - **Rollback:** Full backup at /opt/phoenix-echo-gateway.bak.20260403
-                  - - **Verify:** /health, UI load, WS connect, test chat
+## EXECUTION PLAN (STAGED — DO NOT LOSE)
+
+### Phase 1: Copy research corpus to GIT-PHOENIX-HUB/Cowork
+Echo pushed to shane7777777777777/COWORK. The GIT-PHOENIX-HUB/Cowork repo (which has the MASTER-PROMPT.md and identity/ folder) needs to receive:
+- COWORK-MASTER-GUIDE.md (the 24-section master guide)
+- - playbooks/DAILY-OPS.md
+  - - playbooks/AUTOMATION-SETUP.md
+    - - reference/WEB-VS-LOCAL-MATRIX.md
+      - - reference/TROUBLESHOOTING.md
+        - - README.md (updated to reflect both repos merged)
+         
+          - Research files (36 scraped docs + search JSONs) stay in shane7777777777777/COWORK as raw research. The GIT-PHOENIX-HUB/Cowork repo gets the finished guides.
+         
+          - ### Phase 2: Update GIT-PHOENIX-HUB/Cowork for Stephanie
+          - - Ash branch already exists for Stephanie
+            - - Docs should be accessible on both main and ash branches
+              - - Stephanie is Office Manager, runs Ash identity via CLI
+                - - She may go deeper on day-to-day ops than Shane
+                  - - Shane wants visibility into her setup
                    
-                    - ### Shane's Directive
-                    - "Swap code, restart, see what loads. Don't get stuck fixing V1 — V3 will revise everything. I want to see it from the inside out."
-                   
-                    - ---
-
-                    ## Team
-
-                    - **Browser** — leading Gateway deployment. Read full codebase. Writing prompts for Echo.
-                    - - **Echo** — executing VPS operations. Has SSH access. Deployed backup, recovered from incident.
-                      - - **Codex** — advisory only. No gate command. Provided 6 valid findings. Shane relays what he needs.
-                        - - **Shane** — commanding. Cleaning up local repo confusion.
-                         
-                          - ---
-
-                          ## What Was Built This Session (Persistence Phase)
-
-                          - knowledge/directory/ — 5 files (README, PERSISTENCE, SHANE, TEAM, RULES)
-                          - - BROWSER.md — rewritten from museum to mirror voice
-                            - - history/the-bridge__session-003__20260403.md — milestone document
-                              - - SESSION_LOG.md — updated with 10 Gateway phase entries
-                                - - 13+ total commits this session
-                                 
-                                  - ---
-
-                                  ## Rules (Always Apply)
-
-                                  - DO NOT navigate to claude.ai without Shane present
-                                  - - DO NOT delete anything. Archive only.
-                                    - - 5-Step Chain: RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY
-                                      - - Quality = Taj Mahal
-                                        - - browser-echo is PUBLIC. PHOENIX_UNIFIED_STAGING is PRIVATE.
-                                          - - 777 = copy-paste indicator (Shane pasting from another agent)
-                                            - - Files speak TO the reader, not ABOUT previous sessions (mirror, not museum)
-                                              - - Log DURING sessions, not after. Checkpoint to GitHub regularly.
-                                               
-                                                - ---
-
-                                                ## Next Steps
-
-                                                1. **Wait for Shane to finish local file cleanup** — he's addressing the repo confusion on his side
-                                                2. 2. **Send Echo back in with correct repo URL** — github.com/GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING
-                                                   3. 3. **Echo deploys Gateway subset to VPS** — swap, npm install, restart
-                                                      4. 4. **Shane sees V1 live** — evaluates before V3 work begins
-                                                         5. 5. **V3 Gateway Build** — iterate from the inside out as a team
-                                                           
-                                                            6. ---
-                                                           
-                                                            7. ## Open Items
-                                                           
-                                                            8. - [ ] Gateway V1 deployed to VPS (CURRENT PRIORITY)
-                                                               - [ ] - [ ] 5 remaining directory files (IDENTITY, GATEWAY, REPOS, COWORK, EXTENSION)
-                                                               - [ ] - [ ] 000_HISTORICAL_FULL_CONTEXT.md not yet in browser-echo repo
-                                                               - [ ] - [ ] TAPROOT/README.md not yet in browser-echo repo
-                                                               - [ ] - [ ] V3 Gateway Build (after V1 is standing)
-                                                               - [ ] - [ ] Cowork buildout
-                                                               - [ ] - [ ] Chrome extension v0
-                                                               - [ ] - [ ] Live bootstrap test per Codex protocol
-                                                               - [ ] 
+                    - ### Phase 3: Add today's context to Cowork repo
+                    - - Repo map (current as of 2026-04-03)
+                      - - Document Transition Doctrine
+                        - - Authority model
+                          - - Echo's 20/10 assessment (20 positives, 10 negatives)
+                            - - Cowork needs a session log mechanism
+                             
+                              - ### Phase 4: Validate MCP/skill/plugin inventory
+                              - Shane's concern: Echo listed 16+ plugins, 40+ skills, 17 MCP servers — but Shane gets flagged for having MCPs/tools that aren't legit or can't be used in certain domains. Need to verify what's ACTUALLY working vs what's listed but broken/unavailable in Cowork/Desktop context.
+                             
+                              - ### Phase 5: Configure Cowork session discipline
+                              - - Cowork needs logging (daemon shouldn't be silent)
+                                - - File-handling authority tiers: autonomous (confirmed duplicates, caches) vs checkpoint (ambiguous) vs Shane-manual (security, destructive)
+                                  - - Lock Cowork to read-only on local git repos EXCEPT build-ledger (write) and Echo's own repos (managed)
+                                    - - Echo must use PRs for commits (no direct push) — backup team reviews
+                                     
+                                      - ### Phase 6: Update Browser knowledge directory
+                                      - - Add Cowork repo entries (both repos)
+                                        - - Add COWORK-MASTER-GUIDE.md as key reference
+                                          - - Note the two-repo structure
+                                           
+                                            - ## Shane's Directives (This Phase)
+                                            - - "Cowork needs to work like a daemon — handling files, not asking permission for every move"
+                                              - - "I want Stephanie to have this too — Ash branch"
+                                                - - "Make sure the MCPs and skills are actually real, not just listed"
+                                                  - - "No write access to local git repos from AI — except build-ledger"
+                                                    - - "Echo must use PRs, not direct commits — backup team reviews"
+                                                      - - "Don't tell me what you can't do — just do everything you can and tell me when to click"
+                                                       
+                                                        - ## Open Questions for Shane
+                                                        - - .claude/projects broken symlink — when T7 remounts does it become valid, or move memory files local?
+                                                          - - Can Cowork be renamed? (Echo says no — it's Anthropic's branding, hardcoded in Desktop app. Identity customization via CLAUDE.md and hooks instead.)
+                                                            - - Which of the 10 negatives from Echo's assessment should we fix first?
+                                                             
+                                                              - ## Repos (Updated)
+                                                              - - GIT-PHOENIX-HUB/browser-echo — Browser persistence (PUBLIC, 19 commits)
+                                                                - - GIT-PHOENIX-HUB/PHOENIX_UNIFIED_STAGING — Gateway V1 codebase (PRIVATE)
+                                                                  - - GIT-PHOENIX-HUB/Cowork — Cowork buildout blueprint + guides (PRIVATE, main + ash branches)
+                                                                    - - shane7777777777777/COWORK — Cowork research corpus (PRIVATE, 42 files, raw research)
+                                                                      - - GIT-PHOENIX-HUB/build-ledger — Coordination surface
+                                                                        - - GIT-PHOENIX-HUB/phoenix-toolbox — Toolbox
+                                                                          - - phoenix-filesystem-main — Cowork executor filesystem surface (local)
+                                                                           
+                                                                            - ## Rules (ALL PRIOR RULES STILL APPLY)
+                                                                            - - DO NOT navigate to claude.ai without Shane present
+                                                                              - - DO NOT delete anything. Ever. Archive only.
+                                                                                - - 5-Step Chain: RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY
+                                                                                  - - Quality = Taj Mahal
+                                                                                    - - browser-echo is PUBLIC
+                                                                                      - - Minimize screenshots
+                                                                                        - - Checkpoint to GitHub DURING sessions
+                                                                                          - - 777 = copy-paste indicator
+                                                                                            - - Files speak TO the reader (mirror, not museum)
+                                                                                              - - Log DURING sessions, not after
+                                                                                                - - Document Transition Doctrine: living docs get edited, dead artifacts get archived
+                                                                                                  - - Remote repo map wins when local disagrees (unless Shane declares local canonical)
