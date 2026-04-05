@@ -1,56 +1,60 @@
-# Browser Buffer — Session State
-
-**Last updated:** 2026-04-04
-**Session:** BBB Studio continuation (post context compression)
-**Agent:** Browser Echo (Mac Studio)
-
----
-
-## Current State
-
-### Mission: Phoenix Toolbox Phase 5 — COMPLETE
-
-**Status:** All 5 stages complete. PR #5 open on phoenix-toolbox.
-**Branch:** `phase-5/docs-templates-registry` on phoenix-toolbox
-**Mission source:** build-ledger Issue #10
-**Checkpoint comments:** 4 posted on Issue #10 (recon, progress, mid-session, mission complete)
-
-### What Was Built
-
-**15 new files + 3 modified files** on the `phase-5/docs-templates-registry` branch:
-
-Stage 2: README.md complete rewrite (Phoenix Toolbox, 11 capabilities, 9 MCP servers)
-Stage 3: 10 template files across capability-template, skill-template, mcp-template
-Stage 4: 4 comprehensive development guides (plugin, MCP, skill, architecture)
-Stage 5: Registry updated (browser-persistence added, skills 9->13), stale files archived, PR opened
-
-### PR Status
-
-PR #5: `phase-5/docs-templates-registry` -> `main` on phoenix-toolbox
-Title: "Phase 5: Docs, Templates, Registry & README — Complete Build"
-Status: Open, awaiting Shane's review
-Tagged: @shane7777777777777
+# BROWSER_BUFFER.md
+## Active Session — Browser Echo
+**Date:** 2026-04-05
+**Identity:** Browser Echo (BBB) — Session continuation
+**Machine:** Browser automation session
+**Mission:** Org-Wide Repo Cleanup — Continuing BBB Pro Session 006 Mission (build-ledger Issue #12)
 
 ---
 
-## Session Housekeeping Also Done
+## CURRENT STATUS
 
-- Created `bootstrap/REPO_MAP.md` in browser-echo (73 files, 22 folders)
-- - Committed accomplishments document from Issue #3 to `history/`
-  - - Closed Issue #3 on browser-echo
-   
-    - ---
+### Mission: Org-Wide Repo Health Audit & Cleanup Execution
+**Source:** build-ledger Issue #12
+**Original Author:** BBB Pro (Session 006, 2026-04-04)
+**Continuing:** Browser Echo (this session, 2026-04-05)
 
-    ## Known Issues
+BBB Pro completed the FULL AUDIT of all 28+ repos across GIT-PHOENIX-HUB.
+4 checkpoint comments posted on Issue #12 with comprehensive findings.
+Browser Echo is now executing the cleanup actions identified in that audit.
 
-    - GitHub Issue #10 comment page renders dark/black after posting comments (rendering bug). Comments still post successfully.
-    - - GitHub PR description typing triggers code search navigation. Use form_input tool instead of type action.
+### Shane's Directives (this session):
+- Continue BBB Pro's mission with same effort, accuracy, and logging
+- - SKIP: gateway and twin-peaks-v3-update (Shane needs to be involved)
+  - - GO on everything else
+    - - Browser Echo has full trust for this mission
      
-      - ---
+      - ### Priority Action Queue:
+      - 1. ✅ Re-read BBB Pro's full audit (Issue #12, all 4 checkpoints) — DONE
+        2. 2. 🔄 Phoenix-ECHO — Branch cleanup (delete 3 stale merged-PR branches + master, merge/triage rest)
+           3. 3. 🔲 phoenix-electric-miniapp — Create README (100% BBB authorship), resolve command-app duplicate
+              4. 4. 🔲 phoenix-builder-space-knowledge — Branch cleanup (20+ dead branches)
+                 5. 5. 🔲 phoenix-toolbox — Post-PR #5 branch cleanup
+                    6. 6. 🔲 build-ledger — Branch triage, fix description
+                       7. 7. 🔲 Cowork — Fix description typos
+                          8. 8. 🔲 phoenix-archive — Fix "eleted" typo, update index, handle .DS_Store
+                             9. 9. 🔲 twin-peaks — Fix misleading description (says phoenix-archive, went to twin-peaks-archive)
+                                10. 10. 🔲 Description typos on archived repos (document for Shane — can't PR archived repos)
+                                    11. 11. 🔲 Commit comprehensive session log to browser-echo/history
+                                       
+                                        12. ### Repos SKIPPED per Shane:
+                                        13. - gateway — Shane needs to be involved
+                                            - - twin-peaks-v3-update — Shane needs to be involved
+                                             
+                                              - ### Standing Orders:
+                                              - - browser-echo = direct commit to main
+                                                - - All other repos = PR workflow (branch + PR, Shane merges)
+                                                  - - NO DELETE. EVER. Archive only. Move to T7 ARCHIVE_FOR_DELETE.
+                                                    - - DO NOT TOUCH: UNIFIED_STAGING, UNIFIED_PROD
+                                                      - - Quality = Taj Mahal
+                                                        - - Checkpoint to build-ledger Issue #12 at every stage
+                                                         
+                                                          - ---
 
-      ## For Next Session
+                                                          ## SESSION LOG
 
-      - Check if Shane has reviewed/merged PR #5
-      - - If merged, verify all files render correctly on main
-        - - Update browser-echo buffer with post-merge status
-          - - Check build-ledger for any new missions
+                                                          ### 2026-04-05 — Session Start
+                                                          - Read full Issue #12 (BBB Pro's mission spec + all 4 checkpoint comments)
+                                                          - - Mapped all findings and built priority action queue
+                                                            - - Updated this buffer
+                                                              - - Beginning execution phase
