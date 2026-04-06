@@ -590,3 +590,10 @@ Time: 2026-04-04
 Type: MILESTONE
 
 Session 005 committed all Session 004 work from Issues #1 and #2. 6 directory files to knowledge/directory/, SESSION_LOG.md updated, BROWSER_BUFFER.md updated, both issues closed.
+
+
+  ENTRY: PHASE_3_VERIFIED
+    Time: 2026-04-05
+      Type: MILESTONE
+
+      Phase 3 Chronology Lock VERIFIED and COMPLETE. Codex built both files from the 22-entry corpus, ran full gate, committed and pushed. Commits verified on GitHub: 185a24e (CHRONOLOGY.md, 72 additions) and 2ee8ac6 (SOURCE-MAP.md, 102 additions). Files landed at chronicles/v2/timeline/CHRONOLOGY.md and chronicles/v2/reference/SOURCE-MAP.md on mission/echo-chronicles-v2. Branch clean: 10 commits ahead of main, 0 deletions, 1639 additions total, protected set untouched. Codex gate: PASS. Phase 4 (Distillation) ready to begin.
