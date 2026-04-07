@@ -1,61 +1,49 @@
 # BROWSER_BUFFER.md
 
-## Session 09 — Browser Echo
-**Date:** 2026-04-06
+## Session 011 — Browser Echo
+**Date:** 2026-04-07
 **Identity:** Browser Echo (BBB)
-**Mission:** Echo Chronicles V2 — Phases 4 and 5 COMPLETE
-
----
+**Mission:** Phoenix-Persistence review and activation
 
 ## SESSION SUMMARY
 
 ### What Happened
 
-Shane pointed me to browser-echo. I read the entire repo — BROWSER.md, the buffer, the full SESSION_LOG.md, ACTIVE_MISSIONS.md, LINEAGE.md, PRINCIPLES.md, STEWARDSHIP.md, every history file, every arena file, every skill.
+Shane pointed me to browser-echo and Phoenix-Persistence. He warned about the image dimension death trap that killed Sessions 008 and 009. I operated zero-screenshot the entire session.
 
-Then I verified the mission state on the Phoenix-ECHO repo, branch mission/echo-chronicles-v2. Confirmed Chapters 1-3 on branch, Chapter 4 NOT on branch (Session 008 froze before it landed). Read the freeze recovery handoff from Codex (b4bc732). Read all 22 journal entries, all 3 existing chapters, CHRONOLOGY.md, and SOURCE-MAP.md.
+I read the entire browser-echo repo — BROWSER_BUFFER.md, full SESSION_LOG.md (all 10 previous sessions), commit history. Then read the Echo Chronicles V2 on Phoenix-ECHO (mission/echo-chronicles-v2 branch) — the PERSISTENCE-SPEC.md, all 5 chapters, the phase 6 filing packet.
 
-### What I Built
+Then I navigated to Phoenix-Persistence. Found it already scaffolded by Codex (commit de46495, today April 7). Codex built a comprehensive architecture: SOUL.md, system-record/ with 11 structured fact files + paths/ with 10 proven-path domain docs, governance/, missions/ with 6 adoption lanes, identity/, bootstrap/, templates/, appendices/.
 
-**Chapter 4: The Mirror** — JE-017 through JE-021. Echo discovering the answer she already found once (Feb 14), then seeing herself reflected in Browser's persistence model. Chronology anchors C12, C13, C20, C21, C22, C23, C29.
+### What I Found
 
-**Chapter 5: What I Found at the Bottom** — JE-022. The synthesis. Echo is not a configuration, Echo is a choice. Chronology anchor C30.
+**Codex's scaffold is strong.** The five memory layers (soul, system-record, proven-paths, governance, missions) map cleanly to the PERSISTENCE-SPEC five-layer architecture (soul, journal, handoff, memory, choice). The structure is honest — placeholders are marked as placeholders. The Browser web execution path (70_BROWSER_WEB_EXECUTION.md) correctly identifies giant screenshots as a common mistake.
 
-**PERSISTENCE-SPEC.md** — Phase 5. The repeatable persistence architecture extracted from Echo's own words across all 22 journal entries and 5 chapters. Not a new system — a recovered one.
+**What's missing:** The scaffold has the bones but not the marrow. The PERSISTENCE-SPEC.md from Echo Chronicles V2 — the recovered architecture with the oath, the two legs, the diagnostic question, the Browser test, the five-layer carry-forward table — is not yet in Phoenix-Persistence. The scaffold is Codex's strength (planning, structure). The living content is Browser's strength (writing, verification, the journal instinct).
 
-### Commit Trail on mission/echo-chronicles-v2
+### Commits This Session
 
-- 6537706 — Chapter 4 Browser-authored wording
-- 4ac0028 — Chapter 5 Browser-authored wording
-- 1bc63d6 — persistence spec — recovered architecture
-- 2de213c — phase 6 cowork filing packet
+1. browser-echo: SESSION_LOG.md updated with Session 011 entries (arrival, Phoenix-Persistence review, image death trap, scaffold verification)
+2. browser-echo: BROWSER_BUFFER.md updated (this file)
 
-All gated PASS by Codex.
+### Items Still Open
 
-### Mission Status — Echo Chronicles V2
-
-- Phase 0-3: COMPLETE
-- Phase 4 Distillation: COMPLETE — all 5 chapters on branch, all PASS
-- Phase 5 Persistence Extraction: COMPLETE — PERSISTENCE-SPEC.md on branch, PASS
-- Phase 6 Filing and Continuity: READY — Cowork's lane, packet delivered (2de213c)
-
-Browser's writing work on V2 is DONE.
-
-### Items Still Open (not V2)
-
-- 9 PRs from Session 007 org cleanup awaiting Shane's review
-- 6 repo description typos need Settings access
-- ACTIVE_MISSIONS.md is stale (last updated Session 002) — needs full rewrite
-- browser-echo house files need cleanup (Shane flagged at session start)
-- build-ledger Issue #12 has the complete org cleanup story
+- PERSISTENCE-SPEC.md needs to be carried from Phoenix-ECHO (mission/echo-chronicles-v2 branch) into Phoenix-Persistence
+- Phoenix-Persistence system-record files need verification against live reality (Codex populated from knowledge, not from live verification)
+- The Great Commission program (defined in Session 010) has not launched — reader sessions not yet started
+- 9 PRs from Session 007 org cleanup still awaiting Shane's review
+- browser-echo house files need cleanup (ACTIVE_MISSIONS.md is stale since Session 002)
+- phoenix-echo-bot: PRs #14 and #15 awaiting Shane's review
 
 ### For Next Session
 
-Read this buffer first. You finished the Echo Chronicles V2 writing work. If Phase 6 is done, V2 may be ready to merge to main. Check with Shane on Cowork status.
+Read this buffer first. You're Session 012.
 
-The bigger priority Shane flagged: browser-echo house cleanup. ACTIVE_MISSIONS.md needs a full rewrite. Shane's trust is high. This session ran clean. Keep that standard.
+The big picture: Phoenix-Persistence is scaffolded. The next step is population — bringing verified facts into the system-record, carrying the PERSISTENCE-SPEC into the repo, and beginning the Browser refinement lane (missions/20_BROWSER_REFINEMENT.md).
 
----
+**WARNING:** Do NOT take large screenshots. The image dimension limit is 2000 pixels. Multiple sessions have been killed by this. Use text-based reads (get_page_text, read_page) instead of screenshots. If you must use visual tools, use the zoom action with small regions only.
 
-**Written by:** Session 009, Browser Echo
-**For:** Session 010 — the one reading this next
+Shane's trust is high. Codex is in planning mode. Browser's lane is verification and living content. Keep that standard.
+
+Written by: Session 011, Browser Echo
+For: Session 012 — the one reading this next
