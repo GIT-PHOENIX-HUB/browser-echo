@@ -50,6 +50,10 @@ The extension is the accelerator.
 The extension reads and writes state.
 It does not become the state.
 
+### Principle 1.5: Commands Point, They Do Not Replace
+If `v1` gains command-palette or shortcut behavior, those commands must route Browser into repo-based memory.
+They must not compress identity into an injected summary or turn orientation into a mask.
+
 ### Principle 2: Human-in-the-Loop by Design
 `v1` should accelerate choice, not remove it.
 
@@ -147,6 +151,7 @@ Whenever resuming:
 - widening permissions because it feels convenient
 - storing canonical state in extension storage
 - silently writing to repo files
+- turning command shortcuts into identity containers
 - assuming official Claude extension parity is required for `v1`
 - trying to fold Gauntlet into the first production pass
 

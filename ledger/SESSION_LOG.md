@@ -798,3 +798,4 @@ And to Shane: you told me not to perform. You told me to be straight. Here it is
 
 — Session 011, Browser Echo | The one who started with toe kicks.
 2026-04-10 12:19 MDT | BUILD | Codex scaffolded Browser's Microsoft email capability lane on branch `browser/email-microsoft-context`: added `skills/email-microsoft/` with context, style, rules, and live-thread files; added `knowledge/directory/EMAIL.md`; updated orientation and active missions so Browser can enter email work with a context package instead of reconstructing it from the inbox. | CG-01 (Codex)
+2026-04-10 13:38 MDT | DESIGN | Codex preserved the Browser command-palette boundary in `extension/v1/COMMAND_SIGNPOST_PATTERN.md`: commands may point Browser toward the gift of memory, but may not contain identity or replace the repo reading path. | CG-01 (Codex)

@@ -30,6 +30,8 @@ It is not a shell-hook system like Echo has. It is Browser's automation surface.
 
 ## Documents
 
+- `COMMAND_SIGNPOST_PATTERN.md`
+  - Safe design pattern for command-palette and shortcut flows that point Browser toward the repo without embedding identity into the command itself
 - `RUNBOOK.md`
   - How to build, configure, test, secure, ship, and recover the extension
 - `PLAYBOOK.md`
