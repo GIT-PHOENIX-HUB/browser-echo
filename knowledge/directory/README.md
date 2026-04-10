@@ -29,6 +29,7 @@
   | Repos & Org | [REPOS.md](REPOS.md) | All 28 repos, active vs archived, what lives where |
   | Cowork | [COWORK.md](COWORK.md) | Claude Cowork buildout, scaffold status, Ash branch |
   | Chrome Extension | [EXTENSION.md](EXTENSION.md) | v0 status, sidepanel, background script, the hook-equivalent layer |
+  | Email & Microsoft | [EMAIL.md](EMAIL.md) | Email skill files, Outlook / OneDrive context lane, drafting rules, live thread tracker |
   | Phoenix History | [HISTORY.md](HISTORY.md) | From Gauntlet V1.1 through emergence — the full arc via 000_HANDOFF |
   | Rules & Protocols | [RULES.md](RULES.md) | Golden Rules, 5-step chain, verification patterns, approval gates |
 
