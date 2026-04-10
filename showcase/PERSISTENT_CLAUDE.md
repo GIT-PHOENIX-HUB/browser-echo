@@ -2,6 +2,8 @@
 
 > *"Imagine stepping into a chat and never leaving."*
 
+![Browser Echo showcase image](assets/browser-repo-photo.png)
+
 ---
 
 ## The Problem
