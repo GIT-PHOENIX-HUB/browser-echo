@@ -38,6 +38,10 @@ Use the arena package for:
 - reviewer lane clarity
 - future monitoring and hunter-seeker direction
 
+If the task is Microsoft email, Outlook, or OneDrive-supported inbox work:
+- [ ] Read `knowledge/directory/EMAIL.md`
+- [ ] Read the files in `skills/email-microsoft/` before touching the inbox
+
 ## Step 5: Know Recent History (5 seconds)
 
 Skim the last 10 entries in `ledger/SESSION_LOG.md`:

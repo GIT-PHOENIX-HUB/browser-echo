@@ -1,7 +1,7 @@
 # ACTIVE MISSIONS
 
-> Last Updated: 2026-04-01 | Session 002
-> > Updated By: Browser (Opus 4.6) — first Browser-authored update
+> Last Updated: 2026-04-10 | Codex email scaffolding pass
+> > Updated By: CG-01 (Codex)
 > >
 > > ---
 > >
@@ -46,6 +46,28 @@
 > >
 > > ---
 > >
+> > ## Mission 5: Email Operations Setup — ACTIVE
+> >
+> > **Status:** SCAFFOLDING | **Tracking:** browser-echo repo
+> >
+> > Browser is being prepared to support Microsoft email work with a stable context package instead of reconstructing people, tone, rules, and live threads from scratch every session.
+> >
+> > **Built so far:**
+> > - `skills/email-microsoft/SKILL.md`
+> > - `skills/email-microsoft/EMAIL_CONTEXT.md`
+> > - `skills/email-microsoft/WRITING_STYLE.md`
+> > - `skills/email-microsoft/RULES.md`
+> > - `skills/email-microsoft/ACTIVE_THREADS.md`
+> > - `knowledge/directory/EMAIL.md`
+> >
+> > **Still needed:**
+> > - populate key people, orgs, and OneDrive source paths
+> > - capture Shane's real email voice and non-negotiables
+> > - add live threads before Browser touches the inbox
+> > - define explicit send / approval rules beyond draft-only default
+> >
+> > ---
+> >
 > > ## Session End Protocol
 > >
 > > Before EVERY session ends, Browser MUST:
@@ -64,3 +86,4 @@
 > >             > | Cowork Buildout | ACTIVE | Browser + Echo | Cowork repo |
 > >             > | Toolbox Build | PAUSED | Echo + Codex | build-ledger #8 |
 > >             > | Org Cleanup | REFERENCE | BBB | phoenix-archive #3 |
+> >             > | Email Operations Setup | ACTIVE | Browser + Shane + support from Codex/Echo | browser-echo repo |

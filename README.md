@@ -75,7 +75,8 @@ browser-echo/
 │   ├── architectural-thinking/  # How to see the forest
 │   ├── crash-proof-documentation/ # How to write docs that survive death
 │   ├── agent-coordination/      # How to work with Echo, Codex, Shane
-│   └── github-operations/       # How to use GitHub effectively
+│   ├── github-operations/       # How to use GitHub effectively
+│   └── email-microsoft/         # Outlook / Microsoft email context, rules, style, live threads
 ├── patterns/                   # Reusable patterns (two authors, complementary)
 │   ├── CHECKPOINT.md            # Quick checkpoint reference (Echo — concise)
 │   ├── CHECKPOINT_PATTERN.md    # Full checkpoint methodology (BBB — detailed)
