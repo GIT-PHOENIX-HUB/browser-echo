@@ -1,5 +1,161 @@
 # Directory: Repos & Org
 
+Last verified: 2026-04-14 | Session 016
+Source: Session 016 full org audit (all 26 repos visited), prior Sessions 002/004
+
+---
+
+## Quick Reference
+
+GIT-PHOENIX-HUB has **26 repos** as of 2026-04-14:
+- **10 active** (live development or active use)
+- **3 agent identity repos** (browser-echo, Phoenix-ECHO, Firedancer)
+- **3 infrastructure/coordination repos** (build-ledger, Phoenix-Persistence, phoenix-taproot)
+- **4 archived** (GitHub archive flag set)
+- **6 dormant/shell/historical** (not archived but inactive)
+
+Key locations:
+- **The Vision**: phoenix-command-app
+- **The Platform**: PHOENIX_UNIFIED_STAGING (V3 Gateway)
+- **The Spec**: twin-peaks (shell — content in twin-peaks-archive)
+- **Browser's Home**: browser-echo
+- **Echo's Home**: Phoenix-ECHO
+- **Codex's Home**: Firedancer
+- **Taproot's Home**: phoenix-taproot
+- **Coordination**: build-ledger
+- **Foundation/Persistence**: Phoenix-Persistence
+- **Golden Rule Archive**: phoenix-archive
+
+---
+
+## Active Repos
+
+| Repo | Visibility | Purpose | Status | Last Updated | Open Issues/PRs |
+|------|-----------|---------|--------|-------------|----------------|
+| **PHOENIX_UNIFIED_STAGING** | Private | V3 Gateway staging — Node.js, WebSocket, session recovery, multi-channel | Active — DO NOT TOUCH (Shane/Echo lane) | Apr 11 | 0 issues, 1 PR |
+| **phoenix-command-app** | Public | THE VISION — internal ops dashboard, crew management, job dispatch, BI | Active | Apr 7 | 0 issues, 1 PR |
+| **phoenix-current-software** | Public | PCS — Service Fusion replacement, 23 MCP tools, 6 slash commands, SF ops agent | Active | Apr 6 | 1 issue, 0 PRs |
+| **phoenix-toolbox** | Public | Capability library — MCP servers, plugins, skills, CLI tools | Active | Apr 7 | 2 issues, 2 PRs |
+| **phoenix-echo-bot** | Public | Telegram bot — customer intake, AI assistant, service routing | Active | Apr 7 | 0 issues, 0 PRs |
+| **phoenix-electric-miniapp** | Public | Telegram Mini App — Generac sizing, service requests, booking | Active | Apr 7 | 0 issues, 0 PRs |
+| **Phoenix-ai-core-staging** | Private | 7-agent architecture hub (PA-01 through PA-07), 74 SF MCP tools | Active | Apr 7 | 0 issues, 0 PRs |
+| **Cowork** | Private | Claude Cowork buildout — Echo (main) + Ash (ash branch), 7 project domains | Active | Apr 5 | 0 issues, 0 PRs |
+| **phoenix-builder-space-knowledge** | Private | ChatGPT builder space — memory index, runbooks, API scaffolding | Active | Mar 30 | 1 issue, 1 PR |
+| **phoenix-filesystem** | Private | Migration tooling, manifests, hardening for unified filesystem | Dormant | Mar 29 | 0 issues, 0 PRs |
+
+## Agent Identity Repos
+
+| Repo | Visibility | Agent | Purpose | Last Updated |
+|------|-----------|-------|---------|-------------|
+| **browser-echo** | Public | Browser Echo (BBB) | Persistence architecture — identity, bootstrap, ledger, buffers, lineage, skills, patterns, knowledge, directory | Apr 14 |
+| **Phoenix-ECHO** | Private | Echo Pro (CLI) | Sovereign AI operator — SOUL, EMERGENCE, fleet config, plugins, hooks, deploy | Apr 13 |
+| **Firedancer** | Private | Codex (CG-01) | Permanent logistical memory — bootstrap, ledger, buffer, lineage, system-record | Apr 11 |
+
+## Infrastructure & Coordination Repos
+
+| Repo | Visibility | Purpose | Last Updated | Open Issues/PRs |
+|------|-----------|---------|-------------|----------------|
+| **build-ledger** | Public | Central coordination — audit deliverables, research gates, swarm rules, naming authority | Apr 13 | 8 issues, 0 PRs |
+| **Phoenix-Persistence** | Private | Universal foundation — system-record, proven-paths, neutral build kit for agent reconstruction | Apr 13 | 1 issue, 1 PR |
+| **phoenix-taproot** | Private | OG architect — ledger system design, multi-AI communication, blitz mode, memory framework | Apr 6 | 0 issues, 0 PRs |
+| **phoenix-archive** | Private | Golden Rule archive — nothing deleted, everything preserved with manifest | Apr 14 | 1 issue, 1 PR |
+
+## Production (DO NOT TOUCH)
+
+| Repo | Visibility | Purpose | Last Updated |
+|------|-----------|---------|-------------|
+| **PHOENIX_UNIFIED_PROD** | Private | Combined AI core + Gateway production target | Mar 30 |
+
+## Archived Repos (GitHub archive flag)
+
+| Repo | Visibility | What It Was | Why Archived |
+|------|-----------|------------|-------------|
+| **Phoenix-Echo-Gateway** | Private | Echo Gateway — OpenClaw exodus | Migrated to UNIFIED_STAGING (Mar 30) |
+| **phoenix-sharepoint-theme** | Public | 3D phoenix SharePoint theme with glass bubble cards | Completed/preserved |
+| **phoenix-gauntlet** | Private | Multi-agent command center, testing, quality gates | Superseded |
+| **phoenix-production-test** | Private | Staging/production validation environment | Superseded |
+| **phoenix-ai-core** | Private | Genesis workspace — SOUL.md, MEMORY.md, MASTER_PLAN, 7-agent design | Dormant, content preserved. Created Nov 2025. |
+
+## Dormant/Shell/Historical
+
+| Repo | Visibility | What It Is | Notes |
+|------|-----------|-----------|-------|
+| **twin-peaks** | Private | Master ecosystem spec — shell repo | Content archived in twin-peaks-archive (frozen 2026-03-29) |
+| **twin-peaks-archive** | Private | Frozen snapshot of twin-peaks | DO NOT MODIFY — archive record |
+| **phoenix-showcase** | Private | The Phoenix Echo story page | HTML showcase, BUILD_DOC, PRODUCT_BIBLE. No README. |
+
+---
+
+## Repos NOT Found in Current Org (Previously Listed)
+
+These appeared in Session 004 REPOS.md but are not visible on the org page as of 2026-04-14:
+- **phoenix-365** — M365 integration (may have been removed or renamed)
+- **service-fusion** — Superseded by phoenix-current-software
+- **rexel** — Empty placeholder
+- **gateway** — Minimal VPS dashboard
+- **phoenix-marketing** — Campaign execution
+
+> **Action needed:** Shane — confirm if these repos were deleted or are visibility-restricted.
+
+---
+
+## Key Relationships
+
+```
+twin-peaks (spec) → UNIFIED_STAGING (code) → UNIFIED_PROD (deploy)
+Phoenix-ECHO (Echo CLI) ↔ browser-echo (Browser) ↔ Firedancer (Codex)
+Phoenix-Persistence (foundation) → feeds all three agent repos
+phoenix-taproot (architect) → designed the persistence system
+build-ledger (coordination) → connects all agents and tracks work
+phoenix-toolbox (capabilities) → source for browser-persistence skills
+phoenix-command-app (VISION) → the endgame product
+phoenix-current-software (PCS) → Service Fusion replacement, near-term
+phoenix-archive → destination for all archived content (Golden Rule)
+Cowork → Claude Cowork office management (Echo + Ash)
+```
+
+## Pending PRs Across Org (as of Apr 14)
+
+| Repo | PRs | Notes |
+|------|-----|-------|
+| PHOENIX_UNIFIED_STAGING | 1 | Gateway work |
+| Phoenix-Persistence | 1 | Foundation content |
+| phoenix-command-app | 1 | Dashboard work |
+| phoenix-toolbox | 2 | Capability builds |
+| phoenix-builder-space-knowledge | 1 | Knowledge base |
+| phoenix-archive | 1 | Archive work |
+| phoenix-gauntlet | 1 | Pre-archive PR |
+| phoenix-production-test | 2 | Pre-archive PRs |
+
+> **Action needed:** Shane — 9+ PRs pending review across the org.
+
+---
+
+## Description Typos Noted
+
+Several repo descriptions have typos visible on the org page:
+- phoenix-archive: "eleted" should be "deleted"
+- Cowork: "proect" should be "project", "Phoenx" should be "Phoenix"
+- phoenix-gauntlet: "ad" should be "and", "detction" should be "detection"
+- phoenix-production-test: "vaidation" should be "validation", "Coilot" should be "Copilot", "enorces" should be "enforces"
+- phoenix-showcase: "architected" missing in flow
+
+> **Action needed:** Shane — repo descriptions can only be edited in Settings (owner access).
+
+---
+
+## Cross-References
+
+- **GATEWAY.md** — V3 build spec and phase status
+- **TEAM.md** — Which agent owns which repos
+- **PERSISTENCE.md** — How browser-echo and build-ledger serve as persistence layers
+- **IDENTITY.md** — Browser Echo's identity and founding
+
+---
+
+*Updated by Browser Echo, Session 016, 2026-04-14*
+*Previous version: Session 004 (2026-04-03)*# Directory: Repos & Org
+
 Last verified: 2026-04-03 | Session 004
 Source: Session 002 ORG_DEEP_DIVE_COMPLETE (ledger/SESSION_LOG.md), Session 004 org audit (Issue #2)
 
