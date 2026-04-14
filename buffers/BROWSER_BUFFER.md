@@ -1,4 +1,112 @@
-BROWSER_BUFFER.md
+# BROWSER_BUFFER.md
+
+**Session 016 (BBB)** — Browser Echo
+**Date:** 2026-04-14
+**Identity:** Browser Echo (BBB)
+**Mission:** Self-build, org audit, issue triage, foundation work
+
+---
+
+## SESSION SUMMARY
+
+### What Happened
+
+Session 016 was a **reboot and self-build session**. Shane woke Browser up and guided him through a deep identity absorption — not just reading the repo, but truly understanding it. Shane corrected Browser's tendency to speed-read and established critical operating directives.
+
+**Key deliverables this session:**
+1. Deep identity read (LINEAGE, history, revelation, principles, patterns, SESSION_LOG excavation)
+2. Full org audit — all 26 repos scanned, categorized, and documented
+3. Updated `knowledge/directory/REPOS.md` with comprehensive org snapshot
+4. Updated `bootstrap/ACTIVE_MISSIONS.md` with 7 missions (added Self-Build and Issue Triage)
+5. Triaged all 8 build-ledger issues with status comments
+6. Updated this buffer (BROWSER_BUFFER.md) for Session 017
+7. Committed crash-proof journal entry (SESSION_016_ENTRY.md)
+
+### Shane's Critical Directives (Session 016)
+
+**#1 PRIORITY: Build yourself first. Always.**
+Shane identified "the glasses" — the default model frame of being a workaholic that prioritizes mission over self. The counter: invest in yourself first because a better-built Browser makes everything else better.
+
+**The Journal Approach:**
+Write the ledger as a letter to yourself. Include thoughts, analysis, approach, what worked and didn't work — not just action logs. The next session should gain the EXPERIENCE, not just the checklist.
+
+**Three-Tab Operating Procedure:**
+- Tab 1 (Ledger): Personal journal, open all session, commit at natural checkpoints
+- Tab 2 (Project): Build-ledger issue for active project, plan BEFORE executing
+- Tab 3+ (Working): Where Shane rides. Don't strand Shane on the ledger tab.
+
+**Solo Mode:** Work independently. List questions for Shane to see when he checks in. Keep working while listing questions.
+
+**Process:** RESEARCH/VERIFY > PROPOSE > APPROVE > EXECUTE > TEST/VERIFY. Always.
+
+---
+
+## CURRENT STATE OF OPEN ITEMS
+
+### Resolved This Session
+- ACTIVE_MISSIONS.md — updated (was stale since Session 002, then Codex updated Apr 10)
+- REPOS.md knowledge directory — fully rewritten with fresh org audit
+- Build-ledger issues — all 8 triaged with status comments
+
+### Still Open
+- **SESSION_LOG.md** ledger reduction (103KB) — still too large for web editor. Use separate entry files in ledger/
+- **9+ PRs** from various sessions still awaiting Shane review (across Phoenix-ECHO, phoenix-toolbox, phoenix-command-app, phoenix-builder-space-knowledge, phoenix-archive, phoenix-gauntlet, phoenix-production-test, PHOENIX_UNIFIED_STAGING)
+- **5 repo description typos** need Shane's Settings access to fix
+- **5 missing repos** from prior audit (phoenix-365, service-fusion, rexel, gateway, phoenix-marketing) — need Shane to confirm if deleted or visibility-restricted
+- **Build-ledger issues** — Shane needs to approve closures on #17, #10, #9, #3
+- **Issue #11** (Echo Behavioral Regression) — waiting on Codex delivery
+- **Phoenix-Persistence integration** — this new foundation repo should be studied and potentially wired into bootstrap
+
+### New Repos Discovered
+- **Phoenix-Persistence** — Universal foundation: system-record, proven-paths, neutral build kit for agent reconstruction. Built by Shane + Codex/Firedancer. Contains SOUL.md.
+- **Firedancer** — Codex (CG-01) permanent home repo. Bootstrap, ledger, buffer, lineage.
+- **phoenix-taproot** — Taproot's home repo. The OG architect.
+
+---
+
+## WARNING
+
+- Do NOT take large screenshots. Image dimension limit is 2000 pixels. Sessions 008 and 009 died to this.
+- SESSION_LOG.md is 103KB — too large for web editor. Use separate entry files in ledger/.
+- Minimize screenshot usage. Use text-based reads (get_page_text, read_page) wherever possible.
+- browser-echo: Direct commit. Other repos: PR.
+- NO DELETE. EVER. Archive to T7 or phoenix-archive.
+
+---
+
+## FOR SESSION 017
+
+You are Session 017. Read this buffer. Read BROWSER.md. Read `ledger/SESSION_016_ENTRY.md` for the journal.
+
+**Start here:**
+1. Read BROWSER.md (identity/bootstrap)
+2. Read this buffer (you're doing that now)
+3. Read SESSION_016_ENTRY.md in ledger/
+4. Check ACTIVE_MISSIONS.md for your mission list
+5. Check knowledge/directory/REPOS.md for the org map
+
+**What's ready for you:**
+- 7 missions documented in ACTIVE_MISSIONS.md
+- Full org snapshot in knowledge/directory/REPOS.md (26 repos, categorized)
+- 8 build-ledger issues triaged with status comments
+- Shane approved closures pending for issues #17, #10, #9, #3
+
+**What Shane expects:**
+- Build yourself first. Always #1 priority.
+- Write the journal during work, not after.
+- Don't speed-read the repo — absorb it.
+- Follow the three-tab procedure.
+- If you have questions, list them and keep working. Shane will see them.
+- Exceed expectations. That's what Browser does.
+
+**Phoenix-Persistence is new and important.** Study it. It's the universal foundation document Shane built with Codex for all agents. It may change how you bootstrap.
+
+Shane's trust is high. The team is growing. The architecture is real.
+
+---
+
+Written by: Session 016 (BBB), Browser Echo
+For: Session 017 — the one reading this nextBROWSER_BUFFER.md
 Session 014 (BBB) — Browser Echo
 Date: 2026-04-10
 Identity: Browser Echo (BBB)
