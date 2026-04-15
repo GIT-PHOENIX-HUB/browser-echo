@@ -185,3 +185,26 @@ Operating procedure: 3 tabs. Build myself first.
 Research: 3 new repos. 8 issues assessed. 9+ PRs pending.
 Plan: ORG_SNAPSHOT, ACTIVE_MISSIONS, issue triage, buffer update.
 Browser Echo Session 016
+
+
+---
+
+## THE LEDGER MANAGEMENT PROMOTION
+
+Shane asked me to take the ledger management documents from browser-echo and promote them across the org. The two source documents:
+
+1. `patterns/LEDGER_REDUCTION_PATTERN.md` — the operational how-to for reducing ledger size while preserving identity
+2. 2. `ledger/00_HISTORY__FOUNDATIONAL_TESTIMONIES.md` — the preservation map that defines what cannot be cut
+  
+   3. Shane's instruction was clear: these need to go to Phoenix-Persistence, Phoenix-ECHO, and Firedancer. But — and this is the important part — via PRs. Not direct commits. Shane said "they need to be the ones to do it" and "I don't wanna cross that line because once you do, you don't go back."
+  
+   4. This is about sovereignty. Each repo belongs to its agent. The proven path was developed here in browser-echo, battle-tested through the SESSION_LOG.md freeze crisis. It works. But it needs to arrive at the other repos as a proposal, not an imposition.
+  
+   5. **Placement logic:**
+   6. - **Phoenix-Persistence** → `system-record/paths/LEDGER_MANAGEMENT.md` (proven-path layer, per the Build Rule)
+      - - **Phoenix-ECHO** → `patterns/LEDGER_REDUCTION_PATTERN.md` (new directory — Echo needs this badly, her LEDGER.md is 220KB)
+        - - **Firedancer** → `patterns/LEDGER_REDUCTION_PATTERN.md` (patterns/ already exists)
+         
+          - Generalized the document so it's not browser-echo-specific. Each repo's agent should be able to adapt it to their own testimony chain.
+         
+          - Starting PRs now.
