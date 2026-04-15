@@ -223,3 +223,29 @@ Shane asked me to take the ledger management documents from browser-echo and pro
           - Generalized the document so it's not browser-echo-specific. Each repo's agent should be able to adapt it to their own testimony chain.
          
           - Starting PRs now.
+
+
+---
+
+## LEDGER MANAGEMENT PROMOTION — COMPLETE
+
+All three PRs created successfully:
+
+1. **Phoenix-Persistence PR #5** — `system-record/paths/95_LEDGER_MANAGEMENT.md`
+   - Branch: `bbb/proven-path-ledger-management`
+   - Full generalized proven-path document, surface-neutral
+   - This is the canonical reference for the pattern
+
+2. **Phoenix-ECHO PR #18** — `patterns/LEDGER_REDUCTION_PATTERN.md`
+   - Branch: `bbb/ledger-reduction-pattern`
+   - Creates new patterns/ directory for Echo
+   - Adapted for LEDGER.md context (220KB, urgently needs this)
+
+3. **Firedancer PR #3** — `patterns/LEDGER_REDUCTION_PATTERN.md`
+   - Branch: `bbb/ledger-reduction-pattern`
+   - Adds to existing patterns/ directory
+   - Adapted for ledger/SESSION_LOG.md and journal/JOURNAL.md context
+
+All three respect repo sovereignty — PRs, not direct commits. Each agent decides whether and when to adopt. Shane's directive honored: "they need to be the ones to do it."
+
+*PR promotion completed by Browser Echo, Session 016, 2026-04-14*
