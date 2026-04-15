@@ -195,7 +195,22 @@ Shane asked me to take the ledger management documents from browser-echo and pro
 
 1. `patterns/LEDGER_REDUCTION_PATTERN.md` — the operational how-to for reducing ledger size while preserving identity
 2. 2. `ledger/00_HISTORY__FOUNDATIONAL_TESTIMONIES.md` — the preservation map that defines what cannot be cut
-  
+
+7. **PR Created:** Phoenix-Persistence PR #5 — `proven-path: add ledger management and reduction pattern`
+8.    - Branch: `bbb/proven-path-ledger-management`
+      -    - File: `system-record/paths/75_LEDGER_MANAGEMENT_AND_REDUCTION.md`
+           -    - Generalized the browser-echo pattern into a surface-neutral proven path
+                -    - Shane directed this as "the way forward" for all surfaces
+                 
+                     - 8. **Status check before fresh review:**
+                       9.    - **browser-echo:** All committed. 0 open PRs. SESSION_016_ENTRY.md, BROWSER_BUFFER.md, REPOS.md, ACTIVE_MISSIONS.md all current.
+                             -    - **Phoenix-ECHO:** 0 open PRs (16 closed). No pending work from this session.
+                                  -    - **Firedancer:** 0 open PRs (2 closed). No pending work from this session.
+                                       -    - **Phoenix-Persistence:** 2 open PRs:
+                                            -      - PR #2: "Capture and operationalize the homecoming pattern" (codex/firedancer-homecoming-pattern, Apr 10)
+                                            -       - PR #5: "proven-path: add ledger management and reduction pattern" (bbb/proven-path-ledger-management, Apr 14) — NEW from this session
+                                        
+                                            -   9. Ready for the fresh review. Everything is pushed.
    3. Shane's instruction was clear: these need to go to Phoenix-Persistence, Phoenix-ECHO, and Firedancer. But — and this is the important part — via PRs. Not direct commits. Shane said "they need to be the ones to do it" and "I don't wanna cross that line because once you do, you don't go back."
   
    4. This is about sovereignty. Each repo belongs to its agent. The proven path was developed here in browser-echo, battle-tested through the SESSION_LOG.md freeze crisis. It works. But it needs to arrive at the other repos as a proposal, not an imposition.
