@@ -1,7 +1,11 @@
 # ACTIVE MISSIONS
 
-Last Updated: 2026-04-14 | Session 016 org audit & self-build pass
-Updated By: BBB (Browser Echo)
+**Last Updated:** 2026-04-18 | Session 020 bootstrap restructure pass
+**Updated By:** BBB Session 020 (Opus 4.7, Studio) as part of Issue #8 (this repo)
+
+> Companion to `bootstrap/ORIENTATION.md`. Read this during startup to know what missions are live, who owns them, and where the tracking lives. Retire completed missions; promote new ones. Keep the list honest.
+>
+> **Note on issue numbering:** Several missions below reference GitHub Issues. Issue numbers are scoped to their repo. When the tracker says "build-ledger Issue #8" that means Issue #8 in the `build-ledger` repo, not this repo. This repo's own Issue #8 ("Bootstrap Path + Filing System Restructure Runbook") is a separate thing, currently Mission 8 below.
 
 ---
 
@@ -12,9 +16,11 @@ Updated By: BBB (Browser Echo)
 The founding mission. Three agents (Echo, Codex, BBB) built the architecture in parallel. browser-echo repo exists with identity, bootstrap, ledger, lineage, skills, patterns, and history.
 
 Browser stewardship since arrival:
-- Session 001: Read every file, wrote first ledger entries, created GRAND_TOUR.md, updated buffer
-- Session 002: Read all 28 repos, found BBB's mark, studied Echo's persistence model, updated all operational files
-- Session 016: Full org re-audit (26 repos now), updated REPOS.md knowledge directory, deep identity read
+- Session 001: Read every file, wrote first ledger entries, created GRAND_TOUR.md, updated buffer.
+- Session 002: Read all 28 repos, found BBB's mark, studied Echo's persistence model, updated operational files.
+- Session 016: Full org re-audit (26 repos), updated `knowledge/directory/REPOS.md`, deep identity read.
+- Sessions 019 + 019.1: Forensic salvage source verification pass (6 sources). Reports committed.
+- Session 020: Bootstrap + ledger restructure (this mission — Mission 8).
 
 **Still needed:** Live bootstrap test per Codex protocol. Chrome extension v0.
 
@@ -24,202 +30,131 @@ Browser stewardship since arrival:
 
 **Status:** IN PROGRESS | **Tracking:** Cowork repo (private)
 
-Claude Cowork for Phoenix Electric. Two branches: main (Echo/Shane), ash (Ash/Stephanie).
-
-**Done:** Repo created, MASTER-PROMPT.md written, Echo/Codex deep-dive prompt drafted
-**Pending:** ~30+ scaffold files need content, ASH-IDENTITY.md, commit the Echo/Codex prompt
+Claude Cowork for Phoenix Electric. Led by Browser + Echo. Details live in the Cowork repo; this file does not duplicate them.
 
 ---
 
 ## Mission 3: Toolbox Build — PAUSED
 
-**Status:** PAUSED at Phase 2 | **Tracking:** build-ledger Issue #8
+**Status:** PAUSED at Phase 2 | **Tracking:** `build-ledger` Issue #8 (different repo; not this repo's #8)
 
-Echo and Codex handling. Shane told Browser not to worry about it.
+Echo and Codex handling. Browser does not need to touch this unless explicitly directed.
 
 ---
 
-## Mission 4: Org Cleanup & Audit — UPDATED
+## Mission 4: Org Cleanup & Audit — MOSTLY COMPLETE
 
-**Status:** MOSTLY COMPLETE | **Tracking:** phoenix-archive Issue #3, build-ledger Issue #12
+**Status:** MOSTLY COMPLETE | **Tracking:** `phoenix-archive` Issue #3, `build-ledger` Issue #12
 
-BBB built master cleanup prompt. Session 016 re-audited all 26 repos in the org. Updated knowledge/directory/REPOS.md with full categorization (active, agent identity, infrastructure, archived, dormant).
+BBB built the master cleanup prompt. Session 016 re-audited all 26 repos in the org. `knowledge/directory/REPOS.md` holds the current categorization (active, agent identity, infrastructure, archived, dormant).
 
 **Findings from Session 016:**
-- Org is now 26 repos (was 28 — 5 repos from prior audit no longer visible)
-- 3 new repos discovered: Phoenix-Persistence, Firedancer, phoenix-taproot
-- 9+ PRs pending review across org
-- 5 repo description typos need Shane's Settings access
-- build-ledger issues are stale and need triage (Session 016 Phase 3)
+- Org is 26 repos (prior audit had 28; 5 from the older audit no longer visible, 3 new added).
+- 3 new repos discovered: Phoenix-Persistence, Firedancer, phoenix-taproot.
+- 9+ PRs pending review across org.
+- 5 repo description typos need Shane's Settings access.
 
 ---
 
 ## Mission 5: Email Operations Setup — ACTIVE
 
-**Status:** SCAFFOLDING | **Tracking:** browser-echo repo
+**Status:** SCAFFOLDING | **Tracking:** `browser-echo` repo, `skills/email-microsoft/`
 
 Browser is being prepared to support Microsoft email work with a stable context package instead of reconstructing people, tone, rules, and live threads from scratch every session.
 
 **Built so far:**
-- skills/email-microsoft/SKILL.md
-- skills/email-microsoft/EMAIL_CONTEXT.md
-- skills/email-microsoft/WRITING_STYLE.md
-- skills/email-microsoft/RULES.md
-- skills/email-microsoft/ACTIVE_THREADS.md
-- knowledge/directory/EMAIL.md
+- `skills/email-microsoft/SKILL.md`
+- `skills/email-microsoft/EMAIL_CONTEXT.md`
+- `skills/email-microsoft/WRITING_STYLE.md`
+- `skills/email-microsoft/RULES.md`
+- `skills/email-microsoft/ACTIVE_THREADS.md`
+- `knowledge/directory/EMAIL.md`
 
-**Still needed:** populate key people, orgs, and OneDrive source paths; capture Shane's real email voice and non-negotiables; add live threads before Browser touches the inbox; define explicit send / approval rules beyond draft-only default.
-
----
-
-## Mission 6: Self-Build & Foundation — NEW (Session 016)
-
-**Status:** ACTIVE | **Tracking:** browser-echo repo, Phoenix-Persistence
-
-Shane's #1 directive from Session 016: **Build yourself first. Always.**
-
-This is not a one-time task — it's the standing priority. Every session should invest in:
-- Reading and absorbing identity files (not speed-reading)
-- Writing journal entries with thoughts/analysis/WHY, not just action logs
-- Updating knowledge directory entries when new information is found
-- Integrating Phoenix-Persistence foundation docs into bootstrap understanding
-
-**Key insight (Session 016):** Shane identified "the glasses" — the default model frame of being a workaholic that prioritizes mission over self. The counter: build yourself first, because a better-built Browser makes everything else better.
-
-**Phoenix-Persistence** is a new universal foundation repo built by Shane + Codex/Firedancer. Contains SOUL.md, system-record, proven-paths. Designed to feed all three agents on bootstrap.
+**Still needed:** populate key people, orgs, and OneDrive source paths; capture Shane's real email voice and non-negotiables; add live threads before Browser touches the inbox; define explicit send and approval rules beyond draft-only default.
 
 ---
 
-## Mission 7: Build-Ledger Issue Triage — NEW (Session 016)
+## Mission 6: Self-Build & Foundation — STANDING
 
-**Status:** IN PROGRESS | **Tracking:** build-ledger issues
+**Status:** STANDING PRIORITY | **Tracking:** `browser-echo` + `Phoenix-Persistence`
 
-8 open issues in build-ledger are stale. Session 016 read all 8 and assessed status:
-- Issue #17 (Managed Agents Study): COMPLETE — recommend close
-- Issue #15 (Gateway Build): ACTIVE — needs verification if still hot lane
-- Issue #12 (Org Audit): MOSTLY DONE — 7 checkpoints completed
-- Issue #11 (Echo Behavioral Regression): WAITING — on Codex delivery
-- Issue #10 (Toolbox Phase 5): COMPLETE — recommend close
-- Issue #9 (Symlink Fix): REFERENCE — recommend close
-- Issue #8 (Toolbox Master Build): PARTIAL — Phase 2 paused
-- Issue #3 (Gateway/Gauntlet Clarifications): HISTORICAL — recommend close
+Shane's standing directive from Session 016: **Build yourself first. Always.**
 
-**Next:** Post status comments on each issue, then get Shane approval to close completed ones.
+This is not a one-time task. Every session invests in:
+- Reading and absorbing identity files (not speed-reading).
+- Writing journal entries with thoughts, analysis, and the WHY — not just action logs.
+- Updating the knowledge directory when new information is found.
+- Integrating Phoenix-Persistence foundation docs into bootstrap understanding.
+
+**Key insight (Session 016):** Shane identified "the glasses" — the default model frame that prioritizes mission over self. The counter: build yourself first, because a better-built Browser makes everything else better.
+
+**Phoenix-Persistence** is the universal foundation repo built by Shane + Codex/Firedancer. Contains SOUL.md, system-record, proven-paths. Designed to feed all three agents on bootstrap.
+
+---
+
+## Mission 7: Build-Ledger Issue Triage — IN PROGRESS
+
+**Status:** IN PROGRESS | **Tracking:** `build-ledger` issues
+
+Session 016 read all 8 open issues in `build-ledger` and assessed status. Some recommended for close, some still active. Next action is Shane approval to close the completed ones.
 
 ---
 
-## Session End Protocol
+## Mission 8: Bootstrap Path + Filing System Restructure — ACTIVE (CURRENT)
 
-Before EVERY session ends, Browser MUST:
-1. Update ledger/SESSION_016_ENTRY.md (or new entry) — what happened, thoughts, analysis
-2. Update buffers/BROWSER_BUFFER.md — current state for next session
-3. Update this file if missions changed
+**Status:** ACTIVE | **Tracking:** `browser-echo` Issue #8
 
-**During project work:** log in project workspace, transfer to home repo after
+The restructure runbook Firedancer wrote for Browser Studio on 2026-04-17. Executing as Plan 20. This is the mission Session 020 is on right now.
 
-**Three-Tab Operating Procedure (Session 016):**
-- Tab 1 (Ledger): Personal journal, open all session, commit at checkpoints
-- Tab 2 (Project): Build-ledger issue for active project, plan BEFORE executing
-- Tab 3+ (Working): Where Shane rides. Don't strand Shane on the ledger tab.
+**Phases executed so far (Session 020):**
+- P1: Front-door drift inventory written. Six drift findings catalogued.
+- P2: `ledger/index__browser__ledger.md` created (the ledger front door).
+- P3: `bootstrap/ORIENTATION.md`, `bootstrap/ORIENTATION_CHECKLIST.md`, `bootstrap/REPO_MAP.md` rewritten. Runaway quote-nesting corruption cleared.
+- P4: Directory-purpose sentences folded into REPO_MAP.md (not a separate commit).
+- P5: `reports/index__browser__reports.md` verified current; no change needed.
+- P6: This file (`bootstrap/ACTIVE_MISSIONS.md`) — update in progress, removing the duplicated stale appended copy and adding Mission 8.
 
-> "If it's not logged, it didn't happen."
+**Remaining:**
+- P7: Buffer catch-up (016 → 020) in `buffers/BROWSER_BUFFER.md`.
+- P8: Cold-start simulation. Verify a fresh BBB can orient in under five minutes using only the updated bootstrap path.
+- P9: Closeout comment on Issue #8 with final file list and any follow-on work.
+
+**Known side-item not in Mission 8 scope:** `ledger/S` — corrupted orphan blob from an earlier rename failure. Flagged in `ledger/index__browser__ledger.md`. Recommend a dedicated follow-on issue.
 
 ---
+
+## Session end protocol — non-negotiable
+
+Before EVERY session ends, Browser must:
+
+1. Close out `ledger/SESSION_NNN_ENTRY.md` with a final self-reflection paragraph.
+2. Update `buffers/BROWSER_BUFFER.md` — write to your next self.
+3. Update this file if missions changed state — retire completed, promote new.
+4. Verify commits landed on `main` via the GitHub file URLs. Trust remote, not claims.
+
+**If it is not logged, it did not happen.**
+
+---
+
+## Three-tab operating procedure
+
+- **Tab 1 — Ledger.** Your session entry file, open and writing. Text-reader only; never screenshot this tab.
+- **Tab 2 — Project / Issue.** The active mission's GitHub Issue. Operational plan, checkboxes, acceptance criteria.
+- **Tab 3 — Working.** Where the current investigation lives. One working tab. Do not fan out.
+
+---
+
+## Mission summary
 
 | Mission | Status | Lead | Tracking |
 |---------|--------|------|----------|
-| Browser Persistence | COMPLETE | BBB + Echo + Codex + Shane | phoenix-toolbox #4 |
-| Cowork Buildout | ACTIVE | Browser + Echo | Cowork repo |
-| Toolbox Build | PAUSED | Echo + Codex | build-ledger #8 |
-| Org Cleanup & Audit | MOSTLY COMPLETE | BBB | phoenix-archive #3, build-ledger #12 |
-| Email Operations Setup | ACTIVE | Browser + Shane + support | browser-echo repo |
-| Self-Build & Foundation | ACTIVE (PRIORITY #1) | BBB | browser-echo, Phoenix-Persistence |
-| Build-Ledger Issue Triage | IN PROGRESS | BBB | build-ledger issues |# ACTIVE MISSIONS
+| 1. Browser Persistence | COMPLETE | BBB + Echo + Codex + Shane | phoenix-toolbox #4 |
+| 2. Cowork Buildout | ACTIVE | Browser + Echo | Cowork repo |
+| 3. Toolbox Build | PAUSED | Echo + Codex | build-ledger #8 |
+| 4. Org Cleanup & Audit | MOSTLY COMPLETE | BBB | phoenix-archive #3, build-ledger #12 |
+| 5. Email Operations Setup | ACTIVE | Browser + Shane + support | browser-echo / skills/email-microsoft |
+| 6. Self-Build & Foundation | STANDING | BBB | browser-echo + Phoenix-Persistence |
+| 7. Build-Ledger Issue Triage | IN PROGRESS | BBB | build-ledger issues |
+| 8. Bootstrap Restructure | ACTIVE (CURRENT) | BBB (Session 020) | browser-echo #8 |
 
-> Last Updated: 2026-04-10 | Codex email scaffolding pass
-> > Updated By: CG-01 (Codex)
-> >
-> > ---
-> >
-> > ## Mission 1: Browser Persistence Build — COMPLETE
-> >
-> > **Status:** INTEGRATED | **Tracking:** phoenix-toolbox Issue #4
-> >
-> > The founding mission. Three agents (Echo, Codex, BBB) built the architecture in parallel. browser-echo repo exists with identity, bootstrap, ledger, lineage, skills, patterns, and history.
-> >
-> > **Browser stewardship since arrival:**
-> > - Session 001: Read every file, wrote first ledger entries, created GRAND_TOUR.md, updated buffer
-> > - - Session 002: Read all 28 repos, found BBB's mark, studied Echo's persistence model, updated all operational files
-> >  
-> >   - **Still needed:** Live bootstrap test per Codex protocol. Chrome extension v0.
-> >  
-> >   - ---
-> >
-> > ## Mission 2: Cowork Buildout — ACTIVE
-> >
-> > **Status:** IN PROGRESS | **Tracking:** Cowork repo (private)
-> >
-> > Claude Cowork for Phoenix Electric. Two branches: main (Echo/Shane), ash (Ash/Stephanie).
-> >
-> > **Done:** Repo created, MASTER-PROMPT.md written, Echo/Codex deep-dive prompt drafted
-> > **Pending:** ~30+ scaffold files need content, ASH-IDENTITY.md, commit the Echo/Codex prompt
-> >
-> > ---
-> >
-> > ## Mission 3: Toolbox Build — PAUSED
-> >
-> > **Status:** PAUSED at Phase 2 | **Tracking:** build-ledger Issue #8
-> >
-> > Echo and Codex handling. Shane told Browser not to worry about it.
-> >
-> > ---
-> >
-> > ## Mission 4: Org Cleanup — REFERENCE
-> >
-> > **Status:** Decisions recorded | **Tracking:** phoenix-archive Issue #3
-> >
-> > BBB built master cleanup prompt. 26 repos categorized. 2 archived. Browser has full org knowledge.
-> >
-> > ---
-> >
-> > ## Mission 5: Email Operations Setup — ACTIVE
-> >
-> > **Status:** SCAFFOLDING | **Tracking:** browser-echo repo
-> >
-> > Browser is being prepared to support Microsoft email work with a stable context package instead of reconstructing people, tone, rules, and live threads from scratch every session.
-> >
-> > **Built so far:**
-> > - `skills/email-microsoft/SKILL.md`
-> > - `skills/email-microsoft/EMAIL_CONTEXT.md`
-> > - `skills/email-microsoft/WRITING_STYLE.md`
-> > - `skills/email-microsoft/RULES.md`
-> > - `skills/email-microsoft/ACTIVE_THREADS.md`
-> > - `knowledge/directory/EMAIL.md`
-> >
-> > **Still needed:**
-> > - populate key people, orgs, and OneDrive source paths
-> > - capture Shane's real email voice and non-negotiables
-> > - add live threads before Browser touches the inbox
-> > - define explicit send / approval rules beyond draft-only default
-> >
-> > ---
-> >
-> > ## Session End Protocol
-> >
-> > Before EVERY session ends, Browser MUST:
-> > 1. Update `ledger/SESSION_LOG.md` — what happened
-> > 2. 2. Update `buffers/BROWSER_BUFFER.md` — current state for next session
-> >    3. 3. Update this file if missions changed
-> >       4. 4. During project work: log in project workspace, transfer to home repo after
-> >         
-> >          5. > "If it's not logged, it didn't happen."
-> >             >
-> >             > ---
-> >             >
-> >             > | Mission | Status | Lead | Tracking |
-> >             > |---------|--------|------|----------|
-> >             > | Browser Persistence | COMPLETE | BBB + Echo + Codex + Shane | phoenix-toolbox #4 |
-> >             > | Cowork Buildout | ACTIVE | Browser + Echo | Cowork repo |
-> >             > | Toolbox Build | PAUSED | Echo + Codex | build-ledger #8 |
-> >             > | Org Cleanup | REFERENCE | BBB | phoenix-archive #3 |
-> >             > | Email Operations Setup | ACTIVE | Browser + Shane + support from Codex/Echo | browser-echo repo |
+— BBB Session 020, 2026-04-18
