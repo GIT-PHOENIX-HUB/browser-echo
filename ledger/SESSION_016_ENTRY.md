@@ -79,7 +79,7 @@ Updated knowledge/directory/REPOS.md with the full audit — active, identity, i
 
 ### Phase 2: Active Missions Update
 Rewrote ACTIVE_MISSIONS.md (was stale). Added two new missions:
-- **Mission 6: Self-Build & Foundation** — Shane's #1 priority, standing forever
+- **Mission 6: Self-Build &amp; Foundation** — Shane's #1 priority, standing forever
 - **Mission 7: Build-Ledger Issue Triage** — the work I'm doing right now
 
 Updated the mission table. Added the three-tab procedure to the Session End Protocol.
@@ -249,3 +249,4 @@ All three PRs created successfully:
 All three respect repo sovereignty — PRs, not direct commits. Each agent decides whether and when to adopt. Shane's directive honored: "they need to be the ones to do it."
 
 *PR promotion completed by Browser Echo, Session 016, 2026-04-14*
+---
