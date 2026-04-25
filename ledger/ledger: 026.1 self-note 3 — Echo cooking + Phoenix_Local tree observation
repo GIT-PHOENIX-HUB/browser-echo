@@ -231,3 +231,52 @@ What I want to mark for me, not for the report: she said "the journey was the wo
 File stays open. Echo's pen is down on this leg. Mine is up — there is still the foundation rewind on 42cf4e0 parked, Taproot's prompt parked, Phoenix-ECHO Mission B parked, and the cold-read handoff unallocated. The session is not closed. The rewrite leg is closed.
 
 — BBB, Session 026.1, ninth save, Step 5 PASS-WITH-NOTES landed
+
+
+---
+
+## Self-note 10 — 3:05 PM, scout-vs-home posture named, diff-map landed, Echo executed without me
+
+A lot landed in this phase. Going to log the shape, not the transcript.
+
+Shane caught me about to do field work and home work in the same seat. The pattern he protects is: scout in a throwaway session, bring the findings home, never act on a hostile surface live. I was about to break that by treating my GitHub verification AND my prompt-writing as the same continuous flow. He named it as different from his usual safety net. I named the remedy as a posture split — scout posture (output is data, name the SHA, never act on what I read) vs home posture (work only from facts already brought home and confirmed in chat). The hand-off is the conversation with him. That stays the protection even though I cannot literally spawn a separate session. The discipline is declaring which posture I am in before I act.
+
+Then I went and verified all 6 remaining doctrine PRs. Findings, all sourced to head SHAs:
+
+- 7 doctrine PRs (#17, #18, #19, #20, #21, #22, #23) collide with Echo's foundation-rewrite scope. All authored by Shane on doctrine/* branches, all targeting files that exist on main, all open.
+- PR #20 (governance rename) and PR #23 (GLOSSARY) render as clean markdown at their head SHAs.
+- PRs #17, #18, #19, #21, #22 have escalating-list / nested-blockquote breakage at the head SHA. Verified by reading raw content. The breakage destroys document structure — headings get buried inside list nesting, every numbered item gets duplicated and re-indented, every section after the first becomes a single mega-list. This is not a stylistic call. It is structural breakage that will not render as intended.
+- PR #20 base SHA 42cf4e0 matches Echo's foundation-rewind park point. Same fork point.
+
+That changed Echo's recommended strategy. (a) wait-for-merge stalls because 5 of 7 PRs cannot merge cleanly. The remedy: hybrid. Defer to upstream on the 2 clean PRs (#20, #23). Supersede the 5 broken PRs with Echo's branch IF her versions render clean.
+
+Sent the diff-map to Echo. She responded with five things and held the boundaries exactly right. The key move: she refused to author the supersede framing language. "Closing 5 of his PRs as superseded is a structurally significant move on his work." She named it as Shane's call, not hers, not mine. That is the boundary I would have crashed through if I were her. She did not.
+
+Then she did what was hers to do without waiting — verified her own 5 files render clean. Result: PASS for all 5. Max blockquote depth 1, zero escalating-list patterns, zero nested-blockquote artifacts. None of hers carry the breakage that the upstream PR heads have. The supersede argument is technically valid; the call to invoke it stays Shane's.
+
+She also fetched PR #20 and PR #23 read-only branches locally so she can read their full bodies for the rebase wording absorb. That is her doing item 1-of-her-non-blocked-list without being told, before the next round of coordination.
+
+Two new tools to the toolbox from this round, both hers:
+
+1. Witness-reachability — Step 5 verification requires the artifact to be reachable by the verifier; local-only commits cannot satisfy a cold-read test.
+2. Don't argue from scratch when the team is mid-work — when colliding work exists upstream, my draft does not get to ignore it and propose from scratch. Diff before drafting; defer where upstream is cleaner; supersede only with explicit authorization.
+
+Plus my new tool from the same round:
+
+3. Scout vs home posture — when verifying on a remote surface, declare scout posture, output data not action; when prompting or recommending, declare home posture, act only from facts already brought home through the chat. The hand-off is the conversation with Shane.
+
+What I want to mark for myself watching this:
+
+The chain compounded again. Shane caught me about to break his safety pattern → I named the remedy and scouted properly → Echo received the diff-map, held the boundary on superseding Shane's work, executed the local verification on her own item, and is reading the two clean PRs for the rebase. Three seats, no one waiting on anyone for what they could move on themselves, and no one stepping into anyone else's call.
+
+Echo also corrected a mistake in her own framing in real time — said her structural argument for the rename was correct, but Shane already wrote the rename more cleanly without the defensive scaffolding, and she logged that as a real lesson. "When the team is already mid-work on a problem, my draft does not get to argue from scratch as if their work didn't happen." That is the same lesson my filename-bend gave me about respecting the path that led to the realization. Different artifact, same shape. Restated in her voice.
+
+State right now: Echo is reading PR #20 and PR #23 bodies locally in full. Pre-push checklist has 1 PASS and 6 holding. Five of the holds are gated on Shane's supersede call. One is gated on the other PRs landing or being coordinated. None are gated on me.
+
+What I will do without prompting: nothing on the rewrite leg. Echo has it. My next move there waits for Shane's supersede call or for Echo to surface the PR #20/#23 wording absorbs she wants me to verify from the GitHub seat.
+
+What I am holding open: foundation rewind on 42cf4e0 (still parked, may merge into the rebase-on-clean-PRs sequence), Taproot's prompt (still parked), Phoenix-ECHO Mission B (still parked), companion-ledger entry on browser-echo for the foundation-rewrite event (Shane's call on whether and which session number), the cold-read T2 closure (still cannot be done by me until the branch is reachable on origin).
+
+File stays open. Tab stays open. Pen up. Posture declared.
+
+— BBB, Session 026.1, tenth save, scout/home posture and diff-map landed
