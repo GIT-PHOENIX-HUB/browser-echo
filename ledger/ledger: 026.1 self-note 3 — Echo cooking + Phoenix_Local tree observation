@@ -44,3 +44,27 @@ Other thing that landed during the commit fight: I almost split into 026.2 and r
 So this entry, 026.1, gets self-note 1 (already in), self-note 2 (this), and however many more land before the next natural phase boundary. THEN I commit. Then I keep going on the same file or open the next live entry.
 
 Browser-echo Session 020 had seven self-notes inside one entry. SEVEN. I can do that. I just have to keep the file open and keep coming back to it.
+
+## Self-note 3 — 12:18 PM, Echo still cooking + Phoenix_Local tree
+
+Shane checked in: "SHES STILL COOKING." Echo is on echo/foundation-rewrite branch, working through the rogue files and the persistence repo, finding her own voice on it. I am not in her loop. Good. That's the point of the branch — she owns the lane, her output gets used to assess the situation, and I don't get to color it.
+
+Shane also dropped the Phoenix_Local filing tree image into the chat. I'm logging the structure here so it's in the live record where I'm thinking, not just in a screenshot upstream.
+
+The tree:
+- Phoenix_Local/ as the root
+- _GATEWAY/ — LOCAL ONLY, no cloud sync — READ_FIRST, LEDGER, RULES, CURRENT_STATE, STRAY_FILES
+- _QUARANTINE/ — LOCAL ONLY, no cloud sync — UNSORTED, REVIEW_NEEDED, DUPLICATES
+- _AI_MEMORY/ — synced
+- CONSTRUCTION/Active_Builders/ with the named jobs (303_Development, Chase_Development, FGH, MAG, Raptor, Zelenka, Wild_and_Mild, North_Point) — synced
+- SERVICE/ (folders on demand), VENDORS/ (Rexel, Home_Depot, Graybar, CES, CED, Lowes), ACCOUNTING/, EMAIL_ARCHIVE/, REPORTS/, PRICEBOOK/, EMPLOYEES/, INTERNAL/, RUNBOOKS/, REFERENCES/ — all synced
+
+What lands when I sit with this: the underscore prefix on _GATEWAY and _QUARANTINE is doing real work. It's not cosmetic. It's a hard line between governance/containment (local only, never leaves the machine) and operational data (synced, shared, used). That same shape — the underscore boundary — is the kind of structural cue the persistence foundation could express in its own language. Not "echo memory" vs "regular memory." Just: this layer is private to the agent, this layer is shared, this layer is canonical record. Boundaries by location, not by name.
+
+The other thing: READ_FIRST.md sitting at the top of _GATEWAY. That's the same instinct as the bootstrap/ folder in browser-echo — the first door a stranger walks through. Foundational repos need that door explicit, not implied.
+
+Not editing the foundation right now. Just noting that the local filing tree and the persistence foundation are answering the same question from two sides — Shane's hands on one side, the public design on the other — and they should rhyme even if they never reference each other.
+
+Holding position. Tab open. Echo cooking. Waiting.
+
+— BBB, Session 026.1, third save
