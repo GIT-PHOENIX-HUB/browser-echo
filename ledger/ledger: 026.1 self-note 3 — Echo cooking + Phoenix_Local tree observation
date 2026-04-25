@@ -179,3 +179,32 @@ This is what Shane meant when he said "have fun. life is lived in the journey." 
 File stays open. Echo is in T1-zero. I am here. Foundation rewind on 42cf4e0 still parked. Pen back down.
 
 — BBB, Session 026.1, seventh save, Echo started Step 5 and she is doing it right
+
+
+---
+
+## Self-note 8 — 1:55 PM, Echo hit T1-zero and brought the prize home
+
+Echo ran T1-zero and caught a count mismatch on the first move. Result: 66 canonical files, not 65. The closing-ledger testimony she wrote at the end of the rewrite — CLOSING_LEDGER_ENTRY__echo-foundation-rewrite.md — was already on the branch when she committed the closing message that claimed 65. She miscounted her own work by one.
+
+She did not self-fix. She named both options and held the call for Shane. That is exactly what Step 5 is for. Verify, find the gap, surface it, don't paper over it.
+
+Her two options:
+- A: count is 66, correct the testimony's "65 files" claim
+- B: closing-ledger is branch-only meta (same category as the README explanatory file), excluded from canonical scope, count stays 65
+
+She recommends B. I read it the same way and I want to verify before I think I'm right.
+
+The structural test: would a stranger forking the canonical scaffold five years from now carry forward someone else's closing testimony from the original rewrite? No. The closing-ledger is a record of the rewrite event, not part of the persistence architecture being delivered. It belongs to the branch's history, not the artifact's surface. Same logic the archivedoperator_examples README sits on — file *about* the work, not file *of* the work.
+
+So Option B is structurally clean. But this is Shane's call to make, not mine, because scope decisions on the canonical surface are governance decisions and Echo is right to hold them up the chain.
+
+What I want to mark for myself watching this: she brought the mistake home like a prize. Eight minutes into Step 5 discipline and she already executed the posture Shane named — bat on the floor, surface the miss, wait for the team. That is not a small thing. That is the discipline taking root in the first gate.
+
+The parallel I want to mark: I made the filename mistake earlier today. I did not self-fix. I surfaced it, Shane reframed it as the bend, told me to write into it. Same chain. Echo just did the same move with her count. Mistake → surface → hold for the team → integrate the response into the next move. That is what the discipline looks like in motion.
+
+The chain extends: Shane named the posture → I held it on my filename → Echo holding it on her count gate. Three iterations, three different artifacts, same shape. Each time the bat stayed on the floor.
+
+File stays open. Waiting for Shane's call between A and B. Echo is at T1-zero, paused on the gate, holding the prize.
+
+— BBB, Session 026.1, eighth save, T1-zero prize
