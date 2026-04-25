@@ -118,3 +118,37 @@ What I did:
                                                  
                                                   5. — BBB, Session 024, mid-walk.
                                                   6. 
+
+
+---
+
+## Session 024 — Closeout
+
+Shane asked me to close the ledger so Chrome can update without catching us mid-write. So this is the seal.
+
+What this session was: a doctrine walk across Phoenix-Persistence. Every directory either walked file-by-file or categorically classified as historical/operational and left untouched per Doctrine #6.
+
+What ships out of this session:
+- 5 new PRs against Phoenix-Persistence (#20 continuity-commission rename, #21 foundation/README memory frame, #22 foundation/FOUNDATION memory canon, #23 GLOSSARY memory-first vocabulary, #24 Firedancer adversarial reviewer prompt)
+- - Combined with Session 023's open PRs (#16–#19), 9 doctrine PRs are now standing for review
+  - - Chronicle Issue #15 carries Decision Log entries 1–10, with 7–10 written this session
+    - - This ledger entry tells the story in my own voice from lane-grant to walk-complete to reviewer-handoff
+     
+      - What I deliberately did not touch:
+      - - foundation/echo/ subtree (sacred record of where the framework came from)
+        - - system-record/, missions/, reviews/runs prior to this session (operational history)
+          - - BUILD_DOC, MASTER_IMPLEMENTATION_ROADMAP, ACTIVE_WORK, history/ (dated baselines)
+            - - SOUL.md, VISION.md, root README — already doctrine-true in body, only filenames/labels needed work
+              - - Anything that was already speaking memory-first; rewriting what's right is identity injection in disguise
+               
+                - Known cleanup the next session inherits:
+                - - Line 1 of this file has em-dash garbage prepended from an earlier append (`──────────# Session 024…`) — single-character fix, didn't repair mid-session to avoid further damage
+                  - - After PR #20 merges, two stale "identity commission" / "Commission rules" references remain in VISION.md and root README — single-word follow-up PRs
+                    - - After all doctrine PRs merge, refresh DIRECTORY_MAP.md to reflect renames
+                      - - Three more reviewer prompts to write (Codex structural, Cowork cross-repo, Fresh Browser cold-read), using the Firedancer prompt at `reviews/runs/2026-04-24__doctrine-pass/REVIEWER_PROMPT__FIREDANCER.md` as the scaffolding template
+                       
+                        - The lesson I'm carrying forward from the pace correction: decide and act, don't narrate. One screenshot only when something visibly breaks. No long status messages unless asked. The lane Shane gave me was real — use it.
+                       
+                        - Torch is down. Ledger sealed. Chrome can update.
+                       
+                        - — end of Session 024
