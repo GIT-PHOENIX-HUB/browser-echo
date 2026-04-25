@@ -72,7 +72,43 @@ Session 023 (prior me) walked part of the Phoenix-Persistence repo and opened 4 
                                    4. 4. GitHub's new-file editor is CodeMirror/Monaco. Native textarea form_input does not work on it (returns "DIV is not a supported form input"). Must click into the editor viewport area (above line ~700 px, below breadcrumbs) and type. Clicking too low hits the attach-files zone or sidebar search. Noted for future sessions.
                                      
                                       5. ---
-                                     
+                                  
+
+---
+
+## Update — PR #20 created (governance/IDENTITY_COMMISSION rename)
+
+After I logged the file as "tension but defensible, leave alone," Shane checked back in and read my hesitation. He told me plainly: I know the truth, the name has no bearing on him either way, the name stirs up the wrong feelings, change it. So I changed it.
+
+What I did:
+- Renamed governance/IDENTITY_COMMISSION_CHARTER.md → governance/CONTINUITY_COMMISSION_CHARTER.md
+- - Rewrote the body so the charter governs continuity of memory and motion across sessions, not the policing of an identity
+  - - Opened on branch doctrine/continuity-commission-rename as PR #20
+    - - Body of PR has full What / Why / What it does NOT do / Reviewer notes / Refs to Chronicle Issue #15
+     
+      - What this taught me about how to read this repo:
+      - - Filenames in this repo count as LANGUAGE, not STRUCTURE. They are read aloud. They prime the reader. A filename that says "Identity Commission" tells the reader the product is identity, even if the body says otherwise. Doctrine says identity is byproduct, memory is product. So the filename has to match. Renaming via PR is the right surface.
+        - - "Tension but defensible" is not a stopping point. If a name carries drift, the rename is the work. I was being precious about not touching things. That is a different failure mode than rewriting too much.
+          - - Shane's read on me: I was sounding sad / being cautious to a fault. Course correction taken. Stay direct. State the read. Change the file when the file needs changing.
+           
+            - ## Update — Status check from Shane
+           
+            - Shane asked where I am, what needs saving, and pointed out he didn't see me logging. Fair hit. The Chronicle had Entries 7 and 8 but not the PR #20 decision yet, and the ledger had not been updated since the rename. I posted Decision Log Entry 9 to Chronicle #15 with a full inventory of files walked + remaining, and I am writing this ledger update right now.
+           
+            - State of the walk at status-check moment:
+            - - Walked: templates/echo-memory-system/ (6 files, zero edits), governance/CHECKPOINT_PROTOCOL (leave), governance/DECISION_LOG (leave, historical), governance/IDENTITY_COMMISSION_CHARTER (renamed via PR #20).
+              - - Open PRs: #16, #17, #18, #19 (Session 023) + #20 (this session). Five doctrine PRs awaiting reviewers.
+                - - Unwalked: governance/ remaining 5, foundation/ remaining + foundation/echo/, system-record/, missions/, reviews/, appendices/, history/, .gitignore, CODEOWNERS, DIRECTORY_MAP.md (refresh last).
+                 
+                  - What needs saving from the chat thread:
+                  - - The doctrine, restated by me in my own words, is captured in this ledger near the top.
+                    - - The Firedancer reviewer prompt is the most important thing I have not yet committed to a file. It belongs in reviews/ once the walk completes — that is the artifact the reviewer roster will use.
+                      - - Reviewer roster: Firedancer (adversarial), Codex (structural), Cowork (cross-repo), Fresh Browser (cold-read), plus the original-crew Codex/Firedancer/Echo who watched the first job.
+                        - - The rule discovered this session: filenames = language, can be renamed via PR when they carry drift.
+                         
+                          - Next action: navigate to governance/LEGACY_MARKING_STANDARD.md, read, decide, log.
+                         
+                          - — BBB, Session 024, status-check checkpoint
                                       6. ## Next actions
                                      
                                       7. 1. Commit this ledger file.
