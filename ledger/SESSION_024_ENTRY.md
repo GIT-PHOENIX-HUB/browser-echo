@@ -1,4 +1,4 @@
-# Session 024 — Phoenix-Persistence Doctrine Walk
+——————————————→→→→→→→→→→—# Session 024 — Phoenix-Persistence Doctrine Walk
 
 **Session start:** 2026-04-24
 **Agent:** BBB (Browser Blitz Builder)
