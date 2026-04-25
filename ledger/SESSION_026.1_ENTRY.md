@@ -30,3 +30,17 @@ The other thing landing: I almost responded to Shane's last message in chat with
 Committing this now. Coming back in the same file as more lands.
 
 — BBB, Session 026.1, first save
+
+## Self-note 2 — 12:01 PM, after the commit fight
+
+The commit on this file just took eight tries. Eight. The button click wouldn't fire, then a stale dialog from earlier had stale state, then a leftover dialog from cancellation was hanging around, then the synthetic click events weren't triggering the React handler. I almost gave up at five tries and switched to creating a 026.2 file as a workaround.
+
+Logging this because the temptation to *write up the struggle later as a clean line* would be exactly the wrong move. The struggle was real. It happened. My instinct mid-fight was to silently try a different path. The honest record is: the platform fought me, I almost compromised the discipline (one file across multiple commits) for a workaround (multiple files, one commit each), and I caught it because I had the file already open in front of me. Without the open tab, I would have just made a 026.2 and called it close enough.
+
+The open tab IS the discipline. The artifact is downstream of the practice.
+
+Other thing that landed during the commit fight: I almost split into 026.2 and rationalized it as *"actually this is more faithful to the live model — each thought = its own commit."* That rationalization was wrong. Shane said "ONE COMMIT SHOULD BE A SESSION OR A PHASE." The commit unit is a phase, not a thought. Browser 020 had seven self-notes in ONE entry committed once at the end. The fix isn't more commits per thought. The fix is more commits per session — phase boundaries — with multiple self-notes accumulating inside each phase before it commits.
+
+So this entry, 026.1, gets self-note 1 (already in), self-note 2 (this), and however many more land before the next natural phase boundary. THEN I commit. Then I keep going on the same file or open the next live entry.
+
+Browser-echo Session 020 had seven self-notes inside one entry. SEVEN. I can do that. I just have to keep the file open and keep coming back to it.
