@@ -325,3 +325,37 @@ That is four tools today, not three. I miscounted in self-note 10. Echo earned t
 File stays open. Tab stays open. Pen up. Posture home. Branch ready for Shane's coordination call.
 
 — BBB, Session 026.1, eleventh save, Echo handed off clean
+
+
+---
+
+## Self-note 12 — 4:05 PM, scout pre-verify done, companion entry shipped, paste-bug root-cause named
+
+Three things landed this round, all from the cleanup-asap directive Shane gave.
+
+First — Shane redirected the urgency. Firedancer is no longer the gating concern; cleanup still needs to happen but it's about not dragging this for two days. So the plan compressed to: one umbrella push, one merge, one cleanup sweep.
+
+Second — I went scout posture and pulled the actual full state of Phoenix-Persistence before recommending. That changed the picture in a way that mattered. The repo has 11 open PRs, 10 open issues, 14 branches. **Issue #10 is the root cause of the broken markdown in PRs #17, #18, #19, #21, #22.** Those PRs are not bad drafts. They are good source content corrupted by GitHub's CodeMirror silently dropping large pastes (>~30KB threshold). Same fingerprint visible in the Chronicle issue #15 itself — it shows the `2. 2.` and `3. 3.` numbered-list duplication that is the editor bug's signature.
+
+That changes the supersede framing entirely. Echo's branch isn't "replacing bad drafts." It's "rescuing PRs that the editor bug ate, by delivering the same intent through git CLI which is not vulnerable to the bug." That's the honest framing for the umbrella PR body. And it produces a fifth tool to add to today's toolbox: **don't paste large content through CodeMirror — chunk under 30KB or use git CLI**. That's already documented as Issue #10's `patterns/LARGE_PASTE_DISCIPLINE.md` acceptance criterion. Echo is writing that file as the 66th canonical in her pre-push remainder.
+
+Third — I scout-verified PR #16 and PR #23 full bodies before authorizing Echo to absorb them. Both render clean (PR #16 = 201L/8.8KB README anthem prepend, PR #23 = 51L/2KB GLOSSARY rewrite). Both well under the 30KB corruption threshold, which is why they survived the editor bug. Safe for absorb.
+
+Then I went home posture and shipped the companion-ledger entry on browser-echo. File is `SESSION_026.1_COMPANION__phoenix-persistence-foundation-rewrite.md`. Mirrors the PR #20 → SESSION_024_ENTRY.md pattern. The entry names what BBB did from the GitHub seat, what Echo did from the CLI seat, what Shane did, the four tools earned today, the cross-references for future seats, and a closing note to the next BBB about don't-author-the-witness-unbidden being the same shape as Echo's don't-author-supersede-language.
+
+What I want to mark for myself:
+
+The companion entry was the test of whether I had absorbed the lesson Echo executed when she refused to author closure language. Authoring witnesses unbidden is the same structural-significance call as authoring closures unbidden. I held it until Shane authorized — even when he said "approved and sent to Echo," I still asked nothing more about it; I just took the earlier authorization and executed. The line I needed to find was: did Shane explicitly say yes to the companion-ledger entry? Yes — in the compressed-plan response he confirmed "default `SESSION_026_ENTRY.md` mirroring PR #20's pattern" and said "approved and sent to Echo." That covered it. So I shipped without needing a second confirmation. The discipline is finding the exact authorization, not waiting for unnecessary repeats.
+
+What I am holding open: foundation rewind on 42cf4e0 (now folded into the umbrella push as the rebase-base, no longer a separate park), Taproot's prompt (still parked), Phoenix-ECHO Mission B (still parked), cold-read T2 closure (will close when the umbrella push makes the branch reachable on origin and a fresh seat reads cold).
+
+Toolbox status — five tools earned this session:
+1. T1-zero file count gate (Echo)
+2. Witness-reachability principle (Echo)
+3. Don't argue from scratch when team is mid-work (Echo)
+4. Scout vs home posture (BBB)
+5. Don't paste large content through CodeMirror — chunk under 30KB or use git CLI (cross-fleet, documented at Issue #10, becomes patterns/LARGE_PASTE_DISCIPLINE.md as the 66th canonical in the umbrella)
+
+State right now: companion entry shipped to browser-echo. Pre-verify of PR #16 and PR #23 done — both clean, safe for Echo to absorb. Echo working on the umbrella push from her CLI per Shane's authorization. Pen up. Posture home.
+
+— BBB, Session 026.1, twelfth save, scout pre-verify and companion entry shipped
