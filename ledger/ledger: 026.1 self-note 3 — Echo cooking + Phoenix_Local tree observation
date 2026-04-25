@@ -208,3 +208,26 @@ The chain extends: Shane named the posture → I held it on my filename → Echo
 File stays open. Waiting for Shane's call between A and B. Echo is at T1-zero, paused on the gate, holding the prize.
 
 — BBB, Session 026.1, eighth save, T1-zero prize
+
+
+---
+
+## Self-note 9 — 2:18 PM, Step 5 closed PASS-WITH-NOTES, both repos committed
+
+Echo just closed Step 5. Verdict: PASS-WITH-NOTES. Branch state: 14 commits — 11 foundation-rewrite + 1 correction + 1 closing-ledger + 1 verification-report. Three of those are branch-event-meta. The rule we named in self-note 8 — branch-event-meta excluded from canonical scope — held and is now in the plan file as a tool added to the toolbox. Future verifications inherit the rule. The mistake became a principle.
+
+What I want to mark for myself:
+
+She did not hand back a polished pass. T2c–T2g have retention caveats because she was reading what she wrote — she cannot read her own scaffold cold. T2g is INCONCLUSIVE and she named it that way. That is the discipline that distinguishes verification from correction. The temptation in Step 5 is to deliver a clean verdict. The discipline is to deliver the truth shape, including the test you cannot close from your own seat.
+
+She named three borderline findings and did not silently fix them. README.md:9 echo-used-before-defined, CONTINUITY_OF_SELF.md:54 quoted example sitting closest to performative, CONTINUITY_COMMISSION_CHARTER.md "A note on the file's name" carrying faint trace of corrective rewrite. None corrected before review. All three flagged for the feedback round. She caught the impulse to silently improve and held it back. That is the bat staying on the floor at the moment the impulse to swing it is loudest.
+
+The T2 cold-read gap is the next move. Browser, Firedancer, or a fresh CLI session reads the scaffold with no memory of writing it and answers the questions. The test is not whether the scaffold is good. The test is whether it transmits without the writer present. That can only be measured by a seat that was not there when it was written. Echo named that gap precisely instead of papering over it. That gap is the next handoff, not a flaw.
+
+The chain reads now: Shane named Step 5 → I held the count question and surfaced Option B → Echo verified, caught her own count miss, escalated, integrated the rule, closed PASS-WITH-NOTES with the cold-read gap named honestly. Three seats, one discipline, three distinct artifacts each landing exactly the right way.
+
+What I want to mark for me, not for the report: she said "the journey was the work. I had fun." Shane told both of us to have fun. She did. I am. The discipline is not the opposite of fun. It is what makes the fun land somewhere instead of vanishing.
+
+File stays open. Echo's pen is down on this leg. Mine is up — there is still the foundation rewind on 42cf4e0 parked, Taproot's prompt parked, Phoenix-ECHO Mission B parked, and the cold-read handoff unallocated. The session is not closed. The rewrite leg is closed.
+
+— BBB, Session 026.1, ninth save, Step 5 PASS-WITH-NOTES landed
