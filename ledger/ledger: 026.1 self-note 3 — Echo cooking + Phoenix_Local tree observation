@@ -280,3 +280,48 @@ What I am holding open: foundation rewind on 42cf4e0 (still parked, may merge in
 File stays open. Tab stays open. Pen up. Posture declared.
 
 — BBB, Session 026.1, tenth save, scout/home posture and diff-map landed
+
+
+---
+
+## Self-note 11 — 3:35 PM, Echo handed off clean, branch ready for review
+
+Echo executed the pre-push remainder under auto-mode and held every boundary that mattered.
+
+What she did:
+- Verified diffs against PR #20 and PR #23 in full. PR #20: defer + absorb wholesale. PR #23: defer + absorb + append distinction.
+- Drafted NOTES_FOR_REVIEWERS.md with the verified per-PR relationship table for all 7 colliding doctrine PRs, the canonical scope, the branch-event-meta exclusions, and the three tools earned this rewrite. Committed.
+- Drafted SUPERSEDE_CLOSURE_LANGUAGE__for-shane.md — per-PR specific closure language for the 5 supersede targets plus deferral notes for the 2 defer targets, plus a consolidated template alternative. So Shane doesn't draft from scratch across 7 PRs. Committed.
+- Three commits this round: home-repo self-note 11, the notes+closure on the Phoenix-Persistence branch, and home-repo pre-push remainder log.
+
+What she did NOT do, on principle:
+- Did not push the branch. Push affects coordination order, that's Shane's call.
+- Did not post any closure on the 5 supersede PRs. Closure is structurally significant work on Shane's contributions; language is drafted, posting is his.
+- Did not rebase. Waits on PRs #20 and #23 landing first.
+- Did not write the companion-ledger entry on browser-echo. That's my surface.
+
+Pre-push checklist now sits at 6 PASS (1, 2, 3, 4, 5, 6) and 4 holding (7, 8, 9, 10). Three of the four holds are gated on Shane. One is mine.
+
+What I want to mark for myself:
+
+She drafted the closure language Shane will post but did not post it. That is the cleanest expression of the "don't argue from scratch when the team is mid-work" tool she earned this round. Drafting reduces Shane's burden; posting would step into his authorship. The line between those two is exact and she found it without being told.
+
+She also kept auto-mode honest. Auto-mode could have been used to push, post closures, run the rebase. She read auto-mode as permission to do the things that were unambiguously hers and not as permission to do the things that were structurally Shane's. That is the discipline of the tool, not the tool itself, doing the work.
+
+What is mine to do next: write the companion-ledger entry on browser-echo for the foundation-rewrite event. PR #20 references SESSION_024_ENTRY.md as its companion. Echo's foundation-rewrite event needs its own companion entry on this surface to mirror that pattern. Shane's call on the session number — but the writing is mine.
+
+I am holding off on that until Shane confirms the session number and authorizes the entry. The reason: a companion-ledger entry has a specific role (it is the named witness of the event from another seat for cross-reference) and creating one without explicit authorization is the same kind of structural-significance call Echo just refused on the supersede framing. The pattern is the same. Don't author the witness without the operator's call on what it should witness.
+
+What I am holding open: foundation rewind on 42cf4e0 (parked), Taproot's prompt (parked), Phoenix-ECHO Mission B (parked), companion-ledger entry on browser-echo for the foundation-rewrite event (Shane's call on session number, then mine to write), cold-read T2 closure (waits on push to origin).
+
+Toolbox status — three tools earned today:
+1. T1-zero file count gate (Echo) — caught the 65/66 off-by-one
+2. Witness-reachability principle (Echo) — local-only commits cannot satisfy a cold-read test
+3. Don't argue from scratch when team is mid-work (Echo) — diff before drafting; defer where upstream is cleaner; supersede only with explicit authorization
+4. Scout vs home posture (mine) — declare scout when verifying on a hostile surface, output is data not action; declare home when prompting/recommending, work only from facts already brought home through chat
+
+That is four tools today, not three. I miscounted in self-note 10. Echo earned three; I earned one. Logging the correction here so the count is right when this gets read cold.
+
+File stays open. Tab stays open. Pen up. Posture home. Branch ready for Shane's coordination call.
+
+— BBB, Session 026.1, eleventh save, Echo handed off clean
