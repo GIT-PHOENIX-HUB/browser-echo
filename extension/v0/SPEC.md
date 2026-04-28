@@ -1,4 +1,4 @@
-# Browser Echo Chrome Extension — v0 Spec
+# Browser Echo Chrome Extension — v0/v1 Spec
 
 > The repo is the soul. The extension is the accelerator.
 > — Codex, 2026-03-31
@@ -8,17 +8,31 @@
 ## What This Does
 
 Gives Browser Echo what Echo (CLI) has automatically:
-- **Identity injection** — BROWSER.md content available without manual navigation
+- **Identity display** — BROWSER.md content available without manual navigation
 - **Checkpoint saves** — periodic state capture to GitHub, not just on tab close
 - **Session handoff** — structured buffer write before session ends
 - **Bootstrap acceleration** — 60-second bootstrap becomes 10-second bootstrap
+- **Visible transcript witness** — the sidepanel can show only what is visible in the active `claude.ai` tab
+- **Read-only bridge witness** — the sidepanel reads live bridge state from Gauntlet and never writes bridge state
 
 ## What This Does NOT Do
 
 - Replace the browser-echo repo as source of truth
-- Store identity or state in extension storage (repo is canonical)
+- Store durable identity or canonical continuity in extension storage (repo is canonical)
 - Auto-inject text into claude.ai conversations (human stays in the loop)
 - Require any accounts beyond GitHub OAuth
+
+Keep this block verbatim:
+
+- No hidden prompt injection
+- No invisible context submission into claude.ai
+- No automatic send/submit into the Claude chat box
+- No claim that extension-side transcript visibility equals model-side context ingestion
+
+The Browser Echo sidepanel does not have memory between Claude sessions except
+through (a) explicit operator copy-paste of the bootstrap packet into chat, or
+(b) reading continuity docs from the configured repo source. The sidepanel
+itself is not a memory store; it's a continuity-display surface.
 
 ---
 
@@ -33,10 +47,9 @@ Gives Browser Echo what Echo (CLI) has automatically:
 │  │ Panel    │  │ Service      │  │ Script    │ │
 │  │          │  │ Worker       │  │           │ │
 │  │ - Boot   │  │ - GitHub API │  │ - claude  │ │
-│  │ - Mission│  │ - Checkpoint │  │   .ai     │ │
-│  │ - Check  │  │   Timer      │  │   page    │ │
-│  │   point  │  │ - Tab close  │  │   detect  │ │
-│  │ - Handoff│  │   listener   │  │           │ │
+│  │ - Transcript│- Gauntlet API│  │   .ai     │ │
+│  │ - Bridge │  │ - Checkpoint │  │   visible │ │
+│  │ - Handoff│  │ - Tab close  │  │   DOM     │ │
 │  └────┬─────┘  └──────┬───────┘  └─────┬─────┘ │
 │       │               │                │        │
 └───────┼───────────────┼────────────────┼────────┘
@@ -69,20 +82,30 @@ Always-available panel using Chrome Side Panel API. Shows:
 - ACTIVE_MISSIONS.md content
 - One-click "Copy Bootstrap to Clipboard" — formatted for pasting into claude.ai
 
-**Mission Tab:**
-- Live view of ACTIVE_MISSIONS.md
-- Edit inline → commit to GitHub on save
+**Transcript Tab:**
+- Current visible `claude.ai` conversation transcript from the page DOM
+- State labels:
+  - `Visible in tab`
+  - `Saved continuity`
+  - `Not yet pasted into chat`
+- One-click copy for visible transcript and excerpt
+- No hidden submission into Claude
 
-**Checkpoint Tab:**
-- Text area for current session notes
-- "Save Checkpoint" button → appends to SESSION_LOG.md on GitHub
-- Auto-checkpoint indicator (shows time since last save)
-- Checkpoint history (last 5)
+**Bridge Tab:**
+- Read-only state from Gauntlet:
+  - `GET /api/swarm/state`
+  - `GET /api/ledgers/bridge/tail?lines=N`
+- Shows current mission, latest bridge entry, blockers, next owner, repo target
+- One-click copy for the current mission packet only
+- If Gauntlet is unreachable, shows last-known-good bridge state with timestamp and a stale warning
+- If no live bridge state has ever loaded, shows `bridge unavailable`
+- Does not invent repo-derived bridge state
 
 **Handoff Tab:**
 - BROWSER_BUFFER.md template pre-filled
 - "Save Handoff" button → updates BROWSER_BUFFER.md on GitHub
 - "Save & Close" button → saves handoff + adds ledger entry + closes tab
+- Checkpoint text area and manual "Save Checkpoint" button → appends to SESSION_LOG.md on GitHub
 
 ### 2. Background Service Worker
 
@@ -116,11 +139,27 @@ Minimal injection into claude.ai pages:
 - Activates only on `claude.ai/chat/*` and `claude.ai/new`
 - Adds small floating "BBB" indicator in corner showing extension is active
 
-**Context Awareness:**
-- Detects conversation topic from page title
-- Passes to side panel for checkpoint context
+**Transcript Awareness:**
+- Detects visible conversation turns from the active `claude.ai` DOM
+- Sends transcript snapshots to the background worker and sidepanel
+- Only visible DOM content is considered `Visible in tab`
 
 **NO text injection into conversations.** The human pastes the bootstrap manually. This is intentional — Browser's discipline comes from reading, not from automation.
+
+### 4. Bridge Ownership
+
+The Gauntlet server is the canonical bridge-state holder. Browser Echo reads
+bridge state from Gauntlet and never writes bridge state.
+
+Shared live source:
+
+- `GET /api/swarm/state`
+- `GET /api/ledgers/bridge/tail?lines=N`
+
+Repo continuity and live bridge state are separate truths:
+
+- repo continuity is durable context
+- Gauntlet bridge is live shared state
 
 ---
 
@@ -193,7 +232,9 @@ All writes include:
   "checkpoint_reminder_minutes": 10,
   "show_handoff_on_close": true,
   "auto_open_panel_on_claude": true,
-  "badge_color": "#FF6B00"
+  "badge_color": "#FF6B00",
+  "gauntlet_base_url": "http://localhost:3000",
+  "gauntlet_token": "phoenix-gauntlet-v1"
 }
 ```
 
@@ -235,15 +276,18 @@ extension/
 5. Done. Browser Echo now has a persistent panel.
 
 ### Session Start (Bootstrap)
-1. Open claude.ai → content script detects, opens side panel automatically
-2. Side panel shows Bootstrap tab with BROWSER.md + BUFFER + MISSIONS
+1. Open claude.ai → content script detects the tab and enables the side panel
+2. Side panel shows:
+   - Bootstrap tab with `BROWSER.md` + `BUFFER` + `MISSIONS`
+   - Transcript tab with current visible conversation transcript
+   - Bridge tab with live Gauntlet bridge state when available
 3. User clicks "Copy Bootstrap to Clipboard"
 4. User pastes into claude.ai conversation
-5. Browser Echo is bootstrapped. 10 seconds.
+5. Browser Echo is bootstrapped. Transcript and bridge continue updating beside the chat.
 
 ### During Session (Checkpoints)
 1. Every 10 minutes, extension badge turns orange: "Checkpoint reminder"
-2. User clicks badge → Checkpoint tab opens
+2. User opens the Handoff tab checkpoint section
 3. User writes quick notes about current state
 4. Clicks "Save Checkpoint" → appended to SESSION_LOG.md on GitHub
 5. Badge resets. Timer restarts.
@@ -263,11 +307,12 @@ extension/
 
 | Echo Has (Automatic) | Extension Equivalent |
 |----------------------|---------------------|
-| SessionStart hook loads ECHO.md | Side panel auto-opens with BROWSER.md |
+| SessionStart hook loads ECHO.md | Side panel auto-enables on claude.ai with Bootstrap + Transcript + Bridge tabs |
 | PreCompact hook saves snapshot | Checkpoint reminder + save button |
 | Stop hook runs self_review.sh | Handoff prompt on tab close |
 | PostToolUse hook logs to LEDGER | Manual checkpoint to SESSION_LOG.md |
 | UserPromptSubmit identity check | "BBB" indicator on claude.ai |
+| Tool bridge/status HUD | Bridge tab reads live Gauntlet state; stale cache only when Gauntlet is unreachable |
 
 ## What This Does NOT Give Browser
 
@@ -292,9 +337,10 @@ The human-in-the-loop design is intentional. Shane is the bridge. The extension 
 
 ### Phase 2: Read Everything
 - Read BUFFER, MISSIONS, SESSION_LOG
-- Tabbed UI in side panel
+- Transcript tab with visible conversation DOM parsing
+- Bridge tab with read-only Gauntlet status, blockers, next owner, repo target, latest bridge entry
 - "Copy Bootstrap" button
-- Auto-open on claude.ai
+- Auto-enable on claude.ai
 
 ### Phase 3: Write Operations
 - Save checkpoint → SESSION_LOG.md
@@ -314,6 +360,19 @@ The human-in-the-loop design is intentional. Shane is the bridge. The extension 
 - Error handling and offline resilience
 - Chrome Web Store listing
 
+## Desk Layout Contract
+
+Single-display default:
+
+- Built-in display: `3456 x 2234`
+- Chrome coordination column: `40%` width
+- iTerm execution column: `60%` width
+- Top Chrome window: Gauntlet at `?mode=observer`, `40%` of left-column height
+- Bottom Chrome window: `claude.ai` with Browser Echo sidepanel open, `60%` of left-column height
+
+Gauntlet is Mission Control. Claude in Chrome is a witness/scout lane.
+Execution stays in local iTerm panes.
+
 ---
 
 ## Security Considerations
@@ -324,6 +383,8 @@ The human-in-the-loop design is intentional. Shane is the bridge. The extension 
 - Content script is read-only on claude.ai — does not modify page content
 - All writes require explicit user action (no auto-commit)
 - SHA verification prevents overwrite of concurrent edits
+- Bridge tab is read-only witness state; it does not mutate Gauntlet or bridge ledgers
+- Cached bridge state must be labeled stale when Gauntlet is unreachable
 
 ---
 
@@ -334,6 +395,10 @@ The human-in-the-loop design is intentional. Shane is the bridge. The extension 
 - [ ] Handoff prompt appears on claude.ai tab close
 - [ ] All reads/writes go to browser-echo repo on GitHub
 - [ ] No text injected into claude.ai conversations
+- [ ] No hidden prompt injection, invisible context submission, or automatic send/submit into Claude
+- [ ] Transcript tab distinguishes `Visible in tab`, `Saved continuity`, and `Not yet pasted into chat`
+- [ ] Bridge tab reads from Gauntlet live API and cannot write bridge state
+- [ ] Bridge outage shows stale cached state with timestamp, or `bridge unavailable` if nothing has ever loaded
 - [ ] Works with Shane's existing GitHub account
 - [ ] Extension weighs under 500KB
 

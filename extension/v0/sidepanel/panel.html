@@ -22,8 +22,8 @@
     <!-- Tab Navigation -->
     <nav class="tab-nav">
       <button class="tab-btn active" data-tab="bootstrap">Bootstrap</button>
-      <button class="tab-btn" data-tab="missions">Missions</button>
-      <button class="tab-btn" data-tab="checkpoint">Checkpoint</button>
+      <button class="tab-btn" data-tab="transcript">Transcript</button>
+      <button class="tab-btn" data-tab="bridge">Bridge</button>
       <button class="tab-btn" data-tab="handoff">Handoff</button>
     </nav>
 
@@ -37,33 +37,83 @@
         <h2>Last Handoff</h2>
         <div id="buffer-content" class="markdown-content loading">Loading BROWSER_BUFFER.md...</div>
       </div>
+      <div class="section">
+        <h2>Active Missions</h2>
+        <div id="missions-content" class="markdown-content loading">Loading ACTIVE_MISSIONS.md...</div>
+      </div>
       <button id="copy-bootstrap-btn" class="btn btn-primary full-width">
         Copy Bootstrap to Clipboard
       </button>
     </div>
 
-    <!-- Missions Tab -->
-    <div id="tab-missions" class="tab-content hidden">
+    <!-- Transcript Tab -->
+    <div id="tab-transcript" class="tab-content hidden">
       <div class="section">
-        <h2>Active Missions</h2>
-        <div id="missions-content" class="markdown-content loading">Loading ACTIVE_MISSIONS.md...</div>
+        <h2>Transcript State</h2>
+        <div class="pill-row">
+          <span id="transcript-pill-visible" class="pill pill-neutral">No visible transcript</span>
+          <span id="transcript-pill-saved" class="pill pill-neutral">Saved continuity</span>
+          <span id="transcript-pill-manual" class="pill pill-warning">Not yet pasted into chat</span>
+        </div>
+        <div id="transcript-meta" class="meta-card">Waiting for claude.ai transcript…</div>
+      </div>
+      <div class="section">
+        <h2>Visible in Tab</h2>
+        <div id="transcript-content" class="markdown-content loading">Waiting for visible claude.ai conversation…</div>
+      </div>
+      <div class="button-row">
+        <button id="copy-transcript-btn" class="btn btn-primary full-width">
+          Copy Visible Transcript
+        </button>
+        <button id="copy-excerpt-btn" class="btn btn-secondary full-width">
+          Copy Transcript Excerpt
+        </button>
+      </div>
+      <div class="section">
+        <h2>Saved Continuity</h2>
+        <div id="continuity-content" class="markdown-content loading">Loading continuity snapshot…</div>
       </div>
     </div>
 
-    <!-- Checkpoint Tab -->
-    <div id="tab-checkpoint" class="tab-content hidden">
+    <!-- Bridge Tab -->
+    <div id="tab-bridge" class="tab-content hidden">
       <div class="section">
-        <h2>Save Checkpoint</h2>
-        <p class="hint">What have you done since the last checkpoint?</p>
-        <textarea id="checkpoint-text" placeholder="Completed X. Started Y. Blocked on Z."></textarea>
-        <button id="save-checkpoint-btn" class="btn btn-primary full-width">
-          Save Checkpoint
-        </button>
-        <div id="checkpoint-status" class="status"></div>
+        <h2>Bridge Source</h2>
+        <div id="bridge-warning" class="warning-banner hidden"></div>
+        <div id="bridge-source" class="meta-card">Loading bridge state…</div>
+        <p class="hint">Read-only witness view from Gauntlet. Repo continuity stays in Bootstrap and Saved Continuity, not in the live bridge state.</p>
       </div>
       <div class="section">
-        <h2>Recent Session Log</h2>
-        <div id="log-content" class="markdown-content loading">Loading SESSION_LOG.md...</div>
+        <h2>Current Mission Packet</h2>
+        <div class="bridge-grid">
+          <div class="bridge-card">
+            <div class="bridge-label">Current mission</div>
+            <div id="bridge-current-mission" class="bridge-value">Loading…</div>
+          </div>
+          <div class="bridge-card">
+            <div class="bridge-label">Next owner</div>
+            <div id="bridge-next-owner" class="bridge-value">Loading…</div>
+          </div>
+          <div class="bridge-card">
+            <div class="bridge-label">Repo target</div>
+            <div id="bridge-repo-target" class="bridge-value">Loading…</div>
+          </div>
+          <div class="bridge-card">
+            <div class="bridge-label">Updated</div>
+            <div id="bridge-updated-at" class="bridge-value">Loading…</div>
+          </div>
+        </div>
+        <button id="copy-mission-packet-btn" class="btn btn-primary full-width">
+          Copy Current Mission Packet
+        </button>
+      </div>
+      <div class="section">
+        <h2>Latest Bridge Entry</h2>
+        <div id="bridge-latest" class="markdown-content loading">Waiting for bridge data…</div>
+      </div>
+      <div class="section">
+        <h2>Blockers</h2>
+        <div id="bridge-blockers" class="stack-list loading">Waiting for blocker data…</div>
       </div>
     </div>
 
@@ -81,9 +131,21 @@
         </button>
         <div id="handoff-status" class="status"></div>
       </div>
+      <div class="section">
+        <h2>Save Checkpoint</h2>
+        <p class="hint">What changed since the last checkpoint?</p>
+        <textarea id="checkpoint-text" placeholder="Completed X. Started Y. Blocked on Z."></textarea>
+        <button id="save-checkpoint-btn" class="btn btn-primary full-width">
+          Save Checkpoint
+        </button>
+        <div id="checkpoint-status" class="status"></div>
+      </div>
+      <div class="section">
+        <h2>Recent Session Log</h2>
+        <div id="log-content" class="markdown-content loading">Loading SESSION_LOG.md...</div>
+      </div>
     </div>
 
-    <!-- Footer -->
     <footer class="panel-footer">
       <span class="session-info" id="session-timer"></span>
       <button id="sign-out-btn" class="btn-link">Sign out</button>

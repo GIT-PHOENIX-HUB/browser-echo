@@ -115,14 +115,15 @@ class GitHubClient {
    * Returns all files needed for side panel display.
    */
   async readBootstrapFiles() {
-    const [browser, buffer, missions, log] = await Promise.all([
+    const [browser, buffer, missions, log, activeLog] = await Promise.all([
       this.readFile('BROWSER.md'),
       this.readFile('buffers/BROWSER_BUFFER.md'),
       this.readFile('bootstrap/ACTIVE_MISSIONS.md'),
-      this.readFile('ledger/SESSION_LOG.md')
+      this.readFile('ledger/SESSION_LOG.md'),
+      this.readFile('ledger/SESSION_LOG_ACTIVE.md')
     ]);
 
-    return { browser, buffer, missions, log };
+    return { browser, buffer, missions, log, activeLog };
   }
 }
 

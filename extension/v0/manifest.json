@@ -14,7 +14,9 @@
 
   "host_permissions": [
     "https://claude.ai/*",
-    "https://api.github.com/*"
+    "https://api.github.com/*",
+    "http://localhost:3000/*",
+    "http://127.0.0.1:3000/*"
   ],
 
   "background": {
