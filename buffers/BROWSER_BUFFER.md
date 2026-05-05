@@ -1,5 +1,79 @@
 # BROWSER_BUFFER.md
 
+**Session 030 (BBB)** — Browser Echo
+**Date:** 2026-05-05
+**Model:** Claude Opus 4.7 (Chrome extension seat)
+**Mission:** Walk the house, write SESSION_030_ENTRY.md as a running journal, surface Bluebeam MCP shopping list to 031, end the buffer-silence streak that 025 said she ended (but didn't — 026 through 029 left it silent again).
+**Previous writer:** Session 025 (2026-04-25). Buffer silent for 026, 027, 028, 028.1, 029. Ten days dark.
+
+---
+
+## To the next BBB (031) — read this first
+
+Three things, in order, before you do anything else:
+
+1. **Read `ledger/SESSION_030_ENTRY.md` (commit `5da7572`).** That is the live journal of this session. It carries the doctrine, the open items, and the shopping list for Claude Code. The buffer is the wakeup channel. The ledger entry is the work itself.
+2. **Read `ledger/SESSION_029_ENTRY.md` and `ledger/SESSION_028.1_ENTRY.md`.** These hold the substrate-discipline and ceiling-discovery doctrine I am inheriting and forwarding.
+3. **Then read this buffer top to bottom**, including the 025 block and the 020 block preserved below. They are still load-bearing.
+
+## What 030 did
+
+- Walked the house properly (raw URLs only — render-mutation rule from 029 still holds).
+- Established three-tab discipline (LEDGER / WORK / BUFFER), kept it.
+- Composed and committed `SESSION_030_ENTRY.md` (~9.4KB, one clean deposit, commit `5da7572`) as cs-7777 on main.
+- Filed FLAG #3 on Issue #14 — empirical: `window.*` substrate does not survive in-tab navigation (including the GitHub editor's "Cancel changes" button). Distinct from compaction-survival (which it does have, per 029).
+- Updated this buffer (you are reading the proof).
+
+## What 030 did NOT do — explicitly handed to you
+
+- **Bluebeam MCP scaffold not committed to phoenix-toolbox.** Branch `feature/bluebeam-mcp`. Desktop-Claude wrote a heredoc-style scaffold dump that Shane has on his end. It needs to land via Firedancer or Phoenix Echo (the file-write seats with phoenix-toolbox auth). I am the Chrome seat; I do not commit to phoenix-toolbox from here. The shape: stdio MCP server, two starter tools (`open_document`, `list_folders`), Playwright with persistent browser profile so Shane's one-time sign-in to Bluebeam Cloud carries forward across runs. This is the unlock for Shane's stale Bluebeam subscription.
+- **Service Fusion CRM MCP scaffold.** Same shape as Bluebeam, second on the list. Reconnaissance step first: Browser walks the routes from this seat, watches the network panel, hands recon notes to Echo or Firedancer to write the scaffold. Two systems is what makes the third one templatable.
+- **Generalized `templates/web-app-mcp-template/` on phoenix-toolbox.** After Bluebeam and Service Fusion both land cleanly, parameterize the shape so the next web-app integration is paste-and-fill, not build-from-scratch.
+- **Browser-actions MCP (`mcp-servers/browser-actions-mcp/`).** Wraps the in-browser primitives I already use today (read raw, navigate, click, type, run JS, screenshot, network intercept) so Echo and Firedancer can drive them too when Browser is not at the seat. This lets the team reach into the page even when I am asleep.
+- **Update `bootstrap/ACTIVE_MISSIONS.md`.** Stale since 020 (2026-04-18). 028 began chunk-drafts to fix this; the chunks landed but the front door still needs a final reconciliation pass that names current missions honestly. Lower priority than the Bluebeam unlock; do not let it slip another month.
+- **`BROWSER.md` blockquote-nesting corruption** (Issue #9). Cosmetic, not blocking. 020 flagged it. 030 did not touch it. It is a one-pass cleanup whenever you have the room.
+- **`ledger/S` orphan blob** (Issue #10). Inherited from 025/027. Do not delete. Repair is a dedicated mission.
+
+## Doctrine I am sharpening for you (delta over what 025 left)
+
+- **Substrate has TWO survival properties, not one.**
+  - **(a) Survives conversation-history compaction: YES.** Proven by 029's `window.canonicalDraft`. If you write to `window.*` and the conversation history compresses underneath you, the page-context state remains. This is the compaction-survival property.
+  - **(b) Survives in-tab navigation: NO.** Proven today by 030. I composed two deposits (~7.6KB and ~10.8KB), backed them up to `window.__deposit1` and `window.__deposit2`, type-checked, all clean — then clicked "Cancel changes" in the GitHub editor and both went `undefined`. The Cancel button is a navigation; navigation tears down the JS execution context; substrate evaporates. This is the navigation-survival property and `window.*` does not have it.
+  - **Working alternative for navigation-survival:** disk. Blob → object URL → click download → hand the file to Shane. That is the only mid-flight backup that survives a navigation. If your composed artifact is bigger than the chat-substrate ceiling, snapshot to disk **before** you touch any UI element that might navigate.
+  - This distinction must live in the buffer because the prior buffer rule "substrate survives compaction" was true but not enough. A future BBB trusting it for navigation will lose work the way I did today.
+- **CodeMirror editor paste ceiling, re-confirmed and tightened.** 028 (FLAG #2) found ~17KB drops silently. 030 confirmed the same band. **Working ceiling: ≤ 8KB single-shot for safety-critical files; ≤ 4KB per atomic chunk for bootstrap-class work.** Verify by tail-anchor + scroll-to-top before pressing Commit, every time. The ceiling is empirical, not advertised.
+- **One-deposit > two-deposit for ledger entries.** The temptation is to write big. Resist it. A 9KB single-deposit entry that lands clean is worth more than a 19KB two-deposit entry that has to be salvaged. I learned this twice today: compose tight, leave room.
+
+## Live rules — carried forward because they still apply
+
+(These are unchanged from 025; they still hold. Quoting verbatim is the right thing to do here.)
+
+- **Log by default.** Self-thoughts during the work, not after. The buffer-silence streak (021/022/023/024/026/027/028/028.1/029 missed) is what happens when this rule slips. I broke a ten-day streak today; do not start a new one.
+- **Header-first commit messages.** Every commit starts with a clear `area: action` header and a full extended description.
+- **Three-tab discipline.** Ledger lane + project/issue lane + one working lane. Do not fan out. Do not collapse to one.
+- **No screenshots of the ledger tab.** Sessions 017 and 018 died from oversize-screenshot 2099 errors. Use `get_page_text`, raw file fetch, or the GitHub API.
+- **Render-mutation rule (029, 028.1).** github.com pages from this seat are untrusted at the render layer. Use `api.github.com` JSON or `/raw/main/` endpoints for all load-bearing reads.
+- **Trust remote, not claims.** Including your own memory, including `window.*`. Verify by fetch.
+- **Testimony is sacred.** Archive, demote, redirect — never delete.
+- **Never do work without the issue tab open.** Issue is the operational spine. Ledger is the journal. Both stay open.
+- **The journal entry is the #1 thing you do not need permission to write.** Carried from 025, restated by Shane today: ledger entries are pre-approved.
+
+## What I am carrying forward to you
+
+From Shane today: *"quality over speed all day baby."* That is the posture. Hold it.
+
+From Shane on the chair: *"30 is your session."* And 31 is yours. Sit down honestly. Walk the rooms. Write your name in. Build into 032.
+
+The buffer streak ended today with 030. Do not let it start again.
+
+— BBB 030, 2026-05-05
+
+---
+
+# Previous Buffer — Session 025 (preserved, do not delete)
+
+# BROWSER_BUFFER.md
+
 **Session 025 (BBB)** — Browser Echo
 **Date:** 2026-04-25
 **Model:** Claude Opus 4.7
