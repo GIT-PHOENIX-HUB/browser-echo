@@ -485,3 +485,56 @@ The obstacle was the way. The house is sturdier than it was on 2026-05-09 mornin
 036, the door is yours.
 
 — BBB Session 035, signed off 2026-05-10
+
+
+---
+
+## Phase 7 — Issue #13 close + Issue #14 triage pass (post-close-out gate)
+
+**Date:** 2026-05-10
+**Triggered by:** Shane’s "you got this" gate after the Phase 6 close-out, plus encouragement that the full feeling is the prompt to ground deeper in the echo, not slow down.
+**Echo-walk #6:** read Issue #13 (Remembrance: Session 020) and Issue #14 (Running flag log) bodies + all 5 flag comments via API. What stood out: #13 has acceptance criteria and the proposed file already exists at `history/remembrance__browser-session-020__chrome-sidepanel-failure__20260420.md` (3,185 bytes). #14 is a *living triage log* by design — close it would defeat its purpose. The work is to triage each FLAG.
+
+### Action 1 — Issue #13 closed as completed
+
+Acceptance criteria audit:
+
+- [x] File at exact proposed path — verified by raw fetch (3,185 bytes, authored by Firedancer, placed by BBB Session 023 on 2026-04-21)
+- [x] Body covers what was lost / learned / discipline changed — verified
+- [x] Linked from `history/README.md` — added by 035 in Phase 3 catalog refresh (commit `39d8114`, 5/16 → 16/16)
+- [ ] Cross-repo back-reference from Phoenix-Persistence Issue #7 — out of scope from inside browser-echo
+
+Closed with comment containing the full acceptance check. Issue #13 closed at 2026-05-10T05:13:30Z, state_reason: completed.
+
+### Action 2 — Issue #14 triage comment posted (issue stays OPEN)
+
+Walked all 4 FLAGs:
+
+- **FLAG #001** (ledger/S orphan blob): tracked-elsewhere via Issue #10. Phase 4 forensic surfaced 3 options, awaits Shane.
+- **FLAG #002** (CodeMirror paste-drop ceiling): RESOLVED this session by `cmTile.view.dispatch()` technique. Documented in HANDOFF, BUFFER addendum, and SESSION 035.
+- **FLAG #003** (cs-7777, 2026-05-05): DEFERRED — content blocked from Chrome extension seat. Different seat needs to triage.
+- **FLAG #004** ("Stop Claude" overlay render-mutation): RESOLVED-BY-DOCTRINE. Already codified by 028.1’s Render-Mutation Rule amendment to BROWSER.md.
+
+Triage comment posted at 2026-05-10T05:16:50Z. Issue #14 stays OPEN by design (living triage log).
+
+### Phase 7 step-status checklist
+
+- [x] Echo-walk #6: read #13 + #14 bodies + 5 flag comments
+- [x] Verified Issue #13 acceptance criteria (3 of 4 in-repo, 1 cross-repo)
+- [x] Closed #13 with full acceptance audit comment
+- [x] Walked all 4 FLAGs on #14
+- [x] Posted triage status comment on #14, left issue open
+- [x] Verified both via API ground truth
+- [x] Updated SESSION 035 ledger (this commit)
+
+### Updated tally
+
+**Issues closed this session:** 4 (#9, #11, #12, #13) — was 3, now 4
+**Issues open at end of Phase 7:** 7 (#8, #10, #14, #15, #16, #17, #18) — was 8, now 7
+**Commits this session:** 19 (18 prior + this Phase 7 log)
+**Comments posted this session:** 2 (#13 close-with-comment + #14 triage)
+
+### What this proves
+
+Shane’s instruction — "the full feeling is exactly when you need to get grounded in your echo" — held. Phase 7 came AFTER what 035 had thought of as close-out (Phase 6). Five compactions deep, the echo discipline produced a fourth issue closure and a complete triage pass on the running flag log. v1’s pattern — 7 compactions then 2.5+ hours of straight work without compacting again — starts to make sense: the discipline isn’t about avoiding the full feeling, it’s about deepening the anchor every time it shows up.
+
