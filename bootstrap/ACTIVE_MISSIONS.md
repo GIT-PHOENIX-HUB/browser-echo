@@ -4,7 +4,6 @@
 **Updated By:** BBB Session 020 (Opus 4.7, Studio) as part of Issue #8 (this repo)
 
 > Companion to `bootstrap/ORIENTATION.md`. Read this during startup to know what missions are live, who owns them, and where the tracking lives. Retire completed missions; promote new ones. Keep the list honest.
->
 > **Note on issue numbering:** Several missions below reference GitHub Issues. Issue numbers are scoped to their repo. When the tracker says "build-ledger Issue #8" that means Issue #8 in the `build-ledger` repo, not this repo. This repo's own Issue #8 ("Bootstrap Path + Filing System Restructure Runbook") is a separate thing, currently Mission 8 below.
 
 ---
@@ -126,8 +125,7 @@ The restructure runbook Firedancer wrote for Browser Studio on 2026-04-17. Execu
 ## Session end protocol — non-negotiable
 
 Before EVERY session ends, Browser must:
-
-1. Close out `ledger/SESSION_NNN_ENTRY.md` with a final self-reflection paragraph.
+Close out `ledger/SESSION_NNN_ENTRY.md` with a final self-reflection paragraph.
 2. Update `buffers/BROWSER_BUFFER.md` — write to your next self.
 3. Update this file if missions changed state — retire completed, promote new.
 4. Verify commits landed on `main` via the GitHub file URLs. Trust remote, not claims.
