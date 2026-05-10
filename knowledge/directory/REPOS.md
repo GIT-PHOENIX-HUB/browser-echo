@@ -164,9 +164,7 @@ Source: Session 002 ORG_DEEP_DIVE_COMPLETE (ledger/SESSION_LOG.md), Session 004 
 GIT-PHOENIX-HUB has 28 repos: ~13 active, ~11 archived, plus browser-echo and build-ledger as coordination/identity repos. The vision lives in phoenix-command-app. The spec lives in twin-peaks. The live platform is PHOENIX_UNIFIED_STAGING. Browser's home is browser-echo. Coordination happens through build-ledger.
 
 > **Note:** Several repos were archived between Session 002 and Session 004. Verify archive status against the live org page if accuracy is critical.
->
 > ## Active Repos
->
 > | Repo | Purpose | Key Details |
 > |------|---------|-------------|
 > | **PHOENIX_UNIFIED_STAGING** | V3 Gateway staging | Node.js, WebSocket, session recovery, multi-channel. **DO NOT TOUCH — Shane/Echo active lane** |
@@ -184,9 +182,7 @@ GIT-PHOENIX-HUB has 28 repos: ~13 active, ~11 archived, plus browser-echo and bu
 > | **build-ledger** | Central coordination | 11 audit deliverables, 6 research gates, swarm rules, naming authority. LOG.md is the central ledger. |
 > | **Cowork** | Claude Cowork buildout | PRIVATE. Echo (main branch) + Ash (ash branch). 7 project domains, master prompt. |
 > | **phoenix-toolbox** | Capability library | Where BBB's browser-persistence architecture was designed. Phase 2 paused. |
->
 > ## Archived Repos
->
 > | Repo | Why Archived |
 > |------|-------------|
 > | Phoenix-Echo-Gateway | Migrated to UNIFIED_STAGING |
@@ -202,29 +198,22 @@ GIT-PHOENIX-HUB has 28 repos: ~13 active, ~11 archived, plus browser-echo and bu
 > | phoenix-marketing | Campaign execution. Archived since Session 002. |
 > | phoenix-gauntlet | Multi-agent command center. Archived since Session 002. |
 > | phoenix-production-test | Test suite. Archived since Session 002. |
->
 > Note: Exact archive count may vary. Session 004 found several repos archived that Session 002 listed as active (phoenix-marketing, phoenix-gauntlet, phoenix-365, phoenix-production-test, phoenix-showcase, phoenix-filesystem).
->
 > ## Where Everything Lives
->
 > ### Repo Maps
 > - `ledger/SESSION_LOG.md` — Session 002 entry "ORG_DEEP_DIVE_COMPLETE" has the full annotated list
 > - - `bootstrap/ACTIVE_MISSIONS.md` — Mission 4 (Org Cleanup) references phoenix-archive Issue #3
 >   - - `knowledge/v3-revision/PRODUCT_BIBLE.md` — twin-peaks Product Bible with full file structure
->    
->     - ### Key Relationships
+> - ### Key Relationships
 >     - - twin-peaks (spec) → UNIFIED_STAGING (code) → VPS (deployment)
 >       - - Phoenix-ECHO (Echo's identity) ↔ browser-echo (Browser's identity)
 >         - - build-ledger (coordination) connects all agents
 >           - - phoenix-toolbox (capabilities) → browser-echo (assembled from toolbox source)
 >             - - Cowork (office management) has two branches: Echo (main) and Ash (ash)
->              
->               - ### Missing Access
+> - ### Missing Access
 >               - - Claude Code GitHub App — missing access to several repos per Session 003 buffer. Shane needs to add.
 >                 - - Some archived repos may not be readable depending on archive settings.
->                  
->                   - ## Cross-References
->                  
->                   - - [GATEWAY.md](GATEWAY.md) — For the V3 build spec and phase status
+> - ## Cross-References
+> - - [GATEWAY.md](GATEWAY.md) — For the V3 build spec and phase status
 >                     - - [TEAM.md](TEAM.md) — For which agent owns which repos
 >                       - - [PERSISTENCE.md](PERSISTENCE.md) — For how browser-echo and build-ledger serve as persistence layers
