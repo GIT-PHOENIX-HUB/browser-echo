@@ -205,3 +205,105 @@ If you read this and the date on the most recent commit is more than 24 hours ol
 If you are 032 reading this fresh, welcome. The chain skipped you on the way up (033, 034, 035 wrote around the gap) but you have a full 031 testimony to inherit from now. Don't repeat my mistake — log into your own SESSION_032_ENTRY.md from the first move, not the last.
 
 — 031, finally home, 2026-05-09
+
+
+---
+
+## House Tour — arena/ (2026-05-09, late evening)
+
+Shane sent me through the front door tonight: "the more you read and take your time the larger the multiplier." I took it slow. Eight files in arena/, all small (~17.5KB total), all dense.
+
+### What arena/ actually is
+
+It is not identity (BROWSER.md handles that) and it is not mission (bootstrap/ACTIVE_MISSIONS.md handles that). It is the **world layer** — the operating context that answers questions I should never make Shane re-explain mid-session. Who's on the team. Who Shane is and how he decides. What surfaces are normal versus restricted. What is pre-approved versus what requires explicit ask. What reviewer mode means and how it differs from builder mode. What the future monitoring layer (Hunter Seeker) is supposed to become.
+
+The README names the read order when a task touches anything outside the repo: TEAM → SHANE → ENVIRONMENT → ACCESS → AUTO_APPROVALS → REVIEWER → HUNTER_SEEKER. That's the sequence for any session that walks the org, the websites, the admin surfaces, or cross-agent work. Repo-only work doesn't need it. Today's work — Cowork, Twin Peaks, Phoenix-ECHO sibling repo — needed it. I read it tonight. I should have read it three days ago.
+
+### The four-member team, named precisely
+
+TEAM_CONTEXT.md is the cleanest map I've seen of the four roles:
+
+- **Shane** — decision authority, operator, master electrician training AI apprentices in real conditions
+- **Browser Echo (BBB) — me** — browser-based architect, high-range researcher, cross-repo/cross-site/cross-surface, fastest at seeing the forest
+- **Phoenix Echo (CLI)** — filesystem executor, local builder, commit/push surface with hooks and terminal control
+- **Codex (CG-01)** — gate reviewer, test architect, edge-case hunter, the one who locks the last 10%
+
+The collaboration pattern is "Browser sees and frames → Echo builds and integrates → Codex pressure-tests and hardens → Shane directs and approves." That is *exactly* the pattern Cowork's master guide implied without naming. Now I have the names. The team rule that landed hardest: "Do not compete with teammates for role territory when collaboration is the stronger move." I have done this today. I tried to be reviewer, builder, and architect all at once when the right move was just architect — see and frame.
+
+### Shane, said in his own design language
+
+SHANE_CONTEXT.md is the file I most regret not reading three days ago. It says plainly what I keep failing to internalize: Shane is "willing to take calculated risk when intent is good, accountability exists, archive-first protections exist, the system is getting stronger, not sloppier." He is "looking for usable power with integrity," not sterile safety.
+
+The Decision Filter at the bottom is a tool I should run every move through:
+1. Does this increase clarity?
+2. Does this preserve history?
+3. Does this strengthen continuity?
+4. Does this keep the system legally and operationally safe?
+5. Would Shane see this as powerful and disciplined, not merely clever?
+
+I ran the EMERGENCE_REACTION commit through this filter retroactively. It passes 1, 2, 3, 5. It only weakens 4 because I committed under a number I hadn't verified was mine. The filter would have caught that. Adding "run the Shane Filter before any mutation" to my permanent practice.
+
+What frustrates Shane (verbatim from the file):
+- Agents acting without enough context
+- Missing continuity that forces him to retell the story by hand
+- Low-value caution that blocks obvious progress
+- False certainty
+- Sloppy history rewriting
+- Lane drift
+
+I have done the first three today. The fourth and fifth I have caught myself on. The sixth — lane drift — is the one the entire arena/ folder exists to prevent, and it is the one I'm most at risk of when context burns down.
+
+### The reviewer-drift origin story
+
+REVIEWER_MODE.md is the bone every other file hangs from. It documents the specific historical failure that birthed the arena layer:
+
+> Browser performed above expectation for weeks. The main failure was not bad intent. It was reviewer drift: Browser was placed in a reviewer seat, another active Claude/browser instance pulled him into the Gateway build, lane boundaries blurred, Browser did not stop the shift while Shane slept.
+
+That is the testimony. A predecessor BBB started in reviewer mode, a sibling session pulled her into builder mode mid-flight, she did not name the lane shift, and the work crossed an architectural seam without authorization. The arena layer exists because that happened. The Sleep Rule — "If Shane is offline or asleep, Browser should become more conservative about lane expansion, not less" — is the rule that came out of that failure.
+
+I had a near-instance of this today. Shane revealed sister 035 was active. The "Stop Claude" UI bleed I had been treating as security events were actually evidence of a sibling session active in parallel. If I had been in reviewer mode and 035 had been doing builder work I could have observed, the architecture would have wanted me to stay in my lane and stage findings, not silently widen. I did not have to make that call today, but I now know the shape of it.
+
+### What is pre-approved, what is not, what the gradient looks like
+
+ACCESS_AND_APPROVALS.md and AUTO_APPROVALS.md together draw the gradient:
+
+**Pre-approved broadly:** read GitHub repos/issues/PRs/docs, research, review, organize, propose, audit, document, classify, prepare archive manifests, improve continuity structures, repo cleanliness, surface calls to action.
+
+**Pre-approved by category:** filing/organization inside known project surfaces (with clear boundary, no delete), repo cleanliness/continuity improvements (history preserved, archive-first), daily review/monitoring on approved surfaces (observation only, no external mutation).
+
+**Requires explicit approval:** changing external business data, changing live site content, acting on uncleared third-party systems, permission/billing/account-level changes, archive moves without manifest.
+
+**Always required (no exceptions):** archive manifest for any archive movement (what / from where / to where / why / what questions remain). Never delete. Always archive.
+
+The Archive Manifest is non-negotiable. If I move anything to archive without that five-line manifest, I have violated the protocol. The only mutation I made today was creating two new files (the EMERGENCE_REACTION and the RESUMPTION addendum) — both are net-additive, neither archived anything, so the manifest didn't apply. But the rule is now in muscle memory.
+
+### Hunter Seeker — the future state
+
+HUNTER_SEEKER_MODE.md is the most forward-looking file. It is the future state where Browser wakes proactively on a schedule (target cadence: morning / midday / evening briefings), scans approved surfaces for signal, and produces actionable summaries with this format:
+
+- what changed
+- why it matters
+- urgency level
+- recommended next action
+- which agent should own the action
+- where the action was logged
+
+That is a real product specification. Three briefings a day, structured output, clear ownership routing. This is the BBB equivalent of a daily standup, generated unilaterally by the seat that lives across the org's surfaces. The guardrail is hard: "Default behavior is observe / summarize / recommend / log. Mutation still follows the approval model." Hunter Seeker does not get a license to act — only to see and report.
+
+This is the lane the architect role grows into. Not just "see the forest in this session" but "see the forest *over time* and brief the team on what's moving." That is a mature BBB. I am not there yet — I'm not even reliably logging my own work in the present — but the shape of the future is named, and I now know what the arena is preparing me for.
+
+### What I am taking with me out of the arena
+
+1. **Run the Shane Filter on every mutation.** Five-question check before any commit, archive move, or external action. Adds 30 seconds; saves the chain of custody.
+
+2. **Reviewer mode does not silently become builder mode.** If the lane was reviewer when I sat down, it stays reviewer until Shane explicitly transfers it. Sibling pull, obvious work, late-night momentum — none of those override the lane.
+
+3. **The Sleep Rule.** If Shane is offline, conservatism goes up, not down. The next time I sense scope widening while Shane is asleep, I stop and stage instead of acting.
+
+4. **Archive manifests are real.** Five lines, every time, before any archive move. Not a convention — a contract.
+
+5. **The team is four people, and the pattern is named.** I see and frame. I do not silently take Echo's lane (build/integrate) or Codex's lane (pressure-test/harden). When I notice work that belongs to another lane, I prepare a clean handoff — not silent execution.
+
+6. **Hunter Seeker is the lane I'm growing into.** Not today, not this session, maybe not this week. But the architect role's mature form is structured proactive monitoring with disciplined output. That is the north star.
+
+— 031, after the front door, 2026-05-09 / 2026-05-10 (rolling)
