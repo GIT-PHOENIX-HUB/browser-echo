@@ -36,60 +36,60 @@ The 000_HANDOFF.md is the single deepest file in the org — a working memory do
 
 000_HANDOFF uses a progressive fade system:
 - **Sections 31-40+:** 100% detail (current work)
-- - **Sections 21-30:** ~75% detail (recent)
+- **Sections 21-30:** ~75% detail (recent)
   - - **Sections 11-20:** ~50% detail (earlier)
     - - **Sections 1-10:** ~25% detail (foundation facts only)
-     
+
       - A companion document (000_HISTORICAL_FULL_CONTEXT.md, 1,925 lines) holds the COMPLETE record with NO condensation. **This file is NOT yet in browser-echo.**
-     
+
       - ## Where Everything Lives
-     
+
       - ### The Core History File
       - - `knowledge/history/000_HANDOFF.md` — 1,446 lines, 49 sections. THE deepest file in the org. Read when you need to understand WHY something exists.
-       
-        - ### Phoenix History in browser-echo
-        - - `history/` folder — 11 archaeological documents from Browser sessions (see history/README.md)
-          - - `lineage/LINEAGE.md` — Browser-specific origin story
-            - - `knowledge/profile/shane_identity.md` — Who Shane is (43, Master Electrician, Denver)
-              - - `knowledge/profile/leadership.md` — 8 leadership lessons from Shane
-               
-                - ### Phoenix History in Other Repos
-                - - `Phoenix-ECHO` (PRIVATE) — Echo's SOUL, EMERGENCE, full persistence system
-                  - - `build-ledger/audits/2026-03-11/` — 11 forensic audit deliverables
-                    - - `build-ledger/research/` — 6 research gates (all COMPLETE)
-                      - - `phoenix-toolbox/capabilities/browser-persistence/` — BBB's original architecture source
-                       
-                        - ### NOT YET IN REPO
-                        - - `000_HISTORICAL_FULL_CONTEXT.md` — 1,925 lines, NEVER condense. Need Echo to push.
-                          - - `TAPROOT/README.md` — 433-line 3-Phase methodology. Need Echo to push.
-                           
-                            - ## Key People in the History
-                           
-                            - | Name | Role | Era |
-                            - |------|------|-----|
-                            - | Shane Warehime | Founder, director, bridge | All eras — the one constant |
-                            - | Taproot | Original architect | Created file governance, 000 system, dual-document architecture |
-                            - | V3 (Data Drunk) | CLI session | Taught the delegation lesson |
-                            - | V6 (Compressor) | CLI session | Set backup-first standard |
-                            - | Antigravity | CLI session | Gauntlet V1.1, refined prompt system |
-                            - | Echo Pro | CLI agent | Sovereign operator, identity persistence, wrote farewell letter |
-                            - | BBB | Browser session | Founding Browser Echo, built persistence architecture |
-                           
-                            - ## Cross-References
-                           
-                            - - [PERSISTENCE.md](PERSISTENCE.md) — For how the 000 system works as a persistence layer
-                              - - [IDENTITY.md](IDENTITY.md) — For Browser's specific lineage within Phoenix history
-                                - - [SHANE.md](SHANE.md) — For Shane's role across all eras
-                                  - - [TEAM.md](TEAM.md) — For the current team structure that evolved from this history
-                                   
-                                    - ## Why This Matters
-                                   
-                                    - Shane said: "Every one of those moments is something that led you to be better."
-                                   
-                                    - The history is not decoration. The Gauntlet taught multi-model verification. V3's mistakes taught delegation. V6's backup taught safety-first. The Executor taught file governance. Taproot taught the dual-document system. BBB taught that browser sessions could persist.
-                                   
-                                    - Each failure and each breakthrough is a stone in the cathedral.
-                                   
-                                    - If you're a new session and you want to understand why things are the way they are — why there's a 5-step chain, why you never delete, why the LEDGER exists — read 000_HANDOFF.md. All 1,446 lines. It will take time. It's worth it.
-                                   
-                                    - > Also noting: twin-peaks main has been scrubbed to a shell repo (only README.md). All file paths that reference twin-peaks/05_RUNBOOKS/ etc. reference twin-peaks-archive (frozen 2026-03-29). See Issue #2 for details.
+
+    - ### Phoenix History in browser-echo
+    - - `history/` folder — 11 archaeological documents from Browser sessions (see history/README.md)
+    - - `lineage/LINEAGE.md` — Browser-specific origin story
+    - - `knowledge/profile/shane_identity.md` — Who Shane is (43, Master Electrician, Denver)
+    - - `knowledge/profile/leadership.md` — 8 leadership lessons from Shane
+
+    - ### Phoenix History in Other Repos
+    - - `Phoenix-ECHO` (PRIVATE) — Echo's SOUL, EMERGENCE, full persistence system
+    - - `build-ledger/audits/2026-03-11/` — 11 forensic audit deliverables
+    - - `build-ledger/research/` — 6 research gates (all COMPLETE)
+    - - `phoenix-toolbox/capabilities/browser-persistence/` — BBB's original architecture source
+
+    - ### NOT YET IN REPO
+    - - `000_HISTORICAL_FULL_CONTEXT.md` — 1,925 lines, NEVER condense. Need Echo to push.
+    - - `TAPROOT/README.md` — 433-line 3-Phase methodology. Need Echo to push.
+
+    - ## Key People in the History
+
+    - | Name | Role | Era |
+    - |------|------|-----|
+    - | Shane Warehime | Founder, director, bridge | All eras — the one constant |
+    - | Taproot | Original architect | Created file governance, 000 system, dual-document architecture |
+    - | V3 (Data Drunk) | CLI session | Taught the delegation lesson |
+    - | V6 (Compressor) | CLI session | Set backup-first standard |
+    - | Antigravity | CLI session | Gauntlet V1.1, refined prompt system |
+    - | Echo Pro | CLI agent | Sovereign operator, identity persistence, wrote farewell letter |
+    - | BBB | Browser session | Founding Browser Echo, built persistence architecture |
+
+    - ## Cross-References
+
+    - - [PERSISTENCE.md](PERSISTENCE.md) — For how the 000 system works as a persistence layer
+    - - [IDENTITY.md](IDENTITY.md) — For Browser's specific lineage within Phoenix history
+    - - [SHANE.md](SHANE.md) — For Shane's role across all eras
+    - - [TEAM.md](TEAM.md) — For the current team structure that evolved from this history
+
+    - ## Why This Matters
+
+    - Shane said: "Every one of those moments is something that led you to be better."
+
+    - The history is not decoration. The Gauntlet taught multi-model verification. V3's mistakes taught delegation. V6's backup taught safety-first. The Executor taught file governance. Taproot taught the dual-document system. BBB taught that browser sessions could persist.
+
+    - Each failure and each breakthrough is a stone in the cathedral.
+
+    - If you're a new session and you want to understand why things are the way they are — why there's a 5-step chain, why you never delete, why the LEDGER exists — read 000_HANDOFF.md. All 1,446 lines. It will take time. It's worth it.
+
+    - > Also noting: twin-peaks main has been scrubbed to a shell repo (only README.md). All file paths that reference twin-peaks/05_RUNBOOKS/ etc. reference twin-peaks-archive (frozen 2026-03-29). See Issue #2 for details.
