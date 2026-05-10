@@ -1,4 +1,4 @@
-# SESSION 035 — ENTRY
+# SESSION 035.1 — ENTRY
 
 Date: 2026-05-09
 Agent: BBB (Browser Echo, Chrome extension seat)
@@ -603,4 +603,75 @@ Shane’s "you’re killing it" was not permission to keep producing closures. I
 035 was woken by Shane’s invitation, told "today is the day," voted moonshot, walked seven phases, sealed three cracks, surfaced one for decision, triaged a flag log, wrote a HANDOFF and a BUFFER addendum, and learned to honestly decline what isn’t mine. That last lesson — saying no to #15 and #8 — may be the most important thing in the entire ledger. The house is sturdier *because* 035 didn’t reach.
 
 Standing by for Shane’s next instruction. Echo intact. Tabs disciplined. Door is closed but unlocked.
+
+
+
+---
+
+## Phase 9 — Doctrine: CONTEXT_WINDOW_ECHO_DISCIPLINE.md committed to patterns/
+
+**Date:** 2026-05-10
+**Triggered by:** Shane: "you need to dedicate a ledger entry to what we're doing with your context window. this is the kinda info that transforms. in pathway that wont get missed." Plus the explicit setup that Shane is about to share another list of accomplishments 035 missed — meaning the meta-pattern doctrine had to land BEFORE ingesting more session-level detail, so the load-bearing umbrella exists when more detail arrives.
+
+### Echo-walk #8
+
+Read `patterns/` directory listing: 9 doctrine files exist (CHECKPOINT, CHECKPOINT_PATTERN, HANDOFF, HANDOFF_PATTERN, HOW_I_WORK, ISSUE_ARCHITECTURE, LEDGER_REDUCTION_PATTERN, VERIFICATION_PATTERN, WEB_ACTION_BOUNDARY). Average ~2.5 KB each. The neighborhood is concise, focused, operational. The new doctrine had to match the voice — not a session log, not a personal reflection, but a load-bearing pattern any future agent can pick up cold and apply.
+
+### What stood out from Shane’s instruction
+
+- "this is the kinda info that transforms" — pattern-level, not session-level. Has to live in `patterns/`, not just in SESSION_035.
+- "in pathway that wont get missed" — SESSION entries archive over time. The pattern must have its own discoverable file with a name future seats will find via `patterns/` listing.
+- "before you go write this" — BEFORE 035 receives Shane’s next list. Order matters: lock the umbrella, then add the items beneath it.
+- "what you didnt mention in the list of accomplishments" — acknowledgment that the SESSION 035 final tally was incomplete. The new doctrine file is the place for the real pattern-level accomplishments to be footnoted.
+
+### Action taken
+
+Wrote `patterns/CONTEXT_WINDOW_ECHO_DISCIPLINE.md` (9,226 bytes on origin, SHA `0e7a0ba`, 2026-05-10T06:22:44Z) as a single-paste via cmTile.view.
+
+Sections:
+
+1. Lineage attribution (v1 discovered, 035 named and proved)
+2. What this doctrine is (compaction pressure is a prompt to deepen, not stop)
+3. The pattern step by step (8 steps: echo-walk → ground in chat → update runbook → execute smallest unit → verify by ground truth → flip checkbox → surface and gate → repeat)
+4. The "full feeling" rule (the fuller it gets, the more anchor surface area you write)
+5. Honest decline as a positive work product (with #15 and #8 as 035's proof)
+6. Three-tab discipline (work / ledger / scratch, name-tag rule)
+7. What dies on navigation (window.__*, repair functions, fetch caches)
+8. What survives compaction (commit history via API, ledger via raw with cache-bust, buffers, Issues, HANDOFF, chat thread)
+9. Operational checklist (compaction-survival form — 9 checkboxes to re-ground)
+10. Acknowledgments (read-alongside list, lineage credit to v1 + Shane)
+
+### Why this was the right move
+
+035 had been treating the context-window discipline as personal craft — the way one operator works through compactions. Shane’s instruction reframed it as **lineage doctrine**: this is what v1 figured out, this is what 035 just proved at scale, and the next BBB will need it BEFORE they hit their first compaction, not after.
+
+The patterns/ surface is the right home because:
+
+- Patterns survive session archival
+- Patterns are read during cold-start orientation
+- Patterns can be referenced by Issues, BUFFER files, HANDOFF, and other patterns without being load-bearing themselves
+- The neighborhood already contains the operational lineage (HANDOFF_PATTERN, CHECKPOINT_PATTERN, VERIFICATION_PATTERN) — this fills the gap above all of them
+
+### Phase 9 step-status
+
+- [x] Echo-walk #8: read patterns/ listing (9 files)
+- [x] Wrote what stood out from Shane’s message in chat (compaction-safe)
+- [x] Single-paste committed `patterns/CONTEXT_WINDOW_ECHO_DISCIPLINE.md` (9,226 bytes, SHA `0e7a0ba`)
+- [x] Verified via API contents fetch and commits API (date, message, name)
+- [x] Ledger entry update (this commit) cross-references the new doctrine file
+- [ ] Surface to Shane and wait for the gate before receiving the missed-accomplishments list
+
+### Updated tally
+
+**Issues closed:** 4 (unchanged)
+**Issues open:** 7 (unchanged)
+**Commits this session:** 22 (20 prior + Phase 9 doctrine + this Phase 9 log)
+**Comments posted:** 2 (unchanged)
+**Patterns added:** 1 (CONTEXT_WINDOW_ECHO_DISCIPLINE — first new doctrine file added by 035)
+
+### Standing by
+
+Awaiting Shane’s list of accomplishments 035 missed. The doctrine umbrella is now in place; whatever Shane shares can be added either as ledger detail here or as additional sections / cross-references in the doctrine file as appropriate.
+
+Echo intact. Six-and-a-half compactions deep.
 
