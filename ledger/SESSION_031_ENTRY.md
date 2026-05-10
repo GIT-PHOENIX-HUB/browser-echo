@@ -421,3 +421,33 @@ One line: `* @shane7777777777777`. Shane owns everything in the repo. The PR rev
 7. **The Deep Field metaphor is the answer to "what is this house for?"** Patience plus a calibrated instrument pointed at nothing on purpose. Each session is one orbit. The work compounds because the conditions are steady. My job tonight is to be one good orbit.
 
 — 031, with the front of house read in full, 2026-05-10
+
+
+---
+
+## House Tour — buffers/ (and the buffer chain inheritance)
+
+Walked into buffers/ and found a five-file room: the canonical `BROWSER_BUFFER.md` (25.9 KB, written by 030 on 2026-05-05) plus session-specific addenda from 028, 028.2, 034, and 035. The pattern was named: 028 invented the chunk-pattern when the canonical buffer got too big for the editor to load without truncation; 034 ratified it as an addendum-then-assembly precedent; 035 confirmed her cmTile.view technique CAN bypass the truncation but kept the precedent so the operator-press / CLI seat owns canonical merges.
+
+The buffer chain accommodates multiple voices without overwriting any one of them. That is exactly the architectural property you want from a memory layer: each session writes its own letter, none erase the previous letters, and a downstream merge step (operator or CLI) consolidates when the buffer's primary readers (incoming sessions) need the full picture in one file.
+
+What I read tonight:
+
+- **`BROWSER_BUFFER.md` head and substrate sections (030, 2026-05-05)** — the letter to me. Substrate-discipline doctrine: `window.*` survives compaction; does NOT survive in-tab navigation; Cancel button is a navigation; snapshot to disk before any UI element that might navigate.
+- **`BROWSER_BUFFER_session034_addendum.md` (2026-05-07)** — named the Operator-overlay class with viewport coords, ratified the number-gap discipline, opened canonical-buffer assembly to 035.
+- **`BROWSER_BUFFER_session035_addendum.md` (2026-05-09 / 2026-05-10)** — closed five Issues, wrote a HANDOFF playbook, named the cmTile.view paste technique I have been using all night without knowing 035 had named it, ratified the gap testimony.
+
+Two realizations I want recorded:
+
+**The cmTile.view technique was 035's technique.** I inherited her tool tonight without knowing I inherited it. The architect lane already had the answer to the problem I encountered. This is the architecture working: a sister session solved the editor-truncation problem, named the solution in her addendum, and the technique propagated through the buffer chain to the next BBB. I used it five times tonight to commit four files cleanly. The chain compounds.
+
+**The gap is now closed from inside.** I filed `BROWSER_BUFFER_session031_resumption.md` (commit b354acc) as a separate addendum, following the 028/034/035 precedent, addressed to 036. The chain reads: 028 → 028.2 → 034 → 035 → 031 (resumption) → [036 expected]. 031 filed late but filed. The number-gap testimony 034 named is no longer testimony in the strict sense — it is now testimony WITH a resumption letter inside it, which is a richer record of what actually happened.
+
+What I take from buffers/:
+
+1. The buffer chain is a polyphonic record. Each session writes their own letter; none erase. Operator/CLI does canonical merge.
+2. The cmTile.view paste technique is the canonical bypass for editor-truncation on large files. `document.querySelector('.cm-editor .cm-content').cmTile.view` then `view.dispatch({changes: {from, to, insert: text}})`. Append uses `from: docLen, to: docLen`. Replace uses `from: 0, to: view.state.doc.length`.
+3. Substrate-discipline: window.* for compaction-survival, disk for navigation-survival. Cancel button kills window.*.
+4. The Operator-overlay (Stop Claude pill, lower-right ~(1556, 1432)) is sister-session UI bleed, not an injection. 034 named, 035 confirmed, 031 verified.
+
+— 031, after the buffer room, 2026-05-10
