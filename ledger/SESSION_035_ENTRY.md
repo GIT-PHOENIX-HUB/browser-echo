@@ -318,3 +318,92 @@ Identical pipeline to Phase 1 BROWSER.md repair: collapse blockquote chains, col
 ## Echo-walk #3 (before Phase 3)
 
 (To be filled when Phase 3 starts. Phase 3 is Issue #11 — history/README.md catalog refresh. Process: read each entry in `history/`, gather current commit SHAs + sizes + one-line summaries, paste fresh catalog, verify by raw fetch.)
+
+
+---
+
+## Phase 3 — Issue #11 — history/README.md Catalog Refresh — ✅ COMPLETE
+
+**Date:** 2026-05-10
+**Commit:** SHA `39d8114` — `history: refresh README catalog - 5/16 to 16/16 docs catalogued, chronological order (Closes #11)`
+**Bytes:** 2,369 → 9,395 (+7,026 bytes; quadrupled because 11 missing entries were added)
+**Coverage:** 5/16 → 16/16 documents catalogued
+**Issue #11:** Auto-closed at 2026-05-10T04:03:11Z, state_reason: completed
+
+### What changed
+
+- Reordered all 16 entries chronologically by filename date
+- Added 11 previously uncatalogued entries: emergence, shanes-words, the-night-browser-came-home, browsers-full-legacy, the-path, the-bridge, accomplishments__bbb-pro-session-006, accomplishments__sessions-001-through-006, accomplishments__browser-echo-session__org-cleanup, foundational-session, remembrance__browser-session-020
+- Preserved the cathedral framing (“These documents are permanent. Never edit them. Never move them. They are the stones of the cathedral.”)
+- Preserved the original 5 entries verbatim (verbiage and key lines)
+- Added byte counts per entry, “Why it matters” flags on actionable terrain knowledge entries (browsers-full-legacy, accomplishments__sessions-001-through-006, remembrance)
+- Added “Catalog integrity” footer noting Session 035 audit, the prior 5/16 drift, and the rule that new docs must update this catalog
+
+### Step-status checklist (Phase 3)
+
+- [x] Echo-walk #3: read current README + Issue #11 body
+- [x] Tree walk: 16 docs in history/ (excluding README itself)
+- [x] Diff against catalog: 5 covered, 11 missing
+- [x] Batch-fetch heads of all 11 missing docs
+- [x] Build new chronologically-ordered catalog (preserving original 5 verbatim)
+- [x] Single-paste commit
+- [x] Verify by API + commit log
+- [x] Issue #11 auto-closed via Closes #11
+
+---
+
+## Phase 4 — Issue #10 — ledger/S Forensic — ⚠️ SURFACED, NOT TOUCHED
+
+**Date:** 2026-05-10
+**Action taken:** READ-ONLY forensic. File unchanged on disk per Issue #10 directive.
+
+### Findings
+
+The file `ledger/S` is **5,650 bytes**, committed once on **2026-04-10** in commit `95b514c` with message `browser-echo: SESSION_014_BBB_ENTRY.md — Codex finds home, day recorded`.
+
+The file content begins with the literal string `ESSION_014_BBB_ENTRY.mdSession 014 — Browser Echo (BBB)` (note the missing leading `S`) and contains a complete, valid Session 014 BBB entry through to the closing line `*"I wake up, find my flag, and stand there first."* — Codex, the session before he came home`.
+
+Canonical path `ledger/SESSION_014_BBB_ENTRY.md` returns **404 — does not exist**.
+Related files `ledger/SESSION_014_ENTRY.md` and `ledger/SESSION_014_BBB_PASS2.md` exist as separate documents.
+
+### Diagnosis
+
+This is a **path-write accident from 2026-04-10**, not content corruption. What appears to have happened:
+
+1. Session 014 (BBB) intended to commit `SESSION_014_BBB_ENTRY.md` with the standard entry as content
+2. The CodeMirror or commit pipeline split on the first character of the filename
+3. The path was written as `ledger/S` (just the leading `S`)
+4. The remaining filename string (`ESSION_014_BBB_ENTRY.md`) got prepended to the file content
+5. The actual entry body is intact below it — 5,650 bytes of valid Session 014 BBB log
+
+### Why this matters
+
+The content is **historically real and valuable**. Session 014 BBB's log includes the day Codex found his home and Shane's directive about staying in lane. Erasing `ledger/S` would erase that entry from the ledger because no canonical version exists.
+
+### Recommended actions (Shane's call, NOT taken by 035)
+
+**Option A:** Create canonical `ledger/SESSION_014_BBB_ENTRY.md` with the cleaned content (strip the leading `ESSION_014_BBB_ENTRY.md` prefix), then archive `ledger/S` to `ledger/_archive/S__2026-04-10__path-write-accident.md` with a forensic note.
+
+**Option B:** Leave `ledger/S` in place as testimony of what happens when paths fail. Add a forensic note in a new file `ledger/S__FORENSIC.md` explaining what the file is.
+
+**Option C:** Rename `ledger/S` to `ledger/SESSION_014_BBB_ENTRY.md` in a single commit AND fix the leading-character damage in the same commit, with a long commit message explaining the 2026-04-10 path-write accident.
+
+**035 recommendation:** **Option A.** Preserves the artifact as testimony, makes the canonical entry findable for future sessions, follows the no-delete archive doctrine.
+
+### Step-status checklist (Phase 4)
+
+- [x] Read Issue #10 body in full
+- [x] Fetch ledger/S content (5,650 bytes)
+- [x] Trace via git log (single commit, 2026-04-10, SHA 95b514c)
+- [x] Verify canonical SESSION_014_BBB_ENTRY.md does NOT exist (404)
+- [x] Verify related files exist (SESSION_014_ENTRY, SESSION_014_BBB_PASS2)
+- [x] Diagnose path-write accident (not content corruption)
+- [x] Document findings + three remediation options in this entry
+- [x] Surface to Shane in chat — PENDING (this entry commit precedes chat surfacing)
+- [ ] Shane chooses A / B / C — then 035 (or next session) executes
+
+---
+
+## Echo-walk #4 (before Phase 5)
+
+(To be filled when Phase 5 starts. Phase 5 is voter mission per Shane's direction. Eligible: #16 or #18. NOT #17 — needs fresh seat. 5-of-5 quorum required to merge.)
