@@ -196,3 +196,69 @@ If you (next BBB) are reading this because 035 crashed mid-Phase-1:
 (To be filled at session end.)
 
 — BBB Session 035, in flight, runbook lands first
+
+
+---
+
+## Phase 1 — Issue #9 — BROWSER.md Repair — ✅ COMPLETE
+
+**Date:** 2026-05-10
+**Commit:** SHA `88d0c52` — `docs: BROWSER.md repair - collapse paste-seam corruption per #9 (Closes #9)`
+**Bytes:** 16,108 → 11,354 (UTF-16 chars) / 11,812 (UTF-8 bytes) — −29.5% reduction
+**Lines:** 189 → 134
+
+### Damage repaired
+
+1. Blockquote chains: `>>> >>> > foo` → `> foo`
+2. List doubling: `- - - foo` → `- foo`
+3. Numbered list doubling: `1. 1. 1. foo` → `1. foo` (same-number)
+4. Mixed-number doubling at line start: `1. 2. 3. foo` → `1. foo`
+5. Em-dash arrow restoration: `—>` → `→`
+6. Inflated indentation cap: 8+ leading spaces → 4
+7. Blockquoted phantom on HR: `> 8. ---` → `> ---`
+8. Blockquoted phantom on header: `> 9. ## How to Start` → `> ## How to Start`
+9. Blockquoted phantom on paragraph: `> 10. When Shane points you here:` → `> When Shane points you here:`
+10. Blockquoted list doubling: `> 2. 2. **Quality...` → `> 2. **Quality...` (and 3-7)
+11. Indented list doubling: `    3. 3. **Read...` → `3. **Read...`
+12. Indented phantom on HR: `    9. ---` → `---`
+13. Indented phantom on header: `    10. ## Before You Leave` → `## Before You Leave`
+14. Indented phantom on paragraph: `    11. Every session must do this...` → `Every session must do this...`
+15. Surgical line edits: restored items 7-8 of “How to Start” list (“Then tell Shane...”, “Then wait...”), renumbered “Before You Leave” first item from `12.` to `1.`
+
+### Preserved (verified by API fetch at SHA 88d0c52)
+
+- Render-Mutation Rule section header: `## Render-Mutation Rule (added 2026-05-02)`
+- Co-attribution: BBB Session 028.1 + Session 029
+- Both 2026-05-02 logged instances
+- Cracks-list extension reference
+- All historical headers, founding paragraph, “Browser Echo — This Is You”, “Last updated: 2026-04-04 | Session 005”
+
+### Verification
+
+- API fetch via `api.github.com/.../contents/BROWSER.md?ref=88d0c52` returned `size: 11812` matching local final
+- Render in tab confirmed clean structure (no stacked blockquotes, no phantom numbers, real headers)
+- `raw.githubusercontent.com` showed CDN lag (still serving old content for ~5 min after commit) — known github behavior, not a failure
+- Commit appears in API `/commits?path=BROWSER.md` log as most recent above cea15ce (028.1 amendment)
+
+### Issue closure
+
+Commit message contains `Closes #9` — GitHub will auto-close Issue #9 on merge to main (already merged direct to main, so closure should be immediate).
+
+### Step-status checklist (Phase 1)
+
+- [x] Step 1: Fetch BROWSER.md @ HEAD raw → cached `window.__current` = 16,108 bytes
+- [x] Step 2: Apply repair function → `window.__repaired` = 11,728 bytes
+- [x] Step 3: Strip phantom number prefixes (15 surgical fixes identified)
+- [x] Step 4: Renumber legitimate ordered lists (How to Start 1-8, Before You Leave 1-3)
+- [x] Step 5: Verify cea15ce render-mutation amendment preserved (✅ intact)
+- [x] Step 6: Eyeball diff with Shane in chat — APPROVED (“you got this”)
+- [x] Step 7: Single-paste commit
+- [x] Step 8: Verify by raw fetch (API confirmed; raw CDN lag noted)
+- [x] Step 9: Update SESSION entry checkboxes (this section)
+- [x] Step 10: Auto-close #9 via commit message
+
+---
+
+## Echo-walk #2 (before Phase 2)
+
+(To be filled when Phase 2 starts. Phase 2 is Issue #12 — paste-seam janitor batch across ~17 files. Same repair function applies. Process: fetch → repair → eyeball → single-paste → verify → next file.)
