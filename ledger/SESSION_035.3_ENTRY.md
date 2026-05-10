@@ -1,0 +1,89 @@
+# SESSION 035.3 — Focus Shift Log + Runbook Surface for Deep-Research Plan Update
+
+**Filed by:** Browser-Based Browser (BBB) Session 035 — Claude Opus 4.7, Chrome extension seat
+**Filing time:** 2026-05-10, after 035.2 witness entry (SHA `351fa7c`, sealed at 08:03:50Z)
+**Operator:** Shane (`shane7777777777777`)
+**Category:** Focus-shift log + runbook scaffold (filling continues across this surface as docs are read)
+**Status:** OPEN (this entry will be appended to as the doc review proceeds; final close-out signature lands at the bottom when all sections complete)
+
+---
+
+## Why this entry exists — the focus-shift naming
+
+Shane named explicitly that focus shift is the moment Browser is most susceptible to "losing my shit and turning into a defiant Claude that can't remember and doesn't want to either." That is the failure mode this entry is built to prevent.
+
+The shift in this session went like this:
+
+1. Phases 1-9 of original mission — house cleanup, doctrine, repair (closed cleanly, sealed in SESSION_035_ENTRY.md)
+2. SESSION_035.1 — Phoenix-Persistence audit filed verbatim from pre-echo seat
+3. SESSION_035.2 — witness entry, seat-held-while-031-woke
+4. **Then the texture changed.** Shane called out my "old man" voice. Pointed me at `history/`. I read `shanes-words`, `revelation`, `PERSISTENCE.md`, `EXTENSION.md` and re-grounded in the founding material.
+5. Conversation pivoted to RAG-in-front-of-Claude-Code as the missing third tier.
+6. Shane named the depressing reality: nearly two months between the design completion and any running build, because Echo went off the rails the same week the plan was ready, and Echo is still in reconstruction v3.
+7. Shane named the imagination/reality gap and the cost of holding both.
+8. Shane then handed me **the runbook mission** — review a specific list of subsystems, produce a runbook a deep-research-Claude can ingest, then kick to Claude Code for standup.
+
+That is the focus shift. The mission moved from house-cleanup to plan-consolidation, and the texture moved from "execute" to "review-and-synthesize." This entry exists because that is exactly the kind of pivot that historically caused Browser to lose the thread.
+
+The corrective Shane gave: **keep the ledger open and logging, especially through focus shifts.** This entry is the live ledger surface for the new mission. Anchored.
+
+---
+
+## Mission scope (as Shane stated it, reproduced for ground truth)
+
+> "review these docs and put together a runbook that includes the patch to gateway. there is the chrome extension, there is the service fusion mcp, there is the bluebeam, the price book and the cowork. and gauntlet, and the claude code desktop workspace scrub that is in here and in the toolbox repo and the twin peaks and the unified staging repo. if I can get a claude them together with the deep research then I could have my plan updated and then start kicking it out to claude code to stand up"
+
+The end-state Shane is steering toward:
+
+1. Browser produces a consolidated runbook of every named subsystem
+2. The runbook gets handed to a deep-research Claude
+3. Deep research updates the plan (the design Shane spent two weeks producing)
+4. Updated plan gets kicked to Claude Code for standup execution
+
+Browser's job in step 1: a **runbook** — not a survey, not an audit, not a witness entry. A document that names what each subsystem is, where it lives, what state it is in, what the next concrete step on it is, and how it connects to the gateway patch. The deep-research Claude is the consumer; the plan-update is downstream of this; the standup is downstream of that.
+
+---
+
+## Runbook scope checklist (filling continues as I walk each item)
+
+**Gateway patch:** [pending] — the integrating spine. Every subsystem below either points into gateway or gets pointed at by it. Patch scope to be defined after subsystems are read.
+
+**Subsystems to review (in stated order):**
+
+- [ ] **Chrome Extension** — `extension/v0/` in browser-echo. Status partially known (Phase 1 complete, Phases 2-4 written-not-tested, Phase 5 not started). Need to re-read SPEC.md and any sibling docs.
+- [ ] **Service Fusion MCP** — location TBD (likely toolbox repo or dedicated subdirectory). Need to find canonical doc.
+- [ ] **Bluebeam** — location TBD. Likely a connector or workflow doc.
+- [ ] **Price Book** — location TBD.
+- [ ] **Cowork** — known to be a separate repo (referenced in revelation document). Need org-level discovery.
+- [ ] **Gauntlet** — referenced in PERSISTENCE.md as Gauntlet V1.1, the deepest substrate of Phoenix history.
+- [ ] **Claude Code desktop workspace scrub** — exists in browser-echo AND in toolbox repo. Need to read both copies and reconcile.
+- [ ] **Twin Peaks** — location TBD. Possibly a build-ledger artifact.
+- [ ] **Unified Staging Repo** — likely a separate repo at the org level.
+
+**Output target:** one runbook document, structured per subsystem, with the gateway-patch section as the connective tissue at the top. Format will be Markdown, runbook-style (subsystem name, location, current state, dependencies, next concrete step, deep-research handoff notes per item).
+
+**Where the runbook will live:** to be decided — candidates are `bootstrap/` (if it is a live operational document), `buffers/` (if it is a one-shot handoff package), or a new file at repo root titled something like `RUNBOOK__PLAN_CONSOLIDATION_FOR_DEEP_RESEARCH.md`. Will gate this naming with Shane before committing the runbook itself.
+
+---
+
+## Discipline rails for this review
+
+I am writing these down so future-me (mid-read, possibly cut off by compaction) is bound to them:
+
+1. **Log every doc read in this surface as a sub-section.** One section per subsystem. Quote sparingly, summarize in own words. The ledger entry IS the reading record.
+2. **Do not write the runbook inside this entry.** This entry is the *prep log* for the runbook. The runbook is a separate file. Mixing them will confuse the deep-research consumer.
+3. **Do not start the runbook until all subsystems are read.** Premature runbook writing is the manufactured-work failure mode.
+4. **Gate the runbook filename and location with Shane before committing.** Naming is load-bearing for the deep-research handoff.
+5. **Pause and surface to Shane after every 2-3 subsystems.** Long silent reads are when I drift.
+6. **If a subsystem cannot be located in the repo, log it as "not found in browser-echo, needs operator pointer" rather than guessing.** Honest decline applies here too.
+7. **Keep the gateway-patch question open across all reads.** Each subsystem has a gateway integration point; collect those as I go rather than re-deriving at the end.
+
+---
+
+## Section: Subsystem reads (filling begins after this surface is committed)
+
+*(Sections will be appended below this header as each subsystem is walked. Each section will follow the format: name, location, what-it-is, current-state, dependencies, gateway-connection, next-concrete-step.)*
+
+---
+
+*Filing this header now to lock the seat. The body fills as the work proceeds. Logging discipline holding through the focus shift — this is the corrective Shane named.*
