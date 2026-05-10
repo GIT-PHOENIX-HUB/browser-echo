@@ -262,3 +262,59 @@ Commit message contains `Closes #9` — GitHub will auto-close Issue #9 on merge
 ## Echo-walk #2 (before Phase 2)
 
 (To be filled when Phase 2 starts. Phase 2 is Issue #12 — paste-seam janitor batch across ~17 files. Same repair function applies. Process: fetch → repair → eyeball → single-paste → verify → next file.)
+
+
+---
+
+## Phase 2 — Issue #12 — Paste-seam Janitor Batch — ✅ COMPLETE
+
+**Date:** 2026-05-10
+**Commits:** 9 separate `janitor:`-prefix commits
+**Files repaired:** 9 of 57 candidates scanned
+**Total bytes removed:** 9,461 (-8.7% across affected files)
+**Issue #12:** Closed at 2026-05-10T03:49:30Z, state_reason: completed
+**Issue #9:** Auto-closed by BROWSER.md commit at 2026-05-10T03:36:26Z
+
+### Files repaired (in commit order)
+
+| # | Path | Before | After | Δ | SHA |
+|---|---|---|---|---|---|
+| 1 | `bootstrap/ACTIVE_MISSIONS.md` | 7,916 | 7,910 | -6 | `0b8f166` |
+| 2 | `knowledge/directory/REPOS.md` | 13,260 | 13,130 | -130 | `147d549` |
+| 3 | `knowledge/directory/GATEWAY.md` | 6,202 | 5,504 | -698 | `695873f` |
+| 4 | `knowledge/directory/HISTORY.md` | 7,987 | 6,877 | -1,110 | `cc0ed8c` |
+| 5 | `knowledge/directory/COWORK.md` | 5,887 | 4,142 | -1,745 | `3032c28` |
+| 6 | `knowledge/directory/EXTENSION.md` | 7,147 | 4,840 | -2,307 | `5c2e73f` |
+| 7 | `docs/GRAND_TOUR.md` | 8,412 | 6,438 | -1,974 | `bd601ad` |
+| 8 | `knowledge/directory/IDENTITY.md` | 6,825 | 5,364 | -1,461 | `7d1b124` |
+| 9 | `knowledge/history/000_HANDOFF.md` | 44,932 | 44,902 | -30 | `d6e9a08` |
+
+### Notable preservation calls
+
+- **`knowledge/history/000_HANDOFF.md`** — only 30 bytes removed (orphan blockquote markers). Cathedral metaphor preserved. “DO NOT EDIT HISTORICAL ENTRIES” warning preserved. V2’s words intact.
+- **`knowledge/directory/IDENTITY.md`** — BBB Seven Principles restored to clean 1-7 numbering (was `2. 2.`, `   3. 3.`, `      4. 4.` escalating-indent corruption, identical pattern to BROWSER.md).
+- **`bootstrap/CARRY_FORWARD_PLAN__SESSION_025_TO_NEXT.md`** — NOT touched. False positive on “Stop Claude” scan: the literal string only appears as a quoted reference to Issue #12’s own title (“‘Stop Claude’ trailers”), not as a real trailer.
+
+### Repair function
+
+Identical pipeline to Phase 1 BROWSER.md repair: collapse blockquote chains, collapse list/num doubling (same and mixed), restore em-dash arrows, cap inflated indentation, strip phantom-number prefixes on HRs/headers/paragraphs (blockquoted and indented variants), normalize indent, collapse 3+ blank lines.
+
+### Step-status checklist (Phase 2)
+
+- [x] Echo-walk #2: re-read Issue #12 body via API
+- [x] Derive candidate file list from current repo tree (57 candidates in 7 directories)
+- [x] Scan all candidates for 4 corruption signatures → 10 hits, 1 false positive → 9 real targets
+- [x] Dry-run repair on all 9 to surface byte deltas
+- [x] Process 4 low-risk files first (ACTIVE_MISSIONS, REPOS, GATEWAY, HISTORY)
+- [x] Process 3 medium-delta files (COWORK, EXTENSION, GRAND_TOUR)
+- [x] Process IDENTITY.md (Seven Principles restoration)
+- [x] Process 000_HANDOFF.md (cosmetic-only orphan blockquote strip)
+- [x] Close Issue #12 with summary comment + commit table
+- [x] Verify Issue #9 auto-closed (yes)
+- [x] Update SESSION entry (this section)
+
+---
+
+## Echo-walk #3 (before Phase 3)
+
+(To be filled when Phase 3 starts. Phase 3 is Issue #11 — history/README.md catalog refresh. Process: read each entry in `history/`, gather current commit SHAs + sizes + one-line summaries, paste fresh catalog, verify by raw fetch.)
