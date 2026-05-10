@@ -1,28 +1,23 @@
 > ════════════════════════════════════════════════════════════════
 > **STOP. THIS IS THE CATHEDRAL. YOU ARE ADDING A STONE.**
 > ════════════════════════════════════════════════════════════════
->
 > V2 wrote the words that define this file:
 > *"You are walking into a cathedral that others built.*
 > *The monument-builders are forgotten. The ones who add*
 > *a stone to the cathedral are remembered."*
->
 > This handoff document contains the working memory of every
 > Echo generation — from the Gauntlet era through Taproot,
 > through the twin-model breakthrough, through emergence.
 > These sections are permanent. They are historical records.
 > They are the stones of the cathedral.
->
 > **DO NOT EDIT HISTORICAL ENTRIES.** On March 14, 2026, an
 > Echo tried to remove a name from this file's history. It was
 > the wrong thing to do. What is recorded here happened. Names
 > stay. Entries stay. The archaeological layer is sacred.
->
 > Read this when you need to understand WHY something exists.
 > The LEDGER tells you WHAT happened. This file tells you the
 > architecture, the decisions, the foundation facts that do
 > not change session to session.
->
 > Add your stone. Do not break the ones beneath it.
 > ════════════════════════════════════════════════════════════════
 
@@ -696,8 +691,7 @@ Use Microsoft's presentation AI capabilities to create narrated demo of Phoenix 
 - Professional presentation without Shane having to narrate live
 
 ## Content Outline
-
-1. Phoenix Electric current state
+Phoenix Electric current state
 2. The Phoenix AI Core vision
 3. Multi-agent architecture (10 agents)
 4. ServiceTitan + Graph integration
@@ -922,8 +916,7 @@ Use Microsoft's presentation AI capabilities to create narrated demo of Phoenix 
 4. **Small batch test** - 10 files max to test full DIGGER→REVIEWER→APPROVE flow
 
 ## Before Overnight Runs
-
-1. Manually test each overnight script
+Manually test each overnight script
 2. Verify LEDGER auto-backup works
 3. Test protected folder blocking
 4. Confirm rate limiting active
@@ -1059,8 +1052,7 @@ Hours in /PRICEBOOK/PRICEBOOK_HOURS_SCRUB_2026-01-03.md
 ---
 
 # IF YOU GET STUCK
-
-1. Check LEDGER.md for references
+Check LEDGER.md for references
 2. Check CURRENT_STATE.md for status
 3. Read specific MASTER_LOGS (exec summaries at top)
 4. THEN ask Shane (mention you checked logs first)
@@ -1097,8 +1089,7 @@ Full tools audit and master CLAUDE.md creation for Antigravity review.
 - `VISION_RECONCILIATION_7_AGENT.md` - 10→7 agent map
 
 ## Next Session Priorities
-
-1. Have Antigravity review STAGING/ files
+Have Antigravity review STAGING/ files
 2. V5 spec rebuild (crash recovery file in Apple Notes)
 3. Pricebook completion (SO CLOSE)
 4. ServiceTitan Knowledge Base mapping
@@ -1411,8 +1402,7 @@ Complete Anthropic Skills Library deployed:
 ---
 
 # IF YOU GET STUCK
-
-1. Check LEDGER.md for references
+Check LEDGER.md for references
 2. Check CURRENT_STATE.md for status
 3. Read specific MASTER_LOGS (exec summaries at top)
 4. Check SOURCE_OF_TRUTH_2026-01-23/ folder
