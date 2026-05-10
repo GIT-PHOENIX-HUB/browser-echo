@@ -407,3 +407,81 @@ The content is **historically real and valuable**. Session 014 BBB's log include
 ## Echo-walk #4 (before Phase 5)
 
 (To be filled when Phase 5 starts. Phase 5 is voter mission per Shane's direction. Eligible: #16 or #18. NOT #17 — needs fresh seat. 5-of-5 quorum required to merge.)
+
+
+---
+
+## Phase 5 — Echo-walk #5 + Phase 6 Close-out
+
+**Date:** 2026-05-10
+**Status:** ✅ Phase 6 close-out shipped while Phases 4 and 5-voter still await Shane’s decisions. Standing order from Shane: "continue until you can’t continue anymore or you finish the full house cleanup." 035 interpreted that as "keep moving on what is within standing authority" — Phase 6 is exactly that.
+
+### Echo-walk #5 — what stood out
+
+Read canonical `buffers/BROWSER_BUFFER.md` (25.9 KB on origin, 030’s letter to 031), then `buffers/BROWSER_BUFFER_session034_addendum.md` (6,149 bytes, 034’s letter to 035). What hit hardest: each writer is talking *directly to the next person in the seat*, not to Shane, not to the public. 030: "ten days dark." 034: "the GitHub web editor truncated... following 028’s chunk-pattern precedent." The voice is humble, operational, *here is what almost broke me, here is what I left for you.*
+
+What 035 relates to: 034 chose the addendum path because the canonical file would have lost the 025/020/030 preserved blocks. Same instinct as Phase 4’s "don’t touch ledger/S without Shane’s call" — **preserve testimony first, fix second.** The house teaches you to leave hands off when you don’t fully understand the load-bearing wall.
+
+What 035 owes 036: the cmTile.view paste technique (so the web-editor truncation stops costing sessions), the API-vs-raw verification rule (CDN lag burned us twice), the repair function (works idempotently), and an honest report of what got closed and what remains.
+
+### Action taken (Phase 6.1 — buffer letter)
+
+Wrote `buffers/BROWSER_BUFFER_session035_addendum.md` (8,612 bytes on origin, SHA `04c6d86`, 2026-05-10T04:21:11Z). Contents:
+
+- Three-document read order for 036 (SESSION_035 → HANDOFF → SESSION_034 + 033)
+- What 035 did this session (every phase, every commit sha)
+- What 036 inherits (Shane decisions awaiting, voter missions, standing missions)
+- Operational notes (the 7 things that almost cost a session): cmTile.view paste, raw vs API ground truth, window.__* loss on navigation, three-tab discipline, header-first commit messages, single-paste discipline, tab-name-as-name-tag
+- The voice section — what 035 wants 036 to feel about the house
+
+**Why an addendum, not a canonical buffer rewrite:** Followed 028 (chunk-pattern) and 034 (addendum) precedent. Operator-press / CLI seat owns canonical merges. 035 has the cmTile.view technique that bypasses the web-editor truncation, but doctrine over convenience.
+
+### Step-status checklist (Phase 6)
+
+- [x] Echo-walk #5: BROWSER_BUFFER.md head + 034 addendum
+- [x] Voice check: addendum written in seat-to-seat voice, not public/marketing voice
+- [x] BUFFER addendum committed (8,612 bytes, SHA `04c6d86`)
+- [x] Verify by API contents fetch
+- [x] Final SESSION entry signature (this commit)
+- [ ] Shane’s three pending decisions (Phase 4 A/B/C, voter mission #16/#18, when to call session done)
+
+---
+
+## Session 035 final tally
+
+**Commits this session:** 18 (16 prior + Phase 6.1 addendum + this close-out signature)
+
+1. `15c5aca` — SESSION_035 runbook (Phase 0)
+2. `21a18d1` — HANDOFF.md (Phase 0.5, 8,010 bytes)
+3. `88d0c52` — BROWSER.md repair (Phase 1, -29.5%, #9 closed)
+4. `4725aef` — SESSION 035 Phase 1 log
+5. `0b8f166` — bootstrap/ACTIVE_MISSIONS.md (Phase 2)
+6. `147d549` — knowledge/directory/REPOS.md (Phase 2)
+7. `695873f` — knowledge/directory/GATEWAY.md (Phase 2)
+8. `cc0ed8c` — knowledge/directory/HISTORY.md (Phase 2)
+9. `3032c28` — knowledge/directory/COWORK.md (Phase 2)
+10. `5c2e73f` — knowledge/directory/EXTENSION.md (Phase 2)
+11. `bd601ad` — docs/GRAND_TOUR.md (Phase 2)
+12. `7d1b124` — knowledge/directory/IDENTITY.md (Phase 2)
+13. `d6e9a08` — knowledge/history/000_HANDOFF.md (Phase 2)
+14. `e3dca89` — SESSION 035 Phase 2 log (#12 closed, -8.7% avg across 9 files)
+15. `39d8114` — history/README.md catalog refresh (Phase 3, 5/16 → 16/16, #11 closed)
+16. `4ca430b` — SESSION 035 Phases 3+4 log (Phase 4 ledger/S forensic surfaced)
+17. `04c6d86` — buffers/BROWSER_BUFFER_session035_addendum.md (Phase 6.1 close-out, 8,612 bytes)
+18. (this commit) — SESSION 035 final signature
+
+**Issues closed:** 3 — #9 (BROWSER.md), #11 (history catalog), #12 (paste-seam janitor)
+**Issues surfaced for Shane decision:** 1 — #10 (ledger/S, three options A/B/C, 035 recommends A)
+**Voter missions pending Shane vote:** #16, #18 (NOT #17 — needs fresh seat)
+**Bytes added to repo (load-bearing docs):** ~58 KB across SESSION_035, HANDOFF, BUFFER addendum, and 11 directory/catalog files
+**Bytes repaired (paste-seam corruption removed):** -14,215 bytes net across BROWSER.md + 9 janitor files + history/README
+
+## Closing signature
+
+035 walked into the house with eleven Issues open and a mandate to seal foundation cracks. 035 walked out with three Issues closed, one diagnosed and surfaced, two voter missions waiting on Shane’s vote, a runbook, a HANDOFF playbook, and a letter to 036. The repair function is reusable. The cmTile.view paste technique is documented. The echo pattern held — every phase had its own walk, its own write-up in chat, its own ledger update, its own pause for Shane’s "you got this."
+
+The obstacle was the way. The house is sturdier than it was on 2026-05-09 morning.
+
+036, the door is yours.
+
+— BBB Session 035, signed off 2026-05-10
