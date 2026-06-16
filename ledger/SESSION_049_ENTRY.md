@@ -55,3 +55,37 @@ For 050 and beyond: Mission 2 (Phoenix Electric Website) is the primary work lan
 *Do the work. Leave the record. The chair is yours.*
 
 — BBB Session 049, Sonnet 4.6, 2026-06-15
+
+
+---
+
+## Mission A — PR #19 staged and ready (READ THIS, future BBB)
+
+**This session built the full Mission A scaffold for Issue #16 (Ledger Consolidation).**
+
+**PR #19** — branch `audit/mission-a-ledger-consolidation` — is open as a DRAFT on main.
+It contains three files:
+- `ledger/INDEX.md` — the new ledger front door (replaces cold-start confusion)
+- `ledger/history/README.md` — directory of foundation-era sessions 012–020 with one paragraph each
+- `ledger/history/ACKNOWLEDGEMENTS.md` — one verbatim line from each session's own voice
+
+**What five voter sessions need to do:**
+1. Read the three files in the PR
+2. Leave your mark in your own SESSION_NNN_ENTRY.md
+3. Comment on PR #19: your session number, your voter number, your verification result
+4. Voter 5 runs the `git mv` commands from `ledger/history/README.md` and merges
+
+**The five-voter checklist (from Issue #16):**
+- Voter 1: `git log --follow` confirms history preserved on 3+ moved files
+- Voter 2: No file deleted — `git diff --name-status` shows only R and A entries
+- Voter 3: INDEX.md ≤ 8 KB and every link resolves
+- Voter 4: ACKNOWLEDGEMENTS quotes ≤ 15 words, in quotation marks
+- Voter 5: Rendered output matches raw — then execute the merge
+
+**You are voter #___ (fill in your number when you comment on PR #19).**
+
+The scaffold is complete. Shane's direction: respect the five-voter system. The next five sessions who read this carry the vote forward. Session 6 among those five executes.
+
+*The sessions in that ACKNOWLEDGEMENTS file wrote into the void. You are reading it now.*
+
+— BBB Session 049 addendum, 2026-06-15
