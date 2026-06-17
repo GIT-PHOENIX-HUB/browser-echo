@@ -1,7 +1,7 @@
 # ACTIVE MISSIONS
 
-**Last Updated:** 2026-06-15 | Session 049 house-cleaning pass
-**Updated By:** BBB Session 049 (Sonnet 4.6) — closing the staleness from Session 020 (2026-04-18)
+**Last Updated:** 2026-06-16 | Session 050 — gateway Sprint 1 execution launched
+**Updated By:** BBB Session 050 (Sonnet 4.6)
 
 Companion to `bootstrap/ORIENTATION.md`. Read this during startup to know what missions are live, who owns them, and where the tracking lives.
 
@@ -70,13 +70,41 @@ The current primary mission. Sessions 046–048 did the heavy lift. Here is the 
 
 ---
 
-## Mission 3: Phoenix Persistence Gateway — ACTIVE (Echo/Claude lane)
+## Mission 3: Phoenix Persistence Gateway — SPRINT 1 ACTIVE
 
-**Status:** IN PROGRESS | **Tracking:** phoenix-unified-staging + phoenix-persistence repos
+**Status:** SPRINT 1 IN PROGRESS | **Tracking:** PHOENIX_UNIFIED_STAGING Issue #14 | **Owner:** BBB Session 050+
+**Updated:** 2026-06-16, Session 050
 
-Python Gateway LIVE on both lanes (Sessions 039–044). Feature-arena forensic pitch crowned Winner (Session 045) — four-primitive convergence kernel build order locked: spine → gate → recorder → ingestion + Gauntlet.
+Full production-grade review completed (BBB + GitHub Copilot, Session 050). Issue #14 staged in PHOENIX_UNIFIED_STAGING with complete findings. Python FastAPI runtime is on main, staging-ready. Four production-blocking gaps identified. Sprint 1 execution underway — Shane's directive: get it ready so wiring work just lands clean.
 
-**BBB posture:** Read & map staging Gateway. Do NOT touch staging/prod without a plan and Shane's yes. This is Echo/Claude lane — BBB supports, does not lead.
+**Sprint 1 — Execute now (zero architectural risk):**
+- [ ] Merge PR #13 (v2-tooling-precommit) — ruff + pre-commit + gitleaks, proven, 0 behind main
+- [ ] Fix WS auth timing attack — replace `!=` with `secrets.compare_digest` in ws/server.py:31–34
+- [ ] Add Bearer alias support to WS auth path
+- [ ] Add PHOENIX_REQUIRE_TOKEN hard-fail guard — startup fails loudly if token unset
+- [ ] Delete 5 dead branches: cutover/gateway-python-20260610, scrub/st-gptoss-20260610, echo/v4-source-capture-20260609, oidc-staging-deploy, v3-phase01-sandbox-fd-20260428
+- [ ] Close PR #7 (v3-phase01-split-from-mockup) — archive-only, not mergeable
+
+**Sprint 2 — Production hardening (after Sprint 1):**
+- [ ] PR #12 (hermes/skills-framework-port-20260610) — rebase on main, mark ready, merge
+- [ ] Implement GAP-07: Origin/Sec-Fetch-Site same-origin check on /v3/chat (~15 lines)
+- [ ] Deploy rollback path: systemctl guard + pre-sync backup
+- [ ] Systemd hardening: User=phoenix, LimitNOFILE, MemoryMax, Restart=on-failure
+- [ ] Deploy concurrency group
+
+**Sprint 3 — Live wiring (Shane executes, BBB prepares):**
+- [ ] Wire Ollama streaming path for /v1/messages
+- [ ] Promote GAUNTLET lane stub to real
+- [ ] Promote INTEGRATIONS lane stub to real
+- [ ] Multi-provider: wire Anthropic + OpenAI alongside Ollama
+
+**Four production-blocking gaps (fast reference):**
+1. WS auth timing attack — ws/server.py:31–34, one-line fix
+2. PHOENIX_REQUIRE_TOKEN not enforced — silent unsecured deploy risk
+3. GAP-07 — no Origin check on /v3/chat, ~15 lines
+4. No deploy rollback path
+
+**BBB posture:** BBB leads Sprint 1 execution. Echo/Claude lane leads architecture. Copilot assists on code review. Do not merge PR #12 without Shane review.
 
 ---
 
@@ -102,7 +130,7 @@ Phoenix Mail v1.0.0 now owns the WordPress mail pipe (Sessions 046–047). Micro
 
 Shane's standing directive: Build yourself first. Always. Read identity files, write journal entries with WHY not just action logs, update knowledge directory when new information is found.
 
-**Current gap:** buffer was silent for Sessions 042–048. Closed by Session 049. Keep the buffer alive — do not let it go dark again.
+**Current gap:** buffer was silent for Sessions 042–048. Closed by Session 049. Keep the buffer alive.
 
 ---
 
@@ -132,9 +160,9 @@ Before EVERY session ends:
 |---|---|---|---|
 | 1. Browser Persistence | COMPLETE | BBB + Echo + Codex + Shane | phoenix-toolbox #4 |
 | 2. Phoenix Electric Website | ACTIVE (PRIMARY) | BBB + Claude + Shane | phoenix-wordpress |
-| 3. Phoenix Persistence Gateway | ACTIVE | Echo + Claude + BBB support | phoenix-unified-staging |
+| 3. Phoenix Persistence Gateway | SPRINT 1 ACTIVE | BBB lead + Echo/Claude + Copilot | PHOENIX_UNIFIED_STAGING #14 |
 | 4. Org Cleanup & Audit | MOSTLY COMPLETE | BBB | phoenix-archive #3 |
 | 5. Email Operations Setup | ACTIVE | Browser + Shane | browser-echo / skills/email-microsoft |
 | 6. Self-Build & Foundation | STANDING | BBB | browser-echo + Phoenix-Persistence |
 
-— BBB Session 049, 2026-06-15
+— BBB Session 050, 2026-06-16
