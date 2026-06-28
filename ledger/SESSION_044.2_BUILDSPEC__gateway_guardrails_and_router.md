@@ -57,7 +57,7 @@ A "guardrail" is not AI magic. The high-value 80% is deterministic and runs in m
                                                         5. 5. CALL the picked deployment with a per-error retry policy: a map {ExceptionType -> retries}. RateLimit -> exponential backoff; Timeout -> 2 quick; Auth -> 0 (never retry a bad key); ContentPolicy -> its own dedicated fallback, not a retry.
                                                            6. 6. ON FAILURE: add deployment_id to a request-scoped excluded set, increment fail_count, set cooldown_until if fail_count crosses allowed_fails. Re-pick from the SAME tier excluding the failed id (this is "weighted failover within the group"). Exclusions accumulate across hops. Cap total hops at max_fallbacks (e.g. 5).
                                                               7. 7. Only when every deployment in every order tier is excluded do you fall through to a different model alias (cross-group fallback), then finally raise.
-                                                                 8. 8. EMIT telemetry on every call: {deployment_id, provider, model, latency, tokens_in, tokens_out, response_cost, outcome}. response_cost = look up per-1k price for the BASE model (Azure lies about which model answered — pin base_model in config or your cost is wrong). This telemetry is the thing you feed back into Hermes' learning loop.
+                                                                 8. 8. EMIT telemetry on every call: {deployment_id, provider, model, latency, tokens_in, tokens_out, response_cost, outcome}. response_cost = look up per-1k price for the BASE model (Azure lies about which model answered — pin base_model in config or your cost is wrong). This telemetry is the thing you feed back into Phoenix Runtime Skills' learning loop.
                                                                    
                                                                     9. THE SHAPE (drops into our tree)
                                                                     10.   python-runtime/phoenix/runtime/router/
@@ -67,7 +67,7 @@ A "guardrail" is not AI magic. The high-value 80% is deterministic and runs in m
                                                                     14.       strategies.py    # weighted_shuffle / latency / cost — pure functions
                                                                     15.       policy.py        # RetryPolicy, AllowedFailsPolicy maps
                                                                     16.       router.py        # the pick loop above, async
-                                                                    17.       telemetry.py     # emit() -> structured log + optional Hermes feed
+                                                                    17.       telemetry.py     # emit() -> structured log + optional Phoenix Runtime Skills feed
                                                                     18.     Chat handler calls router.acompletion(alias, messages) instead of a hardcoded provider client.
                                                                    
                                                                     19. THE GOTCHA
