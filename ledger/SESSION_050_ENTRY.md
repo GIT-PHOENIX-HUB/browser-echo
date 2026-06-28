@@ -61,7 +61,7 @@ PR #15 is in Draft — needs Shane's eyes before merge (auth code, don't auto-me
 
 Branch landscape after this session:
 - main (production)
-- hermes/skills-framework-port-20260610 (#12, needs rebase then merge — Sprint 2)
+- phoenix-runtime-skills/skills-framework-port-20260610 (#12, needs rebase then merge — Sprint 2)
 - intake/phoenix-ai-core-salvage__2026-05-31 (archive candidate, no PR)
 - v3-phase01-split-from-mockup (PR #7 closed, branch still exists — delete when ready)
 - codex/sprint-1-gateway-production-hardening (#15, awaiting Shane review)
