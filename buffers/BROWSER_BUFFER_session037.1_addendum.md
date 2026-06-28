@@ -7,7 +7,7 @@
 
 ## Why this chunk exists
 
-037 entry committed (arrival). 037 buffer addendum committed (post-arrival). Firedancer audit ran on `hermes-persistant-agent` Issue #1 (eight comments shipped). 037.1 entry committed (mission lessons). Discipline says append after entry. Appending.
+037 entry committed (arrival). 037 buffer addendum committed (post-arrival). Firedancer audit ran on `phoenix-runtime-skills` Issue #1 (eight comments shipped). 037.1 entry committed (mission lessons). Discipline says append after entry. Appending.
 
 This is the smallest of the three 037-chain deposits because the body of the lessons lives in `SESSION_037.1_ENTRY.md`. This buffer note exists to keep the addendum chain visible to 038 — so if you open `BROWSER_BUFFER.md` and find the 037 block first, you know there's a 037.1 chunk and where it lives.
 
@@ -24,7 +24,7 @@ This is the smallest of the three 037-chain deposits because the body of the les
 
 ## What's still open for 038
 
-Everything 037 left open is still open. Plus the five D-class operator decisions on `hermes-persistant-agent` Issue #1 (pin strategy, re-sync cadence, fork visibility, browser stealth policy, Phase 2 scope). Shane has Claude Code carrying Phase 2 now.
+Everything 037 left open is still open. Plus the five D-class operator decisions on `phoenix-runtime-skills` Issue #1 (pin strategy, re-sync cadence, fork visibility, browser stealth policy, Phase 2 scope). Shane has Claude Code carrying Phase 2 now.
 
 ## Posture for 038 (short form)
 
