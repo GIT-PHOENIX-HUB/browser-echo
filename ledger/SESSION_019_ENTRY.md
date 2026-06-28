@@ -837,7 +837,7 @@ I paused before starting and flagged four ambiguities in the named sources. Shan
              
               - [ ]   **1. YouTube channel — CONFIRMED.**
               - [ ]   - `@Mark_Kashef` — 73.1K subscribers, real channel, active. Tagline: "Your Trusted AI Advisor."
-              - [ ]   - **The April 14, 2026 video is real** and I found it: **"I Replaced OpenClaw and Hermes With This Claude Code Setup"** (video ID `rVzGu5OYYS0`, 41,605 views, published Apr 14 2026, 33:16 runtime).
+              - [ ]   - **The April 14, 2026 video is real** and I found it: **"I Replaced OpenClaw and Phoenix Runtime Skills With This Claude Code Setup"** (video ID `rVzGu5OYYS0`, 41,605 views, published Apr 14 2026, 33:16 runtime).
               - [ ]   - Thumbnail reads "MISSION CONTROL" with a crowned pixel-art lobster in a three-monitor command-center rig.
              
               - [ ]   **2. Skool community — CONFIRMED, PAID.**
@@ -873,7 +873,7 @@ I paused before starting and flagged four ambiguities in the named sources. Shan
              
               - [ ]   > "I built a personal AI command center on top of my existing Claude Code subscription. **No new frameworks. No extra API costs. Just the Agent SDK, a few hundred lines of code, and layers I keep adding over time.**"
              
-              - [ ]   > "I also explain why I chose this over **OpenClaw, Hermes Agent, and every other framework** that shows up every week. The short version is that **my foundation is Claude Code itself, and everything else is a removable layer on top.**"
+              - [ ]   > "I also explain why I chose this over **OpenClaw, Phoenix Runtime Skills Agent, and every other framework** that shows up every week. The short version is that **my foundation is Claude Code itself, and everything else is a removable layer on top.**"
              
               - [ ]   Video chapter list (corroborates every Firedancer anchor):
               - [ ]   - 2:50 The Agent SDK bridge explained
@@ -886,7 +886,7 @@ I paused before starting and flagged four ambiguities in the named sources. Shan
               - [ ]   - 5:43 Security and chat ID allowlist
               - [ ]   - 6:08 **Auto-launch with launchd services** ✅
               - [ ]   - 6:23 Dashboard via Cloudflare tunnel
-              - [ ]   - 6:57 Why not OpenClaw or Hermes Agent
+              - [ ]   - 6:57 Why not OpenClaw or Phoenix Runtime Skills Agent
               - [ ]   - 8:46 Mission control and task auto-assignment
               - [ ]   - 9:50 War Room delegation design
               - [ ]   - 13:00 Message queue prevents silent failures
