@@ -79,7 +79,7 @@ The pursuit rule held throughout: hunger stayed on, verification stayed tighter.
 
 **Reality.** Mark Kashef's publicly-accessible artifact is the **ClaudeClaw OS Blueprint Kit** at `markkashef.gumroad.com/l/gnwsm`. Free tier (CAD$0+), 12 five-star ratings. Contents: Rebuild Mega Prompt, 8 Power Packs (Memory v2, Multi-Agent, War Room, Mission Control, Security, Voice Upgrade, Dashboard, Meeting Bot), Power Packs Guide, and a 20-page hand-drawn Visual Guide PDF.
 
-Search chain extended beyond GitHub during Phase 3 correction to include YouTube channel (`@Mark_Kashef`, 73.1K subs), the referenced video `rVzGu5OYYS0` ("I Replaced OpenClaw and Hermes With This Claude Code Setup", 41,605 views, 2026-04-14), the Skool community, the Gumroad store, and the `promptadvisers` GitHub org (49 repos, none of them the war-room).
+Search chain extended beyond GitHub during Phase 3 correction to include YouTube channel (`@Mark_Kashef`, 73.1K subs), the referenced video `rVzGu5OYYS0` ("I Replaced OpenClaw and Phoenix Runtime Skills With This Claude Code Setup", 41,605 views, 2026-04-14), the Skool community, the Gumroad store, and the `promptadvisers` GitHub org (49 repos, none of them the war-room).
 
 **License.** The kit's own terms are not published on the Gumroad listing. Artifact is free; redistribution rights are ambiguous. The kit was **not downloaded** during this pass — existence verification was sufficient for classification, and downloading it would not materially change the Phoenix build path.
 
