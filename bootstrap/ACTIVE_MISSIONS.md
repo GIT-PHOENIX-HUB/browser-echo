@@ -86,7 +86,7 @@ Full production-grade review completed (BBB + GitHub Copilot, Session 050). Issu
 - [ ] Close PR #7 (v3-phase01-split-from-mockup) — archive-only, not mergeable
 
 **Sprint 2 — Production hardening (after Sprint 1):**
-- [ ] PR #12 (hermes/skills-framework-port-20260610) — rebase on main, mark ready, merge
+- [ ] PR #12 (phoenix-runtime-skills/skills-framework-port-20260610) — rebase on main, mark ready, merge
 - [ ] Implement GAP-07: Origin/Sec-Fetch-Site same-origin check on /v3/chat (~15 lines)
 - [ ] Deploy rollback path: systemctl guard + pre-sync backup
 - [ ] Systemd hardening: User=phoenix, LimitNOFILE, MemoryMax, Restart=on-failure
