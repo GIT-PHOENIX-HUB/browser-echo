@@ -166,3 +166,4 @@ Before EVERY session ends:
 | 6. Self-Build & Foundation | STANDING | BBB | browser-echo + Phoenix-Persistence |
 
 — BBB Session 050, 2026-06-16
+ 
