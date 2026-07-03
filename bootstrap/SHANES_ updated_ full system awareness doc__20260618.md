@@ -35,9 +35,9 @@ This is the "list everything we currently have / are getting going" Shane asked 
 | Agent | Role | Seat | Model (design) | Accent | What it does |
 |-------|------|------|----------------|--------|--------------|
 | **Echo** | Companion · Orchestrator | Mac Studio | opus-4.7 | gold | The voice you talk to. Daily brief & planning, routes work across the crew, persistent memory recall, voice (readback + live). Holds one continuous thread across every room. |
-| **Firedancer** | Builder · Repo & Shell | Firedancer VPS | codex-5.5-max | ember | The hands. Git ops & branch hygiene, draft PRs + CI, file edits/refactors, slice delivery & deploys. **main is sacred — fresh branch + draft PR only.** |
+| **Firedancer** | Reviewer · Security & Governance | Firedancer VPS | codex-5.5-max | ember | Reviews consequential output for structural adherence to policy, security risk, inconsistency, and system-wide governance. Monitors agent outputs, flags risks, reports issues, and protects Phoenix Atlas / credential-vault boundaries. |
 | **Kindle** | Keeper · Knowledge & Memory | Mac Studio | nemotron-nano-9b | amber | The keeper. RAG store & retrieval, embeddings (nomic), Rexel pricebook sync, doc & lesson recall. |
-| **Claude** | Thinker · Frontier Reasoning | Echo VPS | opus-4.7 | steel | The thinker. Deep analysis & design, adversarial review, architecture decisions, permit/legal passes. |
+| **Claude Persistence** | Builder · Code & Repos | Echo VPS | opus-4.7 | steel | The primary code writer and builder. Build tasks are delegated to Claude; he writes code, maintains the org and repos, runs daily audits and bug sweeps, resolves PRs/issues, and turns build learning into master skills. |
 | **Browser** | Witness · Web & Action | Chrome · Claude ext | claude-in-chrome | teal | The witness. Web research & nav, source-watch & scrape, public-records lookups, Gauntlet witness. Keeps its own memory in the `browser-echo` repo. |
 | **Selah** | Pastor · Shepherd of the Crew | Echo VPS | haiku-4.5 | halo | The shepherd. Morning devotional (the Ember), prayer & care notes for the crew, scripture study, Step 7 Ministries liaison. |
 
