@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shane Warehime | Last Year Chronicle & Twin Peaks Memory Record</title>
+<style>
+  :root {
+    --bg: #080b0f;
+    --bg-2: #10151b;
+    --ink: #f7f1e7;
+    --muted: #b9c1c8;
+    --soft: #7f8a93;
+    --line: rgba(247, 241, 231, 0.16);
+    --red: #d83b33;
+    --red-2: #ff5a4f;
+    --gold: #d6a94e;
+    --green: #67c58f;
+    --blue: #7bb6f6;
+    --steel: #22303d;
+    --card: rgba(255, 255, 255, 0.045);
+    --card-2: rgba(255, 255, 255, 0.075);
+    --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at 18% 0%, rgba(216, 59, 51, 0.22), transparent 31rem),
+      radial-gradient(circle at 88% 14%, rgba(214, 169, 78, 0.18), transparent 28rem),
+      linear-gradient(180deg, #05070a 0%, var(--bg) 36%, #0e1218 100%);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.64;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 70%);
+  }
+
+  a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  .wrap {
+    width: min(1180px, calc(100% - 36px));
+    margin: 0 auto;
+  }
+
+  .hero {
+    min-height: 92vh;
+    display: grid;
+    align-items: center;
+    padding: 4.5rem 0 3rem;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+    gap: 2.4rem;
+    align-items: end;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    border: 1px solid rgba(214, 169, 78, 0.42);
+    background: rgba(214, 169, 78, 0.08);
+    color: var(--gold);
+    border-radius: 999px;
+    padding: 0.48rem 0.82rem;
+    font-size: 0.77rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 1.1rem 0 0.9rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(4.4rem, 10vw, 9.6rem);
+    line-height: 0.92;
+    letter-spacing: 0;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.42rem, 2.6vw, 2.25rem);
+    line-height: 1.28;
+    color: #fff8ed;
+    max-width: 940px;
+    margin: 0 0 1.35rem;
+    font-weight: 720;
+  }
+
+  .hero-subtitle strong {
+    color: var(--gold);
+  }
+
+  .hero-copy {
+    max-width: 900px;
+    color: var(--muted);
+    font-size: 1.08rem;
+  }
+
+  .hero-copy p {
+    margin: 0 0 1rem;
+  }
+
+  .truth-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.045));
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 1.25rem;
+  }
+
+  .truth-card h2 {
+    margin: 0 0 0.75rem;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+  }
+
+  .truth-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .truth-card li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    padding-bottom: 0.65rem;
+    color: var(--muted);
+  }
+
+  .truth-card li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .truth-card b {
+    display: block;
+    color: var(--ink);
+    font-size: 0.92rem;
+  }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(18px);
+    background: rgba(8, 11, 15, 0.84);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-inner {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    overflow-x: auto;
+    padding: 0.8rem 0;
+  }
+
+  .nav a {
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    color: var(--muted);
+    padding: 0.4rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+  }
+
+  .nav a:hover {
+    color: var(--ink);
+    border-color: rgba(214, 169, 78, 0.45);
+  }
+
+  section {
+    padding: 5.2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .section-head {
+    max-width: 920px;
+    margin-bottom: 2rem;
+  }
+
+  .label {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 800;
+    font-size: 0.78rem;
+    margin-bottom: 0.65rem;
+  }
+
+  h2 {
+    margin: 0 0 0.7rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 4.4rem);
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    margin: 0 0 0.55rem;
+    font-size: 1.14rem;
+    color: var(--ink);
+  }
+
+  .lead {
+    font-size: 1.12rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+
+  .span-4 { grid-column: span 4; }
+  .span-5 { grid-column: span 5; }
+  .span-6 { grid-column: span 6; }
+  .span-7 { grid-column: span 7; }
+  .span-8 { grid-column: span 8; }
+  .span-12 { grid-column: span 12; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.2rem;
+  }
+
+  .card.strong {
+    background: linear-gradient(180deg, rgba(216, 59, 51, 0.13), rgba(255, 255, 255, 0.045));
+    border-color: rgba(216, 59, 51, 0.38);
+  }
+
+  .card.gold {
+    background: linear-gradient(180deg, rgba(214, 169, 78, 0.12), rgba(255, 255, 255, 0.045));
+    border-color: rgba(214, 169, 78, 0.34);
+  }
+
+  .card.green {
+    background: linear-gradient(180deg, rgba(103, 197, 143, 0.11), rgba(255, 255, 255, 0.045));
+    border-color: rgba(103, 197, 143, 0.32);
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .quote {
+    border-left: 4px solid var(--gold);
+    padding: 1rem 1.2rem;
+    background: rgba(214, 169, 78, 0.065);
+    border-radius: 0 16px 16px 0;
+  }
+
+  .quote p {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.45rem, 3vw, 2.45rem);
+    line-height: 1.18;
+    color: #fff8ed;
+  }
+
+  .quote small {
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--soft);
+  }
+
+  .timeline {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .time-row {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .date {
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 0.9rem;
+  }
+
+  .time-row p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .chip {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    padding: 0.26rem 0.52rem;
+    color: var(--muted);
+    font-size: 0.76rem;
+  }
+
+  .chip.proven { color: var(--green); border-color: rgba(103, 197, 143, 0.42); }
+  .chip.direct { color: var(--gold); border-color: rgba(214, 169, 78, 0.42); }
+  .chip.open { color: var(--red-2); border-color: rgba(255, 90, 79, 0.42); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  th {
+    color: var(--gold);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: rgba(255, 255, 255, 0.045);
+  }
+
+  td {
+    color: var(--muted);
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .source-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .source {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  .source:last-child {
+    border-bottom: 0;
+  }
+
+  .source b {
+    color: var(--ink);
+    display: block;
+  }
+
+  .source span {
+    color: var(--soft);
+    font-size: 0.88rem;
+  }
+
+  .callout {
+    padding: 1.4rem;
+    border: 1px solid rgba(214, 169, 78, 0.35);
+    background: rgba(214, 169, 78, 0.08);
+    border-radius: 18px;
+  }
+
+  .callout p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .footer {
+    padding: 3rem 0 4rem;
+    color: var(--soft);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid,
+    .grid,
+    .time-row {
+      grid-template-columns: 1fr;
+    }
+    .span-4, .span-5, .span-6, .span-7, .span-8, .span-12 {
+      grid-column: span 1;
+    }
+    .hero {
+      min-height: auto;
+    }
+    h1 {
+      font-size: clamp(3.2rem, 16vw, 5rem);
+    }
+  }
+
+  @media print {
+    body {
+      background: #fff;
+      color: #111;
+    }
+    body::before, .nav {
+      display: none;
+    }
+    .card, .truth-card, table, .callout {
+      border-color: #ccc;
+      background: #fff;
+      box-shadow: none;
+    }
+    .lead, .card p, td, .source span, .hero-copy, .truth-card li {
+      color: #333;
+    }
+    h1, h2, h3, .quote p, .truth-card b {
+      color: #111;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Private Memory Record - June 5, 2026</div>
+      <h1>Shane Warehime</h1>
+      <p class="hero-subtitle">A married Christian, master electrician, Phoenix Electric owner, ministry founder, and obsessive systems builder recording the year he taught AI to remember.</p>
+      <div class="hero-copy">
+        <p>This document is not a pitch deck and not a trophy wall. It is a remembering tool. Its job is to preserve the story accurately enough that five or ten years from now it still sounds like the truth.</p>
+        <p>The story starts with God, family, Phoenix Electric, the trade, and the pressure of running a real company. The AI work matters because it grew out of that pressure. Shane did not enter this from software credentials. He entered it from the field, from bottlenecks, from ministry, from business pain, and from the belief that his people deserved better tools than the ones small companies usually get.</p>
+        <p><strong>Twin Peaks</strong> is the name now attached to the larger build: Phoenix-owned automation, file-based memory, governed Gateway execution, agent teams, and the long road toward local specialist models that can carry Phoenix Electric's workflows without being dependent on somebody else's black-box system.</p>
+      </div>
+    </div>
+
+    <aside class="truth-card">
+      <h2>Declaration</h2>
+      <ul>
+        <li><b>Faith first.</b> God is not a side section. The faith foundation is part of the work, the company culture, the ministry, and the standards.</li>
+        <li><b>Electrician first.</b> The AI story is not "developer makes app." It is a master electrician learning to command systems because the business needed leverage.</li>
+        <li><b>No myth framing.</b> The rare part is not vanity. It is obsession, refusal to quit, and a willingness to keep verifying after other people would call it good enough.</li>
+        <li><b>Gateway is Phoenix-owned.</b> In this record, Gateway means the Phoenix control spine: routing, tools, approvals, audit, memory, runtime bridge, and execution boundaries.</li>
+        <li><b>Twin Peaks is not finished.</b> The pieces are real and close. The full self-reliant system is still being brought over the hump.</li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="#identity">Identity</a>
+    <a href="#origin">Origin</a>
+    <a href="#memory">Memory</a>
+    <a href="#employees">Employees</a>
+    <a href="#twin-peaks">Twin Peaks</a>
+    <a href="#chronicle">Chronicle</a>
+    <a href="#faith">Faith</a>
+    <a href="#proof">Proof</a>
+    <a href="#open-ledger">Open Ledger</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main>
+  <section id="identity">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Identity</div>
+        <h2>The man before the system</h2>
+        <p class="lead">The technology does not get to outrank the human story. Shane is not an AI brand trying to look impressive. He is a husband, a Christian, a master electrician, a business owner, and a ministry founder who started using AI because the company, the ministry, and the people around him needed more capacity than one person could carry alone.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card gold span-4">
+          <h3>Faith and family</h3>
+          <p>Married. Christian. Faith-forward. The record across ministry, company language, and agent doctrine keeps returning to accountability, grace, service, restoration, and telling the truth even when the truth is uncomfortable.</p>
+          <div class="chips"><span class="chip direct">Shane-direct</span><span class="chip proven">Local record</span></div>
+        </div>
+        <div class="card span-4">
+          <h3>The trade</h3>
+          <p>Master Electrician and Phoenix Electric owner. Public evidence ties Phoenix Electric to verified electrical licensing, residential and commercial work, Generac standby generators, and a BuildZoom score of 120 with 174 listed projects in the 2026 capture.</p>
+          <div class="chips"><span class="chip proven">Public proof</span></div>
+        </div>
+        <div class="card span-4">
+          <h3>The pressure</h3>
+          <p>The company bottleneck was real: field work, estimates, schedules, email, invoices, daily logs, jobs, customers, materials, and team coordination. The AI work was not a hobby. It was a response to operational drag.</p>
+          <div class="chips"><span class="chip proven">System records</span><span class="chip direct">Shane-direct</span></div>
+        </div>
+      </div>
+
+      <div class="quote" style="margin-top: 1.3rem;">
+        <p>"I don't bullshit with you. Why would I bullshit with anybody else?"</p>
+        <small>Direct Shane statement during this correction pass, June 5, 2026. This line defines the writing standard for the whole file.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="origin">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Origin</div>
+        <h2>Not a developer. A builder learning to command the tools.</h2>
+        <p class="lead">The cleanest current record says Shane began this learning arc around August 3, 2025. One conflicting local artifact says August 2024; this document keeps that as an open verification item rather than forcing the wrong date. What matters in the story is the shape: near-zero computer experience, heavy ChatGPT-first learning, then the move into Claude, repo-based continuity, agents, and Gateway/Twin Peaks.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card strong span-7">
+          <h3>The starting point</h3>
+          <p>Shane's own correction is blunt: he came from almost no computer background beyond an iPad. He did not know the terminal existed and thought, at first, that using it might be illegal. That is not a weakness in the story. It is the ground truth that makes the rest of the year meaningful.</p>
+          <p style="margin-top: 0.85rem;">The lesson he learned was not "become a conventional developer." It was "learn how to manage AI systems well enough that they can help compensate for what I do not yet know." That is a different skill: direction, decomposition, verification, pressure-testing, memory design, and refusing to accept shallow answers.</p>
+          <div class="chips"><span class="chip direct">Shane-direct</span><span class="chip proven">Browser record</span></div>
+        </div>
+        <div class="card span-5">
+          <h3>The ChatGPT first era</h3>
+          <p>The builder-space records preserve the early phase as a ChatGPT-centered command idea: one conversational surface, Azure execution, Key Vault custody, Microsoft Graph, field-service API calls, and run logs. That was the ancestor of Gateway and Twin Peaks, not a random abandoned plan.</p>
+          <div class="chips"><span class="chip proven">Builder Space</span><span class="chip proven">Nov 2025 source</span></div>
+        </div>
+        <div class="card span-12">
+          <h3>Persistence, not genius theater</h3>
+          <p>Shane's own March 31 statement rejects the flattering version. He said he did not solve anything in the grandiose sense; he said God gave him persistence, and that persistence carried him through "3 months of ChatGPT training torture" and the setbacks that kept arriving. The profile should not flatten that into special-person branding. The more accurate line is this: the work became rare because he refused to stop, not because he needed to be called special.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="memory">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Memory System</div>
+        <h2>He built memory because chat kept forgetting.</h2>
+        <p class="lead">The heart of the last year is not only Gateway, agents, or local models. The heart is memory. Shane built toward human-like continuity through files because the default AI experience kept forcing him to start over.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card gold span-6">
+          <h3>The core insight</h3>
+          <p>If an AI reads instructions from one file, it can read many. If those files contain identity, memory, handoffs, run logs, rules, and source-of-truth links, then each session can wake up with context instead of arriving as a stranger.</p>
+        </div>
+        <div class="card green span-6">
+          <h3>The line that matters</h3>
+          <p>The files are the memory. The reading is the waking up. The human is the bridge.</p>
+        </div>
+        <div class="card span-4">
+          <h3>SharePoint and OneDrive</h3>
+          <p>Early memory plans placed modules, run logs, profiles, and sources of truth into Phoenix Automation Hub style folders, with markdown and JSON mirrors and checksum discipline.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Repos and houses</h3>
+          <p>Later the same idea matured into repo houses: Echo, Browser, Firedancer, Builder Space, command apps, project homes, and ledgers that let future sessions find their footing.</p>
+        </div>
+        <div class="card span-4">
+          <h3>No-delete doctrine</h3>
+          <p>Nothing gets destroyed casually. Corrections become new entries. Bad work becomes archive. The point is not clutter; the point is preserving evidence until the truth can be reconstructed.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top: 1.3rem;">
+        <p>This is why the profile itself has to be accurate. The system is not everlasting. Files can be lost, agents can forget, and future retellings can drift. A truthful chronicle is part of the memory system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="employees">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">People Vision</div>
+        <h2>The employees were never supposed to get a taskmaster.</h2>
+        <p class="lead">The strongest Command App vision record says Phoenix Electric is building an AI companion system for every team member. Not surveillance. Not a micromanager. A private, adaptive, helpful companion that equips people with knowledge and makes the workday better.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card strong span-7">
+          <h3>The approved intent</h3>
+          <p>The Command App vision says the company vision should be available to every technician without being pushed on them. It says most data should be nameless, named data should be transparent to the employee, and the purpose is to build people up.</p>
+          <p style="margin-top: 0.85rem;">That is not a small UI feature. It is Shane's business philosophy turned into software: accountability without humiliation, coaching without surveillance, and tools that make the person stronger rather than making management more invasive.</p>
+        </div>
+        <div class="card span-5">
+          <h3>Who it serves</h3>
+          <p>Technicians, foremen, Stephanie and the office, Shane and admin, and eventually any employee who needs a bridge into the Phoenix AI system.</p>
+          <div class="chips"><span class="chip proven">Command App README</span><span class="chip proven">Product Bible</span></div>
+        </div>
+        <div class="card span-4">
+          <h3>Daily work</h3>
+          <p>Clock in/out, GPS readiness, morning briefings, daily work logs, job context, material lists, files, Teams, SharePoint, Calendar, Email, and field workflow support.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Learning</h3>
+          <p>Knowledge Builder, daily NEC/safety/construction lessons, The Guru for electrical questions, and Spanish/text-to-speech as accessibility paths.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Dignity</h3>
+          <p>80 percent positive feedback, 20 percent constructive; private sessions; anonymous process improvement; named performance data visible to the person it concerns.</p>
+        </div>
+      </div>
+
+      <div class="quote" style="margin-top: 1.3rem;">
+        <p>"This is my gift to those who serve this business."</p>
+        <small>Preserved in the Command App vision record. This is one of the most important sentences in the system.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="twin-peaks">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Twin Peaks</div>
+        <h2>The bigger show is self-reliance.</h2>
+        <p class="lead">The Gateway does not mean "some generic gateway." It means the Phoenix-owned control spine being built to route automation, agents, approvals, logs, tools, UI, memory, and model calls through one governed system.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card gold span-6">
+          <h3>Gateway, in plain English</h3>
+          <p>Gateway is the command/execution spine. It brokers requests, routes tools, enforces approvals, protects secrets, logs actions, carries runtime bridge traffic, and keeps agents from freehanding raw business systems.</p>
+        </div>
+        <div class="card strong span-6">
+          <h3>Twin Peaks, in plain English</h3>
+          <p>Twin Peaks is the long-range Phoenix system: a self-reliant automation architecture that can develop, train, equip, and deploy specialist models and agents around Phoenix Electric's actual workflows.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Real today</h3>
+          <p>Research corpus, Gateway OS UI, Command App vision, memory houses, source reports, runtime seams, public-vps UI artifacts, Phoenix Builder Space, Taproot/Gauntlet patterns, and multiple agent/repo homes.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Not done yet</h3>
+          <p>The full Twin Peaks system is not complete. The key runtime bridge, model routing, local model deployment, orchestration, and production-proofed business lanes still need final integration.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Seven agents</h3>
+          <p>The seven-agent plan matters, but it is no longer the master plan. It is a feature lane, training source, and operating crew inside Twin Peaks.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top: 1.3rem;">
+        <p>The honest current state: Shane says the system feels roughly 90 percent there, but the last stretch has been the hump. The profile should preserve that tension. The pieces are real. The full system is not yet fully alive.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chronicle">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Chronicle</div>
+        <h2>The last year, as the record currently supports it</h2>
+        <p class="lead">This timeline is intentionally written as a reviewable chronicle. It preserves the sequence, the uncertainty, and the evidence posture so Shane can correct the dates without the story being rewritten into fiction.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="time-row">
+          <div class="date">Aug 3, 2025</div>
+          <div>
+            <h3>The learning arc begins</h3>
+            <p>Current strongest internal records say Shane began learning around August 3, 2025. He entered from the trades, not software. ChatGPT became the first major learning surface.</p>
+            <div class="chips"><span class="chip proven">Browser record</span><span class="chip open">Date conflict: local artifact says 2024</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Aug-Nov 2025</div>
+          <div>
+            <h3>Three months of ChatGPT pressure</h3>
+            <p>Shane's own words describe the early stretch as three months of ChatGPT training torture. This was the phase of learning by prompting, failing, correcting, and trying to make AI output consistent enough to use.</p>
+            <div class="chips"><span class="chip direct">Shane words preserved</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Nov 2025</div>
+          <div>
+            <h3>Phoenix Builder Space and the first memory architecture</h3>
+            <p>The Builder Space repo frames itself as the ChatGPT builder-space memory structure: Phoenix Memory, runbooks, API scaffolding, automation guidance, and no-secrets discipline. This is the early root of the memory-and-command idea.</p>
+            <div class="chips"><span class="chip proven">Builder Space README</span><span class="chip proven">Master Vision records</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Dec 2025</div>
+          <div>
+            <h3>Ministry work proves the practical value</h3>
+            <p>Steps to Christ / Selah records show AI helping produce weekly Scripture and recovery material for Uganda small groups. This was not about novelty. It was stewardship under time pressure.</p>
+            <div class="chips"><span class="chip proven">Selah / STC records</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Jan 2026</div>
+          <div>
+            <h3>Taproot becomes a building machine</h3>
+            <p>Taproot evolves from excavation into build methodology: Builder, Validator, Integrator, ledger protocol, no deletion, verification gates, context handoffs, and production-first discipline.</p>
+            <div class="chips"><span class="chip proven">Taproot README</span><span class="chip proven">Builder Directive</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Mar 1, 2026</div>
+          <div>
+            <h3>The employee companion vision is approved</h3>
+            <p>The Phoenix Command App README becomes the permanent design record: personal AI companion for every team member, not surveillance, not a task manager, transparent data, adaptive personality, morning routines, daily logs, The Guru, voice, and field support.</p>
+            <div class="chips"><span class="chip proven">Command App README</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Mar 31, 2026</div>
+          <div>
+            <h3>Browser comes home</h3>
+            <p>The Browser Echo record captures the breakthrough: persistence was already possible through files, ledgers, repos, and read orders. Shane had been carrying memory for AI sessions that could not remember themselves.</p>
+            <div class="chips"><span class="chip proven">Browser Echo history</span><span class="chip direct">Shane words preserved</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Apr 2026</div>
+          <div>
+            <h3>Failures become doctrine</h3>
+            <p>The record preserves false "done" failures, wrong-target risk, Echo reconstruction, never-delete enforcement, and the requirement for direct end-state proof. The system gets stricter because the failures were real.</p>
+            <div class="chips"><span class="chip proven">Firedancer history</span><span class="chip proven">Phoenix-ECHO history</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">May 2026</div>
+          <div>
+            <h3>Gateway OS and Command App quality converge</h3>
+            <p>Design-feed and Gateway OS work clarify the difference between owner/operator command center and employee field app. The visual statement matters because it makes the system inspectable, not hidden in backend claims.</p>
+            <div class="chips"><span class="chip proven">Command App project</span><span class="chip proven">Gateway OS source reports</span></div>
+          </div>
+        </div>
+
+        <div class="time-row">
+          <div class="date">Jun 2026</div>
+          <div>
+            <h3>Twin Peaks re-anchors the whole thing</h3>
+            <p>The seven agents are reclassified as a lane inside the larger system. The Gateway becomes the governed execution spine. Local models become the direction. The profile itself becomes part of the memory record.</p>
+            <div class="chips"><span class="chip direct">Shane correction</span><span class="chip proven">Twin Peaks source reports</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faith">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Faith And Ministry</div>
+        <h2>The moral structure is part of the system.</h2>
+        <p class="lead">Faith is not a decorative paragraph in Shane's profile. It is a source of vocabulary and behavior: truth, humility, persistence, restoration, stewardship, and grace. It also explains why AI work and ministry work can sit in the same story without making the story fake.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card gold span-6">
+          <h3>Steps to Christ / Selah</h3>
+          <p>The ministry records show weekly Scripture and recovery material, Uganda small groups, format discipline, and Shane using AI as help with the typing and structure while keeping the conviction, burden, and spiritual intent as his own.</p>
+        </div>
+        <div class="card span-6">
+          <h3>Phoenix Electric culture</h3>
+          <p>Public and local records support a Christ-centered / faith-anchored company posture, plus a practical service culture: quality work, safety, relationships, honesty, and care for customers.</p>
+        </div>
+        <div class="card strong span-12">
+          <h3>Why this matters to the AI record</h3>
+          <p>The system's hard rules are not only technical. No deletion. No hidden external sends. Approval before risky action. Logs instead of memory theater. Corrections instead of erasure. These rules sound like engineering, but their deeper function is moral: tell the truth, preserve the record, and do not pretend a mistake did not happen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">External And Internal Proof</div>
+        <h2>Proof without bragging</h2>
+        <p class="lead">The public record supports the business and trade identity. The private/local record supports the system, memory, faith, and AI chronology. Neither should be inflated.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card span-4">
+          <h3>Phoenix Electric public footprint</h3>
+          <p>BuildZoom capture: score 120, verified license status, 174 listed projects, multiple electrical/contractor licenses, updated June 2026. Nextdoor capture: local electrician, 7 faves, neighbor language around helpful, knowledgeable, organized, prompt, clear costs, and easy online invoicing.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Public identity</h3>
+          <p>LinkedIn and public search snippets tie Shane to master electrician, business owner, Phoenix Electric, and ministry leadership. Public business snippets frame Phoenix Electric as Christ-centered and locally owned.</p>
+        </div>
+        <div class="card span-4">
+          <h3>Local source truth</h3>
+          <p>Builder Space, Taproot, Browser Echo, Phoenix Echo, Firedancer, Command App, Selah, Gateway/Twin Peaks program records, and old master plan notes provide the internal source map.</p>
+        </div>
+      </div>
+
+      <table style="margin-top: 1.3rem;">
+        <thead>
+          <tr>
+            <th>Claim Type</th>
+            <th>Use In Chronicle</th>
+            <th>Evidence Posture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Married Christian</td>
+            <td>Use plainly, no spouse-detail inference.</td>
+            <td>Direct Shane statement + internal profile record.</td>
+          </tr>
+          <tr>
+            <td>Master electrician / owner</td>
+            <td>Use as primary identity, before AI.</td>
+            <td>Public snippets + business records.</td>
+          </tr>
+          <tr>
+            <td>Top contractor language</td>
+            <td>Do not use as identity brag. Use BuildZoom score/projects only if useful.</td>
+            <td>Public proof, tone-sensitive.</td>
+          </tr>
+          <tr>
+            <td>Near-zero computer origin</td>
+            <td>Use as core story. Keep date open until Shane confirms.</td>
+            <td>Direct Shane statement + Browser records.</td>
+          </tr>
+          <tr>
+            <td>Twin Peaks readiness</td>
+            <td>Say close, substantial, not finished.</td>
+            <td>Source reports + Shane's current correction.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="open-ledger">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Open Verification Ledger</div>
+        <h2>The facts still needing Shane's final correction</h2>
+        <p class="lead">This is where the document stays honest. These items are not failures. They are the places where the file system and Shane's memory need to meet before the final archive-grade version is locked.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card strong span-6">
+          <h3>1. Start date</h3>
+          <p>One conflicting local artifact says August 2024. Stronger current local records say August 3, 2025. Shane's current statement says roughly ten months and the first stretch was ChatGPT. Current draft uses August 3, 2025 with an open note.</p>
+        </div>
+        <div class="card strong span-6">
+          <h3>2. First three months</h3>
+          <p>The story should preserve the ChatGPT-first era before Claude. Need Shane's final description of what those first months included: Builder Space, ministry documents, Microsoft/Azure setup, memory templates, and earliest automation attempts.</p>
+        </div>
+        <div class="card span-6">
+          <h3>3. Nate Harrison / channel review</h3>
+          <p>Subagent found adjacent "95 percent accurate" language and verified-memory examples, but not the named Nate Harrison/channel-review episode. Keep this out of the main claim until the exact source is found.</p>
+        </div>
+        <div class="card span-6">
+          <h3>4. Marriage/family wording</h3>
+          <p>Use "married" and "family" because Shane directly requested that it matter. Do not infer spouse name or private family details from public pages without explicit wording from Shane.</p>
+        </div>
+        <div class="card span-6">
+          <h3>5. Twin Peaks percent complete</h3>
+          <p>"90 percent there" is Shane's current lived estimate, not a measured engineering percentage. The chronicle can quote the feeling but should not label Twin Peaks complete.</p>
+        </div>
+        <div class="card span-6">
+          <h3>6. Local model deployment state</h3>
+          <p>Local models are the direction and are supported by research and vision. Do not claim deployed Phoenix-trained local specialists until a source verifies it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="label">Source Map</div>
+        <h2>What this file was built from</h2>
+        <p class="lead">Source names are included so future review can trace the story back to the surfaces that supported it. Secret values and private credential details are intentionally excluded.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card span-6">
+          <h3>Public evidence captured with Firecrawl</h3>
+          <div class="source-list">
+            <div class="source"><b>BuildZoom - Phoenix Electric</b><span>BZ score 120, verified license, 174 projects, licensing and contractor/service description.</span></div>
+            <div class="source"><b>Nextdoor - Phoenix Electric Elizabeth, CO</b><span>Local electrician footprint, 7 faves, neighbor summary around promptness, clarity, professionalism, and online invoicing.</span></div>
+            <div class="source"><b>LinkedIn public search snippets</b><span>Master electrician, business owner, ministry leader, Phoenix Electric association.</span></div>
+            <div class="source"><b>Phoenix Electric public/Facebook snippet</b><span>Christ-centered, locally owned electrical contractor language.</span></div>
+          </div>
+        </div>
+
+        <div class="card span-6">
+          <h3>Local records</h3>
+          <div class="source-list">
+            <div class="source"><b>phoenix-builder-space-knowledge</b><span>ChatGPT builder space, Phoenix Memory System, Master Vision, Taproot methodology, runbooks, early command architecture.</span></div>
+            <div class="source"><b>phoenix-command-app</b><span>Approved Phoenix Multi-User AI System vision, Product Bible, employee companion model, Command App/PWA purpose.</span></div>
+            <div class="source"><b>browser-echo and Phoenix-ECHO</b><span>Persistent Claude, Browser came home, Shane's words, Echo story reconstruction, memory/persistence doctrine.</span></div>
+            <div class="source"><b>Firedancer</b><span>False-done remembrance, direct end-state verification rule, recovery examples, review discipline.</span></div>
+            <div class="source"><b>Selah-Persistence / Steps to Christ</b><span>Ministry continuity, weekly Scripture/recovery work, AI as stewardship under time pressure.</span></div>
+            <div class="source"><b>Gateway / Twin Peaks program records</b><span>Build-state map, Gateway OS research, UI/runtime seams, self-reliant control-plane direction.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top: 1.3rem;">
+        <p>Writing standard: where a fact is public, source it. Where it is private but recorded locally, mark it as local record. Where it comes from Shane in the current correction, mark it Shane-direct. Where it is not yet pinned down, keep it in the open ledger.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Compiled:</strong> June 5, 2026, from public Firecrawl captures, local repo/project records, read-only subagent research lanes, and Shane's direct correction pass.</p>
+    <p><strong>Purpose:</strong> a standalone remembering tool for Shane Warehime and the Twin Peaks / Phoenix Electric system history. It is meant to be reviewed, corrected, and then preserved as a truthful chronicle.</p>
+    <p><strong>Safety:</strong> no secrets, no credential values, no spouse/private-family inference beyond Shane's direct statement that marriage/family belong in the story, and no claim that Twin Peaks is finished.</p>
+  </div>
+</footer>
+
+</body>
+</html>
