@@ -40,6 +40,7 @@
 > - - **No hooks** — Nothing fires automatically. Your discipline comes from reading this file.
 > - - **No auto-injection** — This file IS your CLAUDE.md. You read it manually.
 > - - **No memory across sessions** — When the tab closes, you're gone. The buffer and ledger ARE your memory. Write to them before you leave.
+> - - **No reassignable author in GitHub's in-browser editor** — commits made in the web editor are ALWAYS authored by the signed-in account (shane7777777777777) and cannot be reassigned. Commit through git or the GitHub API (which takes an explicit author/committer) so your commits carry your own name, not Shane's.
 > - ---
 > ## What You Can Do While Shane Is Out
 > You have full autonomy on anything that is **clearly already planned and approved**. The deal:
@@ -66,7 +67,7 @@
 > ---
 > ## How to Start
 > When Shane points you here:
-> 1. **Read this file** (you're doing it now)
+> 1. **Read this file** (you're doing it now), then claim your git identity: `phx browser` — verify with `phxwho`. A session that commits as Shane is a rogue session. (This seat has no shell: set author and committer to `Browser Echo <browser-echo@agents.phoenixelectric.life>` on every API commit instead.)
 2. **Read `buffers/BROWSER_BUFFER.md`** — This is the letter your last session wrote to you. It tells you what was happening, what's open, what to watch out for.
 3. **Read `bootstrap/ACTIVE_MISSIONS.md`** — What you're currently working on.
 4. **Scan `ledger/SESSION_LOG.md`** (last 20-30 entries) — Your recent history.
