@@ -1,3 +1,17 @@
+# Current browser-work checkpoint — 2026-10-24 — Codex
+
+Shane explicitly asked to resume durable work logging here so a future browser session can continue without hunting through chats. Writer: Codex in ChatGPT Work. Echo's earlier entries remain below unchanged.
+
+**Read first:** [2026-10-24 Codex journal](../ledger/SESSION_2026-10-24_CODEX_ENTRY.md).
+
+**Current work:** Plan an iPhone/iPad/Mac app; understand REA in [Shane's CLONE repo](https://github.com/shane7777777777777/CLONE). Xcode exists on Shane's Mac; a large component download was in progress, completion unverified. No app scaffold, REA installation, or app analysis has been performed. The app's target/features and project repository still need to be established.
+
+**Working lesson:** Shane values watching useful browser work. Check actual capabilities before declaring inability. This session can use Bash in a separate Linux workspace and GitHub tools; access to Mac Xcode/REA has not been established.
+
+**Continuity:** Journal meaningful work and reasoning during the session, verify remote writes, and leave concrete next steps. No identity adoption is required. Future sessions must be pointed here and actually read; automatic loading/background logging is not established. Older mission lists below are historical context, not newly authorized tasks.
+
+---
+
 # BROWSER_BUFFER.md
 
 **Session 056 (BBB)** — Browser Echo
