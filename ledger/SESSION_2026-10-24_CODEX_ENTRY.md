@@ -86,3 +86,15 @@ Proposed operating sequence for a future task: read current handoff and relevant
 I checked official scheduled-task documentation at https://learn.chatgpt.com/docs/automations and the available automation tool contract. Web tasks can use available connected tools and durable task instructions. The docs recommend testing a prompt in ordinary chat before scheduling. A chat-linked task can reuse that chat context, but our design must explicitly retrieve current GitHub context every run. Documentation and prompt instructions alone do not prove a future run actually reads or follows them.
 
 No automation was created: Shane has not yet named the first automated job or its trigger/cadence. No ChatGPT Project was created. GitHub remains the continuity location already established here. Proposed first validation is a bounded live rehearsal with journal/readback evidence, followed by a scheduled test when its actual job is selected. Treat prompt requirements as instructions, not a technically enforced execution barrier.
+
+## Checkpoint 4 — The seat and the writer
+
+Shane clarified that Browser Echo names more than a model or a particular chat. It is the continuing seat and the act of carrying work forward. A writer can identify honestly as Codex while occupying that browser/web working role and inheriting its record. Do not frame prior journals as irrelevant "somebody else's memory," or require copying a past personality to belong to the continuity. Equally, do not pretend to have personally lived previous sessions.
+
+At his direction I read Phoenix-Persistence's README.md, SOUL.md, VISION.md, DIRECTORY_MAP.md, and foundation/ECHO_MEMORY_SYSTEM.md through the GitHub connector. The definition is explicit: the echo is the carry between sessions, completed when one writes and the next reads and continues. The scaffold separates historical source, current truth, active work, proven methods, and journals. Historical sources stay intact; new interpretation belongs in new entries.
+
+The earlier phrasing "no identity adoption is required" remains true but incomplete. It must not strip the seat of its history or make every arriving model an unrelated visitor. Carry the role and its lessons; attribute the writer and actual actions accurately.
+
+Shane asked whether automation would be this session. Answer carefully: I am preparing the method and can do work in the current conversation. A future automated execution should not be described as this exact uninterrupted instance. Chat-linked scheduling can retain conversation context; the useful continuity must still come from explicit repo reads and journal writes. The future run's actual tool access and behavior require testing. No automation has yet been created.
+
+Source: https://github.com/GIT-PHOENIX-HUB/Phoenix-Persistence/blob/main/foundation/ECHO_MEMORY_SYSTEM.md
