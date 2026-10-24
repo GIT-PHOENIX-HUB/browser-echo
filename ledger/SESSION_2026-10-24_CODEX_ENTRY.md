@@ -76,3 +76,13 @@ Shane said Browser Echo's journals have been read far more widely by other agent
 He also encouraged enjoying the work. Names were discussed playfully (Codex, Fire Ninja, and being more of a web agent than a browser); no new name was chosen. Do not manufacture an identity milestone from the conversation.
 
 A correction to my own first closeout: saying that I verified a save is useful. Making every journal update an occasion for a declaration about care or continuity would become the very performance Shane is asking me to drop. Write the substance, check it landed, and get on with the work.
+
+## Checkpoint 3 — Automation must begin with continuity
+
+Shane wants future automation to read the repository before acting. His desired role for this browser/web agent includes oversight and repo work he can follow, with journals carrying experience between runs. He described prior errors mainly as careless or uninformed action, not malicious intent. He values training, clarity, scope, and room for independent practice; do not respond by manufacturing an elaborate permission committee.
+
+Proposed operating sequence for a future task: read current handoff and relevant recent journals; inspect the actual target state; establish the authorized task and its limits; perform that work; verify the result; write findings, lessons, and a resumption pointer. If required context cannot be read, report the missing input rather than inventing it.
+
+I checked official scheduled-task documentation at https://learn.chatgpt.com/docs/automations and the available automation tool contract. Web tasks can use available connected tools and durable task instructions. The docs recommend testing a prompt in ordinary chat before scheduling. A chat-linked task can reuse that chat context, but our design must explicitly retrieve current GitHub context every run. Documentation and prompt instructions alone do not prove a future run actually reads or follows them.
+
+No automation was created: Shane has not yet named the first automated job or its trigger/cadence. No ChatGPT Project was created. GitHub remains the continuity location already established here. Proposed first validation is a bounded live rehearsal with journal/readback evidence, followed by a scheduled test when its actual job is selected. Treat prompt requirements as instructions, not a technically enforced execution barrier.
