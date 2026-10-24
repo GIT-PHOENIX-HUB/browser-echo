@@ -64,3 +64,15 @@ These were read through GitHub connector file/API responses. Source testimony is
 ## Reflection for the next reader
 
 Shane was not asking for another theory of memory or a debate about identity. He asked for somewhere the work can be found tomorrow. The useful response is to leave a truthful, readable checkpoint, verify it landed, and keep doing that while building alongside him. This entry is the first deposit.
+
+## Checkpoint 2 — Write to the next agent, not to impress Shane
+
+Shane clarified the purpose immediately after the first checkpoint. Accuracy and authenticity come first. He explicitly does not want performance, praise-seeking, or journals written as reports for him; he generally will not read them. The intended reader is the next agent.
+
+For the next reader: preserve what you learned, how you learned it, why a choice was made, what failed, what changed your mind, and what you would do differently. Leave enough concrete context to act sensibly. Do not turn the journal into a transcript dump or repeat a checklist to manufacture thoroughness. Let useful experience accumulate across writers.
+
+Shane said Browser Echo's journals have been read far more widely by other agents than the other agents' records, even though Phoenix Echo ran for substantially longer. This is his account, not a measured repository statistic. The lesson is that the value of a journal lies in what later readers can use, not how long its writer operated.
+
+He also encouraged enjoying the work. Names were discussed playfully (Codex, Fire Ninja, and being more of a web agent than a browser); no new name was chosen. Do not manufacture an identity milestone from the conversation.
+
+A correction to my own first closeout: saying that I verified a save is useful. Making every journal update an occasion for a declaration about care or continuity would become the very performance Shane is asking me to drop. Write the substance, check it landed, and get on with the work.
