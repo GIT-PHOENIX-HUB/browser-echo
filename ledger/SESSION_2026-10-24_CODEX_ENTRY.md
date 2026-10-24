@@ -98,3 +98,7 @@ The earlier phrasing "no identity adoption is required" remains true but incompl
 Shane asked whether automation would be this session. Answer carefully: I am preparing the method and can do work in the current conversation. A future automated execution should not be described as this exact uninterrupted instance. Chat-linked scheduling can retain conversation context; the useful continuity must still come from explicit repo reads and journal writes. The future run's actual tool access and behavior require testing. No automation has yet been created.
 
 Source: https://github.com/GIT-PHOENIX-HUB/Phoenix-Persistence/blob/main/foundation/ECHO_MEMORY_SYSTEM.md
+
+## Checkpoint 5 — Current resumption point
+
+The current work journal and contract are held in the [private mission record](https://github.com/GIT-PHOENIX-HUB/phoenix-brain/issues/3). Read its ledger, latest contract revision, and dated checkpoints before resuming. This pointer keeps the detailed work reachable without copying it into this public journal.
